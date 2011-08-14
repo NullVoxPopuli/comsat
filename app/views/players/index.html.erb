@@ -5,6 +5,8 @@
     <th>English name</th>
     <th>Country</th>
     <th>Team</th>
+	<th>Abbr.</th>
+	<th>feat?</th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,6 +17,8 @@
     <td><%= player.english_name %></td>
     <td><%= player.country %></td>
     <td><%= player.team %></td>
+    <td><%= player.team_shorthand %></td>
+    <td><%= player.featured ? "Yes" : "No" %></td>
     <td><%= link_to 'Show', player %></td>
     <td><%= link_to 'Edit', edit_player_path(player) %></td>
     <td><%= link_to 'Destroy', player, :confirm => 'Are you sure?', :method => :delete %></td>

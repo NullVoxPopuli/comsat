@@ -412,3 +412,114 @@ Started GET "/" for 127.0.0.1 at 2011-08-13 21:37:55 -0400
   [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT "players".* FROM "players" WHERE (featured = 't')[0m
 Rendered home/index.html.erb within layouts/application (11.3ms)
 Completed 200 OK in 23ms (Views: 15.7ms | ActiveRecord: 0.5ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /Users/lprestonsegoiii/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111)
+
+
+Started GET "/players" for 127.0.0.1 at 2011-08-13 23:06:55 -0400
+
+RuntimeError (!!! Missing the mysql2 gem. Add it to your Gemfile: gem 'mysql2'):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.2ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.2ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2011-08-13 23:07:17 -0400
+
+RuntimeError (!!! Missing the mysql2 gem. Add it to your Gemfile: gem 'mysql2'):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.6ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /Users/lprestonsegoiii/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111)
+
+
+Started GET "/players" for 127.0.0.1 at 2011-08-13 23:07:30 -0400
+
+Mysql::Error (Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.8ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2011-08-13 23:12:52 -0400
+  Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.6ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+Mysql::Error: Table 'comsat_dev.players' doesn't exist: SELECT `players`.* FROM `players`
+Completed 500 Internal Server Error in 78ms
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'comsat_dev.players' doesn't exist: SELECT `players`.* FROM `players`):
+  app/controllers/players_controller.rb:6:in `index'
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (150.7ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (156.0ms)
+  [1m[36mSQL (59.2ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (1.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (193.6ms)[0m  [1mCREATE TABLE `admins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (361.6ms)[0m  CREATE TABLE `players` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `english_name` varchar(255), `main_race` varchar(255), `country` varchar(255), `team` varchar(255), `team_shorthand` varchar(255), `featured` tinyint(1), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (252.5ms)[0m  [1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `confirmation_token` varchar(255), `confirmed_at` datetime, `confirmation_sent_at` datetime, `reset_password_token` varchar(255), `remember_token` varchar(255), `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `failed_attempts` int(11) DEFAULT 0, `unlock_token` varchar(255), `locked_at` datetime, `created_at` datetime, `updated_at` datetime, `authentication_token` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (274.0ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (0.7ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35mSQL (314.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35mSQL (14.7ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20110813223644')
+  [1m[36mSQL (9.2ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20090916131255')[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20091009223419')
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20100615195947')[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (1.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+
+
+Started GET "/players" for 127.0.0.1 at 2011-08-13 23:13:52 -0400
+  Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.7ms)[0m  SELECT `players`.* FROM `players`
+Rendered players/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 55ms (Views: 7.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2011-08-13 23:13:56 -0400
+  Processing by PlayersController#new as HTML
+Rendered players/_form.html.erb (178.2ms)
+Rendered players/new.html.erb within layouts/application (181.1ms)
+Completed 200 OK in 212ms (Views: 185.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2011-08-13 23:14:10 -0400
+  Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "player"=>{"english_name"=>"IdrA", "country"=>"US", "team"=>"Evil Geniuses", "main_race"=>"zerg", "team_shorthand"=>"EG", "featured"=>"1"}, "commit"=>"Create Player"}
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW TABLES
+  [1m[36mSQL (2.8ms)[0m  [1mdescribe `players`[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO `players` (`english_name`, `main_race`, `country`, `team`, `team_shorthand`, `featured`, `created_at`, `updated_at`) VALUES ('IdrA', 'zerg', 'US', 'Evil Geniuses', 'EG', 1, '2011-08-14 03:14:10', '2011-08-14 03:14:10')
+  [1m[36mSQL (1.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/players/1
+Completed 302 Found in 114ms
+
+
+Started GET "/players/1" for 127.0.0.1 at 2011-08-13 23:14:10 -0400
+  Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlayer Load (1.6ms)[0m  SELECT `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+Rendered players/show.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 76ms (Views: 15.8ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2011-08-13 23:14:13 -0400
+  Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+Rendered players/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 40ms (Views: 15.5ms | ActiveRecord: 0.3ms)
