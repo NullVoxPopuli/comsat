@@ -1659,3 +1659,901 @@ Started GET "/" for 127.0.0.1 at 2011-08-14 02:06:36 -0400
   [1m[36mPlayer Load (0.6ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
 Rendered home/index.html.erb within layouts/application (10.0ms)
 Completed 200 OK in 21ms (Views: 15.0ms | ActiveRecord: 0.6ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 13:25:54 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (52.9ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+Rendered home/index.html.erb within layouts/application (41.4ms)
+Completed 200 OK in 270ms (Views: 54.3ms | ActiveRecord: 52.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 13:27:20 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered home/index.html.erb within layouts/application (44.2ms)
+Completed 200 OK in 54ms (Views: 49.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 13:27:56 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+Rendered home/index.html.erb within layouts/application (34.1ms)
+Completed 200 OK in 46ms (Views: 41.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 13:28:27 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered home/index.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 40ms (Views: 35.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/players" for 127.0.0.1 at Sun Aug 14 13:36:50 -0400 2011
+  Processing by PlayersController#index as HTML
+Completed   in 24ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 13:36:51 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.2ms)
+Rendered devise/sessions/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 141ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Sun Aug 14 13:36:53 -0400 2011
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"Aqhy8e9xWLaubJk4KTXyyAqnTMY2pZJPnfX+vdJVUp4=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"theprecognition@gmail.com"}}
+Completed   in 66ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"Aqhy8e9xWLaubJk4KTXyyAqnTMY2pZJPnfX+vdJVUp4=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"theprecognition@gmail.com"}}
+WARNING: Can't mass-assign protected attributes: remember_me
+Rendered devise/shared/_links.erb (2.1ms)
+Rendered devise/sessions/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 230ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Sun Aug 14 13:39:15 -0400 2011
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"Aqhy8e9xWLaubJk4KTXyyAqnTMY2pZJPnfX+vdJVUp4=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"theprecognition@gmail.com"}}
+Completed   in 10ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"Aqhy8e9xWLaubJk4KTXyyAqnTMY2pZJPnfX+vdJVUp4=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"theprecognition@gmail.com"}}
+WARNING: Can't mass-assign protected attributes: remember_me
+Rendered devise/shared/_links.erb (1.9ms)
+Rendered devise/sessions/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 204ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at Sun Aug 14 13:39:46 -0400 2011
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (2.1ms)
+Rendered devise/registrations/new.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 154ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Sun Aug 14 13:44:58 -0400 2011
+  Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"Aqhy8e9xWLaubJk4KTXyyAqnTMY2pZJPnfX+vdJVUp4=", "utf8"=>"\342\234\223", "user"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"theprecognition@gmail.com"}}
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT 1 FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('theprecognition@gmail.com')) LIMIT 1
+  [1m[36mSQL (31.2ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`confirmation_token` = 'N3brNJqFyp4Q5yjLPQVh' LIMIT 1
+  [1m[36mSQL (1.9ms)[0m  [1mdescribe `users`[0m
+  [1m[35mAREL (20.4ms)[0m  INSERT INTO `users` (`current_sign_in_at`, `last_sign_in_at`, `confirmed_at`, `admin`, `username`, `last_sign_in_ip`, `remember_created_at`, `battle_net_url`, `sign_in_count`, `failed_attempts`, `encrypted_password`, `login`, `updated_at`, `unlock_token`, `locked_at`, `current_sign_in_ip`, `battle_net_id`, `reset_password_token`, `remember_token`, `created_at`, `email`, `confirmation_token`, `authentication_token`, `confirmation_sent_at`) VALUES (NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, 0, '$2a$10$uV3Q/Unss.yz6oe7CLAqcO47M1fvsJjnDabqvu/W75dRp55NVDFZS', NULL, '2011-08-14 17:44:59', NULL, NULL, NULL, NULL, NULL, NULL, '2011-08-14 17:44:59', 'theprecognition@gmail.com', 'N3brNJqFyp4Q5yjLPQVh', NULL, '2011-08-14 17:44:59')
+Rendered devise/mailer/confirmation_instructions.html.erb (0.9ms)
+
+Sent mail to theprecognition@gmail.com (43ms)
+Date: Sun, 14 Aug 2011 13:45:00 -0400
+From: fake-email@comsat.heroku.com
+Reply-To: fake-email@comsat.heroku.com
+To: theprecognition@gmail.com
+Message-ID: <4e48099c5f762_2858472a4a038984@Prometheus.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome theprecognition@gmail.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=N3brNJqFyp4Q5yjLPQVh">Confirm my account</a></p>
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 1694ms
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 13:45:00 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered home/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 43ms (Views: 17.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/confirmation?confirmation_token=N3brNJqFyp4Q5yjLPQVh" for 127.0.0.1 at Sun Aug 14 13:45:26 -0400 2011
+  Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"N3brNJqFyp4Q5yjLPQVh"}
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`confirmation_token` = 'N3brNJqFyp4Q5yjLPQVh' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE `users` SET `confirmation_token` = NULL, `confirmed_at` = '2011-08-14 17:45:26', `updated_at` = '2011-08-14 17:45:26' WHERE `users`.`id` = 2[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  UPDATE `users` SET `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `last_sign_in_ip` = '127.0.0.1', `updated_at` = '2011-08-14 17:45:26', `last_sign_in_at` = '2011-08-14 17:45:26', `current_sign_in_at` = '2011-08-14 17:45:26' WHERE `users`.`id` = 2
+  [1m[36mSQL (0.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/players
+Completed 302 Found in 112ms
+
+
+Started GET "/players" for 127.0.0.1 at Sun Aug 14 13:45:26 -0400 2011
+  Processing by PlayersController#index as HTML
+  [1m[35mUser Load (1.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+Rendered players/index.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 123ms (Views: 85.0ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 13:55:31 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (141.4ms)
+Completed 200 OK in 195ms (Views: 166.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 13:57:29 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (2.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (84.3ms)
+Completed 200 OK in 99ms (Views: 89.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 13:59:15 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (3.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (66.6ms)
+Completed 200 OK in 80ms (Views: 70.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 14:07:28 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (134.5ms)
+Completed 200 OK in 166ms (Views: 138.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 14:08:27 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.5ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (3.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 73ms (Views: 61.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 14:13:23 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (55.3ms)
+Completed 200 OK in 68ms (Views: 60.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 14:13:47 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (6.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (69.9ms)
+Completed 200 OK in 160ms (Views: 71.2ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 14:16:51 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (46.7ms)
+Completed 200 OK in 59ms (Views: 50.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 14:17:02 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.6ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (3.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (71.6ms)
+Completed 200 OK in 88ms (Views: 77.1ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 14:17:50 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (52.4ms)
+Completed 200 OK in 61ms (Views: 55.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 14:18:02 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (138.2ms)
+Completed 200 OK in 151ms (Views: 144.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 14:18:33 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (4.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (52.3ms)
+Completed 200 OK in 66ms (Views: 55.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 14:20:55 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (46.4ms)
+Completed 200 OK in 60ms (Views: 52.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 14:21:04 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (1.1ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (151.5ms)
+Completed 200 OK in 167ms (Views: 158.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 14:22:50 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (40.7ms)
+Completed 200 OK in 52ms (Views: 45.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 14:28:25 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (2.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 109ms (Views: 80.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 14:31:13 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.5ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (2.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (48.1ms)
+Completed 500 Internal Server Error in 168ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+    15: 	 	<%= link_to 'Home', root_path %>
+    16:      	<% if user_signed_in? -%>
+    17: 			<div id="user_login_box" style="float:right">
+    18: 		        <%= current_user.username + " | " if current_user %>
+    19: 		        <%= link_to 'Account', edit_user_registration_path %> |
+    20: 		    	<%= link_to 'Sign out', destroy_user_session_path %>
+    21: 		    </div>
+  app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___207079262_2222763900_0'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (367.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (376.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 14:32:30 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.9ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (142.7ms)
+Completed 200 OK in 159ms (Views: 150.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 14:33:06 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (63.4ms)
+Completed 200 OK in 79ms (Views: 70.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 14:33:15 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 78ms (Views: 68.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at Sun Aug 14 14:35:40 -0400 2011
+  Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (2.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered devise/registrations/edit.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 118ms (Views: 20.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at Sun Aug 14 14:43:39 -0400 2011
+  Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (3.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered devise/registrations/edit.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 76ms (Views: 35.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at Sun Aug 14 14:44:41 -0400 2011
+  Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (4.9ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered devise/registrations/edit.html.erb within layouts/application (100.4ms)
+Completed 200 OK in 165ms (Views: 108.7ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at Sun Aug 14 14:45:02 -0400 2011
+  Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered devise/registrations/edit.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 61ms (Views: 21.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at Sun Aug 14 14:45:09 -0400 2011
+  Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Rendered devise/registrations/edit.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 74ms (Views: 20.6ms | ActiveRecord: 0.7ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104)
+
+
+Started GET "/users/edit" for 127.0.0.1 at Sun Aug 14 15:20:07 -0400 2011
+  Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSQL (50.1ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+Completed   in 181ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 15:20:08 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.5ms)
+Rendered devise/sessions/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 55ms (Views: 25.8ms | ActiveRecord: 50.6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Sun Aug 14 15:20:26 -0400 2011
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"Aqhy8e9xWLaubJk4KTXyyAqnTMY2pZJPnfX+vdJVUp4=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"1", "login"=>"thePrecognition@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (lower(username) = 'theprecognition@gmail.com' OR lower(email) = 'theprecognition@gmail.com') LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (1.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`remember_token` = 'VaC3Q7TF9aTe2T5xQ2TM' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE `users` SET `remember_created_at` = '2011-08-14 19:20:26', `remember_token` = 'VaC3Q7TF9aTe2T5xQ2TM', `updated_at` = '2011-08-14 19:20:26' WHERE `users`.`id` = 2
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.2ms)[0m  [1mUPDATE `users` SET `current_sign_in_at` = '2011-08-14 19:20:26', `sign_in_count` = 2, `updated_at` = '2011-08-14 19:20:26' WHERE `users`.`id` = 2[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/edit
+Completed 302 Found in 203ms
+
+
+Started GET "/users/edit" for 127.0.0.1 at Sun Aug 14 15:20:26 -0400 2011
+  Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+Rendered devise/registrations/edit.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 55ms (Views: 14.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at Sun Aug 14 15:27:29 -0400 2011
+  Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+ERROR: compiling _app_views_layouts_application_html_erb___207079262_2176620940_0 RAISED compile error
+/Users/lprestonsegoiii/Personal Projects/SC2-Replay-Selector/app/views/layouts/application.html.erb:32: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _app_views_layouts_application_html_erb___207079262_2176620940_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>');@output_buffer.append= ( h(yield(:title) || "Comsat") );@output_buffer.safe_concat('</title>
+    ');@output_buffer.append= ( csrf_meta_tag );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    ');@output_buffer.append= ( yield(:head) );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('	');@output_buffer.append= ( stylesheet_link_tag "application.css" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </head>
+  <body>
+	<div class="header">
+');@output_buffer.append_if_string= 		 flash.each do |name, msg| 
+@output_buffer.safe_concat('	        ');@output_buffer.append= ( content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) );@output_buffer.safe_concat('
+');	     end 
+@output_buffer.safe_concat('	 	');@output_buffer.append= ( link_to 'Home', root_path );@output_buffer.safe_concat('
+');     	 if user_signed_in? 
+@output_buffer.safe_concat('			<div id="user_login_box" style="float:right">
+		        ');@output_buffer.append= ( current_user.username + " | " if current_user and current_user.username );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('		        ');@output_buffer.append= ( link_to 'Account', edit_user_registration_path );@output_buffer.safe_concat(' |
+		    	');@output_buffer.append= ( link_to 'Sign out', destroy_user_session_path );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('		    </div>
+');		 end 
+@output_buffer.safe_concat('	</div>
+');	 request.path =~ /users/ or request.path =~ /sessions/ 
+@output_buffer.safe_concat('	<div class="header_spacer"></div>
+');	 end 
+@output_buffer.safe_concat('      ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+  </body>
+</html>
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/lprestonsegoiii/Personal Projects/SC2-Replay-Selector/app/views/layouts/application.html.erb:32:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/template.rb:134:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications.rb:54:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/template.rb:127:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/render/layouts.rb:80:in `_render_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:62:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:26:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:93:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:17:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.9/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Library/Ruby/Gems/1.8/gems/devise-1.3.1/lib/devise/controllers/scoped_views.rb:28:in `render_with_scope'
+/Library/Ruby/Gems/1.8/gems/devise-1.3.1/app/controllers/devise/registrations_controller.rb:34:in `edit'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:150:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:446:in `_run__1732029701__process_action__1992409046__callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:119:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:41:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal.rb:138:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_controller/metal.rb:178:in `action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/routing/mapper.rb:39:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:82:in `optimized_each'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Library/Ruby/Gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:35:in `call'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:34:in `catch'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:34:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.2/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:32:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:12:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.2/lib/rack/sendfile.rb:107:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/rack/logger.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.2/lib/rack/runtime.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.0.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/application.rb:168:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/application.rb:77:in `send'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/application.rb:77:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/rack/log_tailer.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.2/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.2/lib/rack/handler/webrick.rb:52:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.2/lib/rack/handler/webrick.rb:13:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.2.2/lib/rack/server.rb:213:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/commands/server.rb:65:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/commands.rb:30
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/commands.rb:27:in `tap'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.9/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered devise/registrations/edit.html.erb within layouts/application (19.7ms)
+Completed 500 Internal Server Error in 175ms
+
+ActionView::Template::Error (compile error
+/Users/lprestonsegoiii/Personal Projects/SC2-Replay-Selector/app/views/layouts/application.html.erb:32: syntax error, unexpected kENSURE, expecting $end):
+    29:   </body>
+    30: </html>
+  app/views/layouts/application.html.erb:32:in `compile'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (268.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (278.1ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at Sun Aug 14 15:27:52 -0400 2011
+  Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (34.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+Rendered devise/registrations/edit.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 141ms (Views: 12.9ms | ActiveRecord: 34.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at Sun Aug 14 15:33:05 -0400 2011
+  Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"Aqhy8e9xWLaubJk4KTXyyAqnTMY2pZJPnfX+vdJVUp4=", "utf8"=>"\342\234\223", "user"=>{"password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "username"=>"LindyHop", "password"=>"[FILTERED]", "email"=>"theprecognition@gmail.com"}}
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+Rendered devise/registrations/edit.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 117ms (Views: 15.4ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at Sun Aug 14 15:33:18 -0400 2011
+  Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"Aqhy8e9xWLaubJk4KTXyyAqnTMY2pZJPnfX+vdJVUp4=", "utf8"=>"\342\234\223", "user"=>{"password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "username"=>"LindyHop", "password"=>"[FILTERED]", "email"=>"theprecognition@gmail.com"}}
+  [1m[36mUser Load (3.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('theprecognition@gmail.com')) AND (`users`.id <> 2) LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mUPDATE `users` SET `encrypted_password` = '$2a$10$pTh9XA3268A00r7//3yWr.4stN0nToo1gHg56PpU3hb3oi9c/k2Pi', `username` = 'LindyHop', `updated_at` = '2011-08-14 19:33:18' WHERE `users`.`id` = 2[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 324ms
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 15:33:18 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+  [1m[35mUser Load (1.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+Rendered home/index.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 47ms (Views: 40.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 15:34:06 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+  [1m[35mUser Load (1.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+Rendered home/index.html.erb within layouts/application (69.0ms)
+Completed 200 OK in 78ms (Views: 72.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at Sun Aug 14 15:38:03 -0400 2011
+  Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (45.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+Rendered devise/registrations/edit.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 86ms (Views: 12.9ms | ActiveRecord: 45.2ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at Sun Aug 14 15:38:07 -0400 2011
+  Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (38.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mUPDATE `users` SET `remember_token` = NULL, `remember_created_at` = NULL, `updated_at` = '2011-08-14 19:38:07' WHERE `users`.`id` = 2[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 126ms
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 15:38:07 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+Rendered home/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 33ms (Views: 28.4ms | ActiveRecord: 39.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Aug 14 15:44:29 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered home/index.html.erb within layouts/application (53.1ms)
+Completed 200 OK in 64ms (Views: 59.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/players" for 127.0.0.1 at Sun Aug 14 15:44:37 -0400 2011
+  Processing by PlayersController#index as HTML
+Completed   in 78ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 15:44:37 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.6ms)
+Rendered devise/sessions/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 68ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at Sun Aug 14 15:45:50 -0400 2011
+  Processing by PlayersController#index as HTML
+Completed   in 10ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 15:45:50 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.3ms)
+Rendered devise/sessions/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 129ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at Sun Aug 14 15:47:57 -0400 2011
+  Processing by PlayersController#index as HTML
+Completed   in 11ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 15:47:57 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (3.2ms)
+Rendered devise/sessions/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 50ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 15:48:23 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 119ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at Sun Aug 14 15:48:27 -0400 2011
+  Processing by PlayersController#index as HTML
+Completed   in 8ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 15:48:27 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.9ms)
+Rendered devise/sessions/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 41ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at Sun Aug 14 15:50:26 -0400 2011
+  Processing by PlayersController#index as HTML
+Completed   in 85ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 15:50:26 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.2ms)
+Rendered devise/sessions/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 60ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at Sun Aug 14 15:52:56 -0400 2011
+  Processing by PlayersController#index as HTML
+Completed   in 10ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 15:52:56 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.0ms)
+Rendered devise/sessions/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 106ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at Sun Aug 14 15:53:05 -0400 2011
+  Processing by PlayersController#index as HTML
+Completed   in 8ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 15:53:05 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.8ms)
+Rendered devise/sessions/new.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 48ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at Sun Aug 14 15:53:24 -0400 2011
+  Processing by PlayersController#index as HTML
+Completed   in 76ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 15:53:24 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (3.3ms)
+Rendered devise/sessions/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 51ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at Sun Aug 14 15:53:46 -0400 2011
+  Processing by PlayersController#index as HTML
+Completed   in 10ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 15:53:46 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 107ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at Sun Aug 14 15:53:58 -0400 2011
+  Processing by PlayersController#index as HTML
+Completed   in 7ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 15:53:58 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.2ms)
+Rendered devise/sessions/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 45ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 15:54:04 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.9ms)
+Rendered devise/sessions/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 103ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at Sun Aug 14 15:55:38 -0400 2011
+  Processing by PlayersController#index as HTML
+Completed   in 7ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 15:55:38 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.5ms)
+Rendered devise/sessions/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 65ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 15:55:49 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.5ms)
+Rendered devise/sessions/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 38ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at Sun Aug 14 15:55:53 -0400 2011
+  Processing by PlayersController#index as HTML
+Completed   in 8ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 15:55:53 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.2ms)
+Rendered devise/sessions/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 96ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at Sun Aug 14 15:59:11 -0400 2011
+  Processing by PlayersController#index as HTML
+Completed   in 10ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 15:59:11 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.1ms)
+Rendered devise/sessions/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 46ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at Sun Aug 14 16:01:43 -0400 2011
+  Processing by PlayersController#index as HTML
+Completed   in 10ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 16:01:43 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.3ms)
+Rendered devise/sessions/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 64ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at Sun Aug 14 16:01:49 -0400 2011
+  Processing by PlayersController#index as HTML
+Completed   in 9ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 16:01:49 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.8ms)
+Rendered devise/sessions/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 103ms (Views: 75.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at Sun Aug 14 16:02:01 -0400 2011
+  Processing by PlayersController#index as HTML
+Completed   in 8ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 16:02:01 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.1ms)
+Rendered devise/sessions/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 39ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at Sun Aug 14 16:02:46 -0400 2011
+  Processing by PlayersController#index as HTML
+Completed   in 11ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 16:02:46 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (3.2ms)
+Rendered devise/sessions/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 36ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at Sun Aug 14 16:06:09 -0400 2011
+  Processing by PlayersController#index as HTML
+Completed   in 7ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 16:06:09 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (65.6ms)
+Rendered devise/sessions/new.html.erb within layouts/application (74.7ms)
+Completed 200 OK in 113ms (Views: 80.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at Sun Aug 14 16:06:37 -0400 2011
+  Processing by PlayersController#index as HTML
+Completed   in 9ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 16:06:37 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.2ms)
+Rendered devise/sessions/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 41ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for 127.0.0.1 at Sun Aug 14 16:08:12 -0400 2011
+  Processing by PlayersController#index as HTML
+Completed   in 7ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 16:08:12 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (3.5ms)
+Rendered devise/sessions/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 65ms (Views: 36.5ms | ActiveRecord: 0.0ms)

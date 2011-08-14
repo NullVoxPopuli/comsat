@@ -5,10 +5,41 @@
     <title><%= h(yield(:title) || "Comsat") %></title>
     <%= csrf_meta_tag %>
     <%= yield(:head) %>
-
+	<%= stylesheet_link_tag "application.css" %>
+	<%= javascript_include_tag "jquery-1.6.2.min.js", "jquery-ui-1.8.15.custom.min.js"%>
+	<script type="text/javascript">
+		$j = jQuery.noConflict();
+	</script>
   </head>
   <body>
-      <%= yield %>
-    </div>
+	<div class="pre_header_container">
+		<%- flash.each do |name, msg| -%>
+	        <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+			<script type="text/javascript">
+				$j(function() {
+					setTimeout(function(){
+						$j("div#flash_<%= name %>").hide("slide", {direction: "up"}, 1000);
+					}, 2000);
+				});
+			</script>
+		    <%- end -%>
+		<div class="header">
+			<div class="header_container">
+			 	<%= link_to 'Home', root_path %>
+		     	<% if user_signed_in? -%>
+					<div id="user_login_box" style="float:right">
+				        <%= current_user.username + " | " if current_user and current_user.username %>
+				        <%= link_to 'Account', edit_user_registration_path %> |
+				    	<%= link_to 'Sign out', destroy_user_session_path %>
+				    </div>
+				<% end -%>
+			</div>
+		</div>
+		<% if request.path =~ /users/ or request.path =~ /sessions/ %>
+		<div class="header_spacer"></div>
+		<% end %>
+	      <%= yield %>
+	    </div>
+	</div>
   </body>
 </html>

@@ -5,6 +5,8 @@ body{
 	padding: 0px;
 	display: block;
 	height: 100%;
+	font-family: Verdana, Helvetica, Arial;
+	
 }
 svg{
 	width:  100% !important;

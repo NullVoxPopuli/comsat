@@ -256,11 +256,11 @@ function showPlayerActionView(container, playersList, index){
 	// animate (hide)
 	if (container == cs_characterSliderPlayerOne){
 		if (container.is(":visible")){
-			container.hide("slide", {direction: "left"}, 100);
+			container.fadeOut(0);//.hide("slide", {direction: "left"}, 100);
 		}
 	} else if (container == cs_characterSliderPlayerTwo){
 		if (container.is(":visible")){
-			container.hide("slide", {direction: "right"}, 100);
+			container.fadeOut(0);//.hide("slide", {direction: "right"}, 100);
 		}
 	}
 	
@@ -271,7 +271,7 @@ function showPlayerActionView(container, playersList, index){
 	raceImageContainer.removeClass("zerg");
 	raceImageContainer.removeClass("terran");
 	raceImageContainer.removeClass("random");
-	raceImageContainer.addClass(currentPlayerElement.find("span").attr("class"));
+	raceImageContainer.addClass(currentPlayerElement.find("span.race").text());
 	
 	countryImgURL = currentPlayerElement.find(".country").text();
 	container.find(".nameSlider .countryFlag").css("background", "url(/images/"+countryImgURL+")");
