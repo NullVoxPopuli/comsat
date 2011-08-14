@@ -2557,3 +2557,38 @@ Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 16:08:12 -0400 2011
 Rendered devise/shared/_links.erb (3.5ms)
 Rendered devise/sessions/new.html.erb within layouts/application (14.3ms)
 Completed 200 OK in 65ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 16:18:57 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 82ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Sun Aug 14 16:19:25 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.8ms)
+Rendered devise/sessions/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 47ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Sun Aug 14 16:20:06 -0400 2011
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"mFC72N1hlpvHm/QpV72RfPaRKTnLOCf6U1dMVq96ipM=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "login"=>"LindyHop", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (lower(username) = 'lindyhop' OR lower(email) = 'lindyhop') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.5ms)[0m  [1mUPDATE `users` SET `current_sign_in_at` = '2011-08-14 20:20:06', `sign_in_count` = 3, `last_sign_in_at` = '2011-08-14 19:20:26', `updated_at` = '2011-08-14 20:20:06' WHERE `users`.`id` = 2[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/players
+Completed 302 Found in 108ms
+
+
+Started GET "/players" for 127.0.0.1 at Sun Aug 14 16:20:06 -0400 2011
+  Processing by PlayersController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+Rendered players/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 115ms (Views: 24.1ms | ActiveRecord: 1.6ms)
