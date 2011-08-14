@@ -1,0 +1,15 @@
+<%= javascript_include_tag "raphael-min.js" %>
+<%= javascript_include_tag "jquery-1.6.2.min.js", "jquery-ui-1.8.15.custom.min.js"%>
+<%= javascript_include_tag "comsat.js"%>
+<%= stylesheet_link_tag "comsat.css"%>
+
+<div id="notepad"></div>
+
+<ul class="players" style="display: none">
+	<% @featured_players.each do |player |%>
+		<li class="<%=h player.country %>">
+			<%=h player.team_shorthand %><%=h player.english_name %>
+			<span class="<%=h player.main_race %>"></span>
+		</li>
+	<% end %>
+</ul>

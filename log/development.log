@@ -1,0 +1,414 @@
+  [1m[36mSQL (24.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.7ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (9.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36mSQL (3.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to CreateUsers (20090916131255)
+  [1m[36mSQL (0.8ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(128) DEFAULT '' NOT NULL, "confirmation_token" varchar(255), "confirmed_at" datetime, "confirmation_sent_at" datetime, "reset_password_token" varchar(255), "remember_token" varchar(255), "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "failed_attempts" integer DEFAULT 0, "unlock_token" varchar(255), "locked_at" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20090916131255')
+Migrating to CreateAdmins (20091009223419)
+  [1m[36mSQL (0.7ms)[0m  [1mCREATE TABLE "admins" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(128) DEFAULT '' NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20091009223419')
+Migrating to TokenAuthentication (20100615195947)
+  [1m[36mSQL (0.7ms)[0m  [1mALTER TABLE "users" ADD "authentication_token" varchar(255)[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" >= 0) ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100615195947')
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("admins")
+  [1m[36mSQL (0.2ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."authentication_token" = 'ZpJBgg3W45zDJ9zXSWT8' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'VrfuJP3CUOoQY4UE5OuZ' LIMIT 1[0m
+  [1m[35mAREL (0.8ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmed_at", "confirmation_sent_at", "reset_password_token", "remember_token", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "failed_attempts", "unlock_token", "locked_at", "created_at", "updated_at", "authentication_token") VALUES ('user@test.com', '$2a$10$uzUZT03pmBJMYFmYFUv1S..k5dJlq.ItOAnn3yNCI45dBzTS4tRji', 'VrfuJP3CUOoQY4UE5OuZ', NULL, '2011-08-13 21:58:33.351799', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, NULL, NULL, '2011-08-13 21:58:33.351909', '2011-08-13 21:58:33.351909', 'ZpJBgg3W45zDJ9zXSWT8')
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from block (3 levels) in <top (required)> at /Users/lprestonsegoiii/Personal Projects/devise_example/lib/tasks/setup.rake:9)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/devise-1.3.1/app/views/devise/mailer/confirmation_instructions.html.erb (124.0ms)
+
+Sent mail to user@test.com (83ms)
+Date: Sat, 13 Aug 2011 17:58:37 -0400
+From: please-change-me@config-initializers-devise.com
+Reply-To: please-change-me@config-initializers-devise.com
+To: user@test.com
+Message-ID: <4e46f38d104fe_d6373ffa4d0357c8716e3@Prometheus.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user@test.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=VrfuJP3CUOoQY4UE5OuZ">Confirm my account</a></p>
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE (LOWER("users"."email") = LOWER('user@test.com')) AND ("users".id <> 1) LIMIT 1[0m
+  [1m[35mAREL (0.8ms)[0m  UPDATE "users" SET "confirmation_token" = NULL, "confirmed_at" = '2011-08-13 21:58:37.124874', "updated_at" = '2011-08-13 21:58:37.127168' WHERE "users"."id" = 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "admins" WHERE (LOWER("admins"."email") = LOWER('admin@test.com')) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES ('admin@test.com', '$2a$10$IdJpDWe8WQnQPjqw6BRRmO4nCnwzXJqoYnftNerLthAidAkNdnmcy', '2011-08-13 21:58:37.231055', '2011-08-13 21:58:37.231055')[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /Users/lprestonsegoiii/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-13 17:58:59 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 17ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/sign_up" for 127.0.0.1 at 2011-08-13 18:04:10 -0400
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/devise-1.3.1/app/views/devise/shared/_links.erb (3.0ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/devise-1.3.1/app/views/devise/registrations/new.html.erb within layouts/application (376.1ms)
+Completed 200 OK in 402ms (Views: 383.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin" for 127.0.0.1 at 2011-08-13 18:05:12 -0400
+  Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XFYNeo11EKxyErwi1gPtVKVdZoMObzGbQ3Km+/jOjlw=", "admin"=>{"email"=>"ThePrecognition@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT 1 FROM "admins" WHERE (LOWER("admins"."email") = LOWER('ThePrecognition@gmail.com')) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.6ms)[0m  [1mINSERT INTO "admins" ("email", "encrypted_password", "created_at", "updated_at") VALUES ('ThePrecognition@gmail.com', '$2a$10$xZrSojjFQ4Oiq7NIA7QCl.oaZzwKjPHbMYlGvAi8MSr1fDfFJY9nm', '2011-08-13 22:05:12.667676', '2011-08-13 22:05:12.667676')[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 379ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-13 18:05:12 -0400
+  Processing by HomeController#index as HTML
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."id" = 2 LIMIT 1
+Rendered home/index.html.erb within layouts/application (138.9ms)
+Completed 200 OK in 147ms (Views: 145.6ms | ActiveRecord: 0.3ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /Users/lprestonsegoiii/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-13 18:18:31 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mSQL (1.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."id" = 2 LIMIT 1
+Rendered home/index.html.erb within layouts/application (223.3ms)
+Completed 200 OK in 233ms (Views: 230.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-13 19:22:32 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 100ms (Views: 99.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-13 19:23:26 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (33.4ms)
+Completed 200 OK in 40ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /Users/lprestonsegoiii/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-13 20:43:57 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (19.5ms)
+Completed 500 Internal Server Error in 39ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    6: <div id="notepad"></div>
+    7: 
+    8: <ul class="players" style="display: none">
+    9: 	<% @featured_players.each do |player |%>
+    10: 		<li class="<%=h player.country %>">
+    11: 			<%=h player.team_shorthand %><%=h player.english_name %>
+    12: 			<span class="<%=h player.main_race %>"></span>
+  app/views/home/index.html.erb:9:in `_app_views_home_index_html_erb___1251108590776564245_70247179204940__3754417815836340378'
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (173.9ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (213.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-13 20:44:49 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (50.0ms)[0m  [1mSELECT "players".* FROM "players" WHERE (featured = 't')[0m
+SQLite3::SQLException: no such table: players: SELECT "players".* FROM "players" WHERE (featured = 't')
+Completed 500 Internal Server Error in 201ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: players: SELECT "players".* FROM "players" WHERE (featured = 't')):
+  app/controllers/home_controller.rb:5:in `index'
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (207.9ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (257.9ms)
+  [1m[36mSQL (15.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateUsers (20090916131255)
+Migrating to CreateAdmins (20091009223419)
+Migrating to TokenAuthentication (20100615195947)
+Migrating to CreatePlayers (20110813223644)
+  [1m[35mSQL (13.7ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (2.0ms)[0m  [1mCREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "english_name" varchar(255), "main_race" varchar(255), "country" varchar(255), "team" varchar(255), "team_shorthand" varchar(255), "featured" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110813223644')
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("admins")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("players")[0m
+  [1m[35mSQL (0.2ms)[0m  PRAGMA index_list("users")
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-13 20:52:58 -0400
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.6ms)[0m  SELECT "players".* FROM "players" WHERE (featured = 't')
+Rendered home/index.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 98ms (Views: 27.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-13 20:54:23 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT "players".* FROM "players" WHERE (featured = 't')[0m
+Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 14ms (Views: 7.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2011-08-13 20:56:00 -0400
+  Processing by PlayersController#new as HTML
+Rendered players/_form.html.erb (566.9ms)
+Rendered players/new.html.erb within layouts/application (568.8ms)
+Completed 500 Internal Server Error in 616ms
+
+ActionView::Template::Error (undefined method `checkbox' for #<ActionView::Helpers::FormBuilder:0x007fc763a6d830>):
+    29:   </div>
+    30:   <div class="field">
+    31:     <%= f.label :featured %><br />
+    32:     <%= f.checkbox :featured %>
+    33:   </div>
+    34:   <div class="actions">
+    35:     <%= f.submit %>
+  app/views/players/_form.html.erb:32:in `block in _app_views_players__form_html_erb__1491067898215754936_70247175494380__1291187773042934326'
+  app/views/players/_form.html.erb:1:in `_app_views_players__form_html_erb__1491067898215754936_70247175494380__1291187773042934326'
+  app/views/players/new.html.erb:3:in `_app_views_players_new_html_erb__4441076369328578791_70247175503920__3754417815836340378'
+  app/controllers/players_controller.rb:30:in `new'
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (130.9ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (166.9ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2011-08-13 20:56:11 -0400
+  Processing by PlayersController#new as HTML
+Rendered players/_form.html.erb (13.5ms)
+Rendered players/new.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 53ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2011-08-13 21:05:22 -0400
+  Processing by PlayersController#new as HTML
+Rendered players/_form.html.erb (75.1ms)
+Rendered players/new.html.erb within layouts/application (106.4ms)
+Completed 200 OK in 292ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2011-08-13 21:20:20 -0400
+  Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "player"=>{"english_name"=>"IdrA", "country"=>"US", "team"=>"Evil Geniuses", "team_shorthand"=>"EG", "featured"=>"1"}, "commit"=>"Create Player"}
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (1.2ms)[0m  [1mINSERT INTO "players" ("english_name", "main_race", "country", "team", "team_shorthand", "featured", "created_at", "updated_at") VALUES ('IdrA', NULL, 'US', 'Evil Geniuses', 'EG', 't', '2011-08-14 01:20:20.752582', '2011-08-14 01:20:20.752582')[0m
+Redirected to http://localhost:3000/players/1
+Completed 302 Found in 232ms
+
+
+Started GET "/players/1" for 127.0.0.1 at 2011-08-13 21:20:20 -0400
+  Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlayer Load (0.5ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered players/show.html.erb within layouts/application (40.7ms)
+Completed 200 OK in 113ms (Views: 83.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-13 21:20:24 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.8ms)[0m  [1mSELECT "players".* FROM "players" WHERE (featured = 't')[0m
+Rendered home/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 38ms (Views: 30.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-13 21:20:55 -0400
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.6ms)[0m  SELECT "players".* FROM "players" WHERE (featured = 't')
+Rendered home/index.html.erb within layouts/application (44.5ms)
+Completed 200 OK in 56ms (Views: 48.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-13 21:25:31 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.6ms)[0m  [1mSELECT "players".* FROM "players" WHERE (featured = 't')[0m
+Rendered home/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 29ms (Views: 21.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2011-08-13 21:25:50 -0400
+  Processing by PlayersController#new as HTML
+Rendered players/_form.html.erb (10.5ms)
+Rendered players/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 104ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2011-08-13 21:26:16 -0400
+  Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "player"=>{"english_name"=>"iNControl", "country"=>"US", "team"=>"Evil Geniuses", "team_shorthand"=>"EG", "featured"=>"1"}, "commit"=>"Create Player"}
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "players" ("english_name", "main_race", "country", "team", "team_shorthand", "featured", "created_at", "updated_at") VALUES ('iNControl', NULL, 'US', 'Evil Geniuses', 'EG', 't', '2011-08-14 01:26:16.815261', '2011-08-14 01:26:16.815261')
+Redirected to http://localhost:3000/players/2
+Completed 302 Found in 104ms
+
+
+Started GET "/players/2" for 127.0.0.1 at 2011-08-13 21:26:16 -0400
+  Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 2 LIMIT 1[0m
+Rendered players/show.html.erb within layouts/application (49.8ms)
+Completed 200 OK in 119ms (Views: 74.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-13 21:26:19 -0400
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.7ms)[0m  SELECT "players".* FROM "players" WHERE (featured = 't')
+Rendered home/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 25ms (Views: 16.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-13 21:28:26 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (1.2ms)[0m  [1mSELECT "players".* FROM "players" WHERE (featured = 't')[0m
+Rendered home/index.html.erb within layouts/application (62.1ms)
+Completed 200 OK in 80ms (Views: 68.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-13 21:30:31 -0400
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (1.4ms)[0m  SELECT "players".* FROM "players" WHERE (featured = 't')
+Rendered home/index.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 59ms (Views: 38.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-13 21:31:15 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (1.6ms)[0m  [1mSELECT "players".* FROM "players" WHERE (featured = 't')[0m
+Rendered home/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 55ms (Views: 34.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-13 21:32:22 -0400
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.9ms)[0m  SELECT "players".* FROM "players" WHERE (featured = 't')
+Rendered home/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 26ms (Views: 17.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2011-08-13 21:37:37 -0400
+  Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.9ms)[0m  [1mSELECT "players".* FROM "players"[0m
+Rendered players/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 66ms (Views: 25.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/players/1/edit" for 127.0.0.1 at 2011-08-13 21:37:38 -0400
+  Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1
+Rendered players/_form.html.erb (20.7ms)
+Rendered players/edit.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 64ms (Views: 30.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/players/1" for 127.0.0.1 at 2011-08-13 21:37:42 -0400
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "player"=>{"english_name"=>"IdrA", "country"=>"US", "team"=>"Evil Geniuses", "main_race"=>"zerg", "team_shorthand"=>"EG", "featured"=>"1"}, "commit"=>"Update Player", "id"=>"1"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (5.0ms)[0m  UPDATE "players" SET "main_race" = 'zerg', "updated_at" = '2011-08-14 01:37:43.032545' WHERE "players"."id" = 1
+Redirected to http://localhost:3000/players/1
+Completed 302 Found in 96ms
+
+
+Started GET "/players/1" for 127.0.0.1 at 2011-08-13 21:37:43 -0400
+  Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 1 LIMIT 1[0m
+Rendered players/show.html.erb within layouts/application (47.2ms)
+Completed 200 OK in 113ms (Views: 81.5ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2011-08-13 21:37:44 -0400
+  Processing by PlayersController#index as HTML
+  [1m[35mPlayer Load (0.6ms)[0m  SELECT "players".* FROM "players"
+Rendered players/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 50ms (Views: 22.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/players/2/edit" for 127.0.0.1 at 2011-08-13 21:37:47 -0400
+  Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPlayer Load (0.6ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."id" = 2 LIMIT 1[0m
+Rendered players/_form.html.erb (16.4ms)
+Rendered players/edit.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 93ms (Views: 25.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/players/2" for 127.0.0.1 at 2011-08-13 21:37:52 -0400
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "player"=>{"english_name"=>"iNControl", "country"=>"US", "team"=>"Evil Geniuses", "main_race"=>"protoss", "team_shorthand"=>"EG", "featured"=>"1"}, "commit"=>"Update Player", "id"=>"2"}
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 2 LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE "players" SET "main_race" = 'protoss', "updated_at" = '2011-08-14 01:37:52.400744' WHERE "players"."id" = 2[0m
+Redirected to http://localhost:3000/players/2
+Completed 302 Found in 88ms
+
+
+Started GET "/players/2" for 127.0.0.1 at 2011-08-13 21:37:52 -0400
+  Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players" WHERE "players"."id" = 2 LIMIT 1
+Rendered players/show.html.erb within layouts/application (53.3ms)
+Completed 200 OK in 87ms (Views: 58.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-13 21:37:55 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT "players".* FROM "players" WHERE (featured = 't')[0m
+Rendered home/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 23ms (Views: 15.7ms | ActiveRecord: 0.5ms)

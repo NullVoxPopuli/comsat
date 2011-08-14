@@ -1,22 +1,33 @@
 # SQLite version 3.x
-#   gem install sqlite3
-development:
-  adapter: sqlite3
-  database: db/development.sqlite3
-  pool: 5
-  timeout: 5000
+#   gem install sqlite3-ruby (not necessary on OS X Leopard)
+# I had been struggling with this issue. The two above pointers worked. Here is what I did:
 
+# Added to
+#    .zshrc: export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$DYLD_LIBRARY_PATH"
+
+# Executed this: 
+    
+#    env ARCHFLAGS="-arch x86_64" sudo gem install mysql -v='2.8.1' -- --with-mysql-dir=/usr/local/mysql --with-mysql-lib=/usr/local/mysql/lib --with-mysql-include=/usr/local/mysql/include --with-mysql-config=/usr/local/mysql/bin/mysql_config
+development:
+  adapter: mysql
+  encoding: utf8
+  database: comsat_dev
+  username: root
+  password: 
+  
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  adapter: sqlite3
-  database: db/test.sqlite3
-  pool: 5
-  timeout: 5000
+    adapter: mysql
+    encoding: utf8
+    database: comsat_test
+    username: root
+    password:
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
-  pool: 5
-  timeout: 5000
+    adapter: mysql
+    encoding: utf8
+    database: comsat_production
+    username: root
+    password:

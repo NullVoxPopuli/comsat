@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-Comsat::Application.load_tasks
+DeviseExample::Application.load_tasks

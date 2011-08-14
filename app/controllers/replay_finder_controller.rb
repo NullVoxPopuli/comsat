@@ -1,2 +1,0 @@
-class ReplayFinderController < ApplicationController
-end

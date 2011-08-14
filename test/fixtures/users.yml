@@ -1,11 +1,4 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  login: MyString
-  bnet_URL: MyString
-  email: MyString
-
-two:
-  login: MyString
-  bnet_URL: MyString
-  email: MyString
+john:
+    email: john@john.com
+    confirmed_at: <%= 1.hour.ago.to_s(:db) %>

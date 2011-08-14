@@ -1,0 +1,112 @@
+body{
+	background: url(http://i.imgur.com/Ks6Pd.jpg) black no-repeat;
+	font-family: sans-serif;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	height: 100%;
+}
+svg{
+	width:  100% !important;
+	height:  100% !important;
+}
+.zerg{
+	background: url(../images/zerg.jpeg) no-repeat;
+}
+.protoss{
+	background: url(../images/protoss.jpeg) no-repeat;
+}
+.terran{
+	background: url(../images/terran.jpeg) no-repeat;
+}
+.random{
+	background: url(../images/random.jpeg) no-repeat;
+}
+
+.zerg, .protoss, .terran, .random{
+	background-size: 400px; 
+}
+
+
+#playerOne,
+#playerTwo {
+	width: 700px;
+	position:relative;
+	overflow:hidden;
+	display: block;
+	min-height: 100%;
+}
+
+#playerOne{
+	float: left;
+}
+#playerTwo{
+	float: right;
+}
+	.race{
+		position: absolute;
+		margin-top: 100px;
+		width: 600px;
+		height: 800px;
+	}
+	#playerOne .race{
+		right: 100px;
+	}
+	#playerTwo .race{
+		left: 100px;
+	}
+	.nameSlider{
+		font-weight: bold;
+		position: absolute;
+		bottom:  0px;
+		background: rgba(0,0,0,0.5);
+		height:  100px;
+		width:  100%;
+	}
+	
+		.countryFlag{
+			width:  150px;
+			height:  100px;
+			background:  white;
+			display: inline-block;
+		}
+		#playerOne .countryFlag{
+			float: left;
+		}
+		#playerTwo .countryFlag{
+			float: right;
+		}
+		
+		.name{
+			position: absolute;
+			color:  white;
+			font-size: 50px;
+			line-height: 100px;
+			display:  inline-block;
+		}
+		
+		#playerOne .name {
+			left: 170px;
+			
+		}
+		
+		#playerTwo .name {
+			right: 170px;
+		}
+		
+		.pText{
+			font-size: 40px;
+			display: inline-block;
+			line-height:100px;
+		}
+		
+		#playerOne .pText{
+			color: blue;
+			float: right;
+			margin-right: 20px;
+		}
+		#playerTwo .pText{
+			color: red;
+			float: left;
+			margin-left:  20px;
+		}

@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Comsat::Application.config.secret_token = '87d71e14348e57257e4557d26867b2118ca242f2b75ad0e44740b48e3ad4ce042a9b68553649adbc867a00ff2c2189537cbaf645c93f49fd37652938266538f4'
+DeviseExample::Application.config.secret_token = '4e82a8e264e746673fd95920138de80d7ad1b03c25a8b0c03fd83d58627a2ea08771703ed2ef6c07704e594dca1dbdba1d90ff161c869fba02495236ecd64e8e'
