@@ -253,6 +253,17 @@ function renderLayout(){
 }
 
 function showPlayerActionView(container, playersList, index){
+	// animate (hide)
+	if (container == cs_characterSliderPlayerOne){
+		if (container.is(":visible")){
+			container.hide("slide", {direction: "left"}, 100);
+		}
+	} else if (container == cs_characterSliderPlayerTwo){
+		if (container.is(":visible")){
+			container.hide("slide", {direction: "right"}, 100);
+		}
+	}
+	
 	currentPlayerElement = playersList.eq(index)
 	
 	raceImageContainer = container.find(".race");
@@ -266,26 +277,11 @@ function showPlayerActionView(container, playersList, index){
 	container.find(".nameSlider .countryFlag").css("background", "url(/images/"+countryImgURL+")");
 	container.find(".nameSlider .name").text(currentPlayerElement.find(".player_name").text());
 	
-	// animate
+	// animate (show)
 	if (container == cs_characterSliderPlayerOne){
-		if (container.is(":visible")){
-			container.hide("slide", {direction: "right"}, 100);
-			setTimeout(function(){
-				container.show("slide", {direction: "left"}, 100);
-			}, 0);
-		}else {
-			container.show("slide", {direction: "left"}, 100);
-		}
+		container.show("slide", {direction: "left"}, 100);
 	} else if (container == cs_characterSliderPlayerTwo){
-		if (container.is(":visible")){
-			container.hide("slide", {direction: "left"}, 100);
-			setTimeout(function(){
-				container.show("slide", {direction: "right"}, 100);
-			}, 0);
-			
-		}else {
-			container.show("slide", {direction: "right"}, 100);
-		}
+		container.show("slide", {direction: "right"}, 100);
 	}
 }
 

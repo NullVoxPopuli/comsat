@@ -1147,3 +1147,515 @@ ActionController::RoutingError (No route matches "/images/US"):
   
 
 Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-14 01:53:01 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+Rendered home/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 27ms (Views: 16.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/US" for 127.0.0.1 at 2011-08-14 01:53:04 -0400
+
+ActionController::RoutingError (No route matches "/images/US"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.1ms)
+
+
+Started GET "/images/US" for 127.0.0.1 at 2011-08-14 01:53:05 -0400
+
+ActionController::RoutingError (No route matches "/images/US"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/US" for 127.0.0.1 at 2011-08-14 01:53:08 -0400
+
+ActionController::RoutingError (No route matches "/images/US"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/images/US" for 127.0.0.1 at 2011-08-14 01:53:09 -0400
+
+ActionController::RoutingError (No route matches "/images/US"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/US" for 127.0.0.1 at 2011-08-14 01:53:13 -0400
+
+ActionController::RoutingError (No route matches "/images/US"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/US" for 127.0.0.1 at 2011-08-14 01:53:14 -0400
+
+ActionController::RoutingError (No route matches "/images/US"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/US" for 127.0.0.1 at 2011-08-14 01:53:16 -0400
+
+ActionController::RoutingError (No route matches "/images/US"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/images/US" for 127.0.0.1 at 2011-08-14 01:53:17 -0400
+
+ActionController::RoutingError (No route matches "/images/US"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2011-08-14 01:55:00 -0400
+  Processing by PlayersController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+Completed   in 21ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-08-14 01:55:00 -0400
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.6ms)
+Rendered devise/sessions/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 39ms (Views: 10.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2011-08-14 01:55:02 -0400
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "user"=>{"email"=>"theprecognition@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Completed   in 9ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "user"=>{"email"=>"theprecognition@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+WARNING: Can't mass-assign protected attributes: remember_me
+Rendered devise/shared/_links.erb (1.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 108ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2011-08-14 01:55:04 -0400
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (2.0ms)
+Rendered devise/registrations/new.html.erb within layouts/application (62.5ms)
+Completed 200 OK in 118ms (Views: 104.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2011-08-14 01:55:09 -0400
+  Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "user"=>{"email"=>"theprecognition@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('theprecognition@gmail.com')) LIMIT 1
+  [1m[36mUser Load (36.8ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`confirmation_token` = 'Q6PvP2G3QV2mKgSnQqlc' LIMIT 1[0m
+  [1m[35mSQL (400.2ms)[0m  describe `users`
+  [1m[36mAREL (23.7ms)[0m  [1mINSERT INTO `users` (`email`, `encrypted_password`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `reset_password_token`, `remember_token`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at`, `authentication_token`, `login`, `battle_net_id`, `battle_net_url`, `admin`, `username`) VALUES ('theprecognition@gmail.com', '$2a$10$HeocX0R4u6QCUbuApJGHpejD8qHV/l4WRVHNDotbcX.choPROwzNq', 'Q6PvP2G3QV2mKgSnQqlc', NULL, '2011-08-14 05:55:09', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, NULL, NULL, '2011-08-14 05:55:09', '2011-08-14 05:55:09', NULL, NULL, NULL, NULL, 0, NULL)[0m
+Rendered devise/mailer/confirmation_instructions.html.erb (1.1ms)
+
+Sent mail to theprecognition@gmail.com (10ms)
+Date: Sun, 14 Aug 2011 01:55:10 -0400
+From: please-change-me@config-initializers-devise.com
+Reply-To: please-change-me@config-initializers-devise.com
+To: theprecognition@gmail.com
+Message-ID: <4e47633eb8584_b1d3fd9b207f03c6792d@Prometheus.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome theprecognition@gmail.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=Q6PvP2G3QV2mKgSnQqlc">Confirm my account</a></p>
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 1059ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-14 01:55:10 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+Rendered home/index.html.erb within layouts/application (46.7ms)
+Completed 200 OK in 57ms (Views: 50.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/confirmation?confirmation_token=Q6PvP2G3QV2mKgSnQqlc" for 127.0.0.1 at 2011-08-14 01:55:23 -0400
+  Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"Q6PvP2G3QV2mKgSnQqlc"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`confirmation_token` = 'Q6PvP2G3QV2mKgSnQqlc' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  UPDATE `users` SET `confirmation_token` = NULL, `confirmed_at` = '2011-08-14 05:55:23', `updated_at` = '2011-08-14 05:55:23' WHERE `users`.`id` = 1
+  [1m[36mSQL (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2011-08-14 05:55:23', `current_sign_in_at` = '2011-08-14 05:55:23', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2011-08-14 05:55:23' WHERE `users`.`id` = 1[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/players/new
+Completed 302 Found in 90ms
+
+
+Started GET "/players/new" for 127.0.0.1 at 2011-08-14 01:55:23 -0400
+  Processing by PlayersController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered players/_form.html.erb (14.2ms)
+Rendered players/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 71ms (Views: 22.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2011-08-14 01:55:30 -0400
+  Processing by PlayersController#index as HTML
+  [1m[35mUser Load (36.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+Rendered players/index.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 98ms (Views: 24.3ms | ActiveRecord: 36.9ms)
+
+
+Started GET "/players/1/edit" for 127.0.0.1 at 2011-08-14 01:55:34 -0400
+  Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (42.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (1.4ms)[0m  [1mSELECT `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+Rendered players/_form.html.erb (15.7ms)
+Rendered players/edit.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 173ms (Views: 45.5ms | ActiveRecord: 44.3ms)
+
+
+Started POST "/players/1" for 127.0.0.1 at 2011-08-14 01:55:40 -0400
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "player"=>{"english_name"=>"IdrA", "country"=>"flag_usa.png", "team"=>"Evil Geniuses", "main_race"=>"zerg", "team_shorthand"=>"EG", "featured"=>"1"}, "commit"=>"Update Player", "id"=>"1"}
+  [1m[35mUser Load (2.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (1.0ms)[0m  [1mSELECT `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE `players` SET `country` = 'flag_usa.png', `updated_at` = '2011-08-14 05:55:40' WHERE `players`.`id` = 1[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/players/1
+Completed 302 Found in 94ms
+
+
+Started GET "/players/1" for 127.0.0.1 at 2011-08-14 01:55:40 -0400
+  Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (2.3ms)[0m  SELECT `players`.* FROM `players` WHERE `players`.`id` = 1 LIMIT 1
+Rendered players/show.html.erb within layouts/application (187.7ms)
+Completed 200 OK in 321ms (Views: 192.3ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2011-08-14 01:55:41 -0400
+  Processing by PlayersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+Rendered players/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 104ms (Views: 22.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/players/2/edit" for 127.0.0.1 at 2011-08-14 01:55:44 -0400
+  Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (40.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (1.3ms)[0m  SELECT `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+Rendered players/_form.html.erb (13.9ms)
+Rendered players/edit.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 142ms (Views: 20.6ms | ActiveRecord: 41.8ms)
+
+
+Started POST "/players/2" for 127.0.0.1 at 2011-08-14 01:55:46 -0400
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "player"=>{"english_name"=>"iNControl", "country"=>"flag_usa.png", "team"=>"Evil Geniuses", "main_race"=>"zerg", "team_shorthand"=>"EG", "featured"=>"1"}, "commit"=>"Update Player", "id"=>"2"}
+  [1m[36mUser Load (3.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (1.6ms)[0m  SELECT `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  UPDATE `players` SET `country` = 'flag_usa.png', `updated_at` = '2011-08-14 05:55:46' WHERE `players`.`id` = 2
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/players/2
+Completed 302 Found in 111ms
+
+
+Started GET "/players/2" for 127.0.0.1 at 2011-08-14 01:55:46 -0400
+  Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (1.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (1.2ms)[0m  [1mSELECT `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+Rendered players/show.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 64ms (Views: 15.8ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2011-08-14 01:55:48 -0400
+  Processing by PlayersController#index as HTML
+  [1m[35mUser Load (40.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+Rendered players/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 139ms (Views: 23.0ms | ActiveRecord: 41.1ms)
+
+
+Started GET "/players/3/edit" for 127.0.0.1 at 2011-08-14 01:55:50 -0400
+  Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (1.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (1.8ms)[0m  [1mSELECT `players`.* FROM `players` WHERE `players`.`id` = 3 LIMIT 1[0m
+Rendered players/_form.html.erb (16.9ms)
+Rendered players/edit.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 313ms (Views: 61.7ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/players/3" for 127.0.0.1 at 2011-08-14 01:55:53 -0400
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "player"=>{"english_name"=>"qxc", "country"=>"flag_usa.png", "team"=>"FXOpen", "main_race"=>"terran", "team_shorthand"=>"FXO", "featured"=>"1"}, "commit"=>"Update Player", "id"=>"3"}
+  [1m[35mUser Load (1.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (1.9ms)[0m  [1mSELECT `players`.* FROM `players` WHERE `players`.`id` = 3 LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mUPDATE `players` SET `country` = 'flag_usa.png', `updated_at` = '2011-08-14 05:55:53' WHERE `players`.`id` = 3[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/players/3
+Completed 302 Found in 60ms
+
+
+Started GET "/players/3" for 127.0.0.1 at 2011-08-14 01:55:53 -0400
+  Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (1.4ms)[0m  SELECT `players`.* FROM `players` WHERE `players`.`id` = 3 LIMIT 1
+Rendered players/show.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 57ms (Views: 13.7ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2011-08-14 01:55:55 -0400
+  Processing by PlayersController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+Rendered players/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 105ms (Views: 25.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/players/4/edit" for 127.0.0.1 at 2011-08-14 01:55:57 -0400
+  Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (37.8ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (1.5ms)[0m  SELECT `players`.* FROM `players` WHERE `players`.`id` = 4 LIMIT 1
+Rendered players/_form.html.erb (56.8ms)
+Rendered players/edit.html.erb within layouts/application (59.5ms)
+Completed 200 OK in 144ms (Views: 63.3ms | ActiveRecord: 39.2ms)
+
+
+Started POST "/players/4" for 127.0.0.1 at 2011-08-14 01:56:00 -0400
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "player"=>{"english_name"=>"HuK", "country"=>"flag_usa_canada.png", "team"=>"Team Liquid", "main_race"=>"protoss", "team_shorthand"=>"Liquid", "featured"=>"1"}, "commit"=>"Update Player", "id"=>"4"}
+  [1m[36mUser Load (2.8ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (1.3ms)[0m  SELECT `players`.* FROM `players` WHERE `players`.`id` = 4 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE `players` SET `country` = 'flag_usa_canada.png', `updated_at` = '2011-08-14 05:56:01' WHERE `players`.`id` = 4
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/players/4
+Completed 302 Found in 75ms
+
+
+Started GET "/players/4" for 127.0.0.1 at 2011-08-14 01:56:01 -0400
+  Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (1.4ms)[0m  [1mSELECT `players`.* FROM `players` WHERE `players`.`id` = 4 LIMIT 1[0m
+Rendered players/show.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 108ms (Views: 15.8ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2011-08-14 01:56:02 -0400
+  Processing by PlayersController#index as HTML
+  [1m[35mUser Load (1.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+Rendered players/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 100ms (Views: 23.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/players/5/edit" for 127.0.0.1 at 2011-08-14 01:56:04 -0400
+  Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUser Load (42.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (1.3ms)[0m  [1mSELECT `players`.* FROM `players` WHERE `players`.`id` = 5 LIMIT 1[0m
+Rendered players/_form.html.erb (14.4ms)
+Rendered players/edit.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 106ms (Views: 20.9ms | ActiveRecord: 43.8ms)
+
+
+Started POST "/players/5" for 127.0.0.1 at 2011-08-14 01:56:06 -0400
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "player"=>{"english_name"=>"Sheth", "country"=>"flag_usa.png", "team"=>"Team Liquid", "main_race"=>"zerg", "team_shorthand"=>"Liquid", "featured"=>"1"}, "commit"=>"Update Player", "id"=>"5"}
+  [1m[35mUser Load (3.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (1.4ms)[0m  [1mSELECT `players`.* FROM `players` WHERE `players`.`id` = 5 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE `players` SET `country` = 'flag_usa.png', `updated_at` = '2011-08-14 05:56:06' WHERE `players`.`id` = 5[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/players/5
+Completed 302 Found in 61ms
+
+
+Started GET "/players/5" for 127.0.0.1 at 2011-08-14 01:56:06 -0400
+  Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.9ms)[0m  SELECT `players`.* FROM `players` WHERE `players`.`id` = 5 LIMIT 1
+Rendered players/show.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 101ms (Views: 16.3ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2011-08-14 01:56:08 -0400
+  Processing by PlayersController#index as HTML
+  [1m[36mUser Load (39.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players`
+Rendered players/index.html.erb within layouts/application (56.3ms)
+Completed 200 OK in 139ms (Views: 60.5ms | ActiveRecord: 39.6ms)
+
+
+Started GET "/players/6/edit" for 127.0.0.1 at 2011-08-14 01:56:10 -0400
+  Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (2.8ms)[0m  SELECT `players`.* FROM `players` WHERE `players`.`id` = 6 LIMIT 1
+Rendered players/_form.html.erb (16.2ms)
+Rendered players/edit.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 74ms (Views: 22.6ms | ActiveRecord: 4.3ms)
+
+
+Started POST "/players/6" for 127.0.0.1 at 2011-08-14 01:56:12 -0400
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "player"=>{"english_name"=>"Destiny", "country"=>"flag_usa.png", "team"=>"", "main_race"=>"zerg", "team_shorthand"=>"", "featured"=>"1"}, "commit"=>"Update Player", "id"=>"6"}
+  [1m[36mUser Load (3.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (1.3ms)[0m  SELECT `players`.* FROM `players` WHERE `players`.`id` = 6 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE `players` SET `country` = 'flag_usa.png', `updated_at` = '2011-08-14 05:56:12' WHERE `players`.`id` = 6
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/players/6
+Completed 302 Found in 102ms
+
+
+Started GET "/players/6" for 127.0.0.1 at 2011-08-14 01:56:12 -0400
+  Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (1.3ms)[0m  [1mSELECT `players`.* FROM `players` WHERE `players`.`id` = 6 LIMIT 1[0m
+Rendered players/show.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 101ms (Views: 14.2ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2011-08-14 01:56:14 -0400
+  Processing by PlayersController#index as HTML
+  [1m[35mUser Load (50.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+Rendered players/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 118ms (Views: 21.9ms | ActiveRecord: 51.1ms)
+
+
+Started GET "/players/7/edit" for 127.0.0.1 at 2011-08-14 01:56:16 -0400
+  Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (36.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (1.2ms)[0m  [1mSELECT `players`.* FROM `players` WHERE `players`.`id` = 7 LIMIT 1[0m
+Rendered players/_form.html.erb (15.6ms)
+Rendered players/edit.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 100ms (Views: 22.1ms | ActiveRecord: 37.5ms)
+
+
+Started POST "/players/7" for 127.0.0.1 at 2011-08-14 01:56:19 -0400
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "player"=>{"english_name"=>"LindyHop", "country"=>"flag_usa.png", "team"=>"Vertical Flat Plates", "main_race"=>"zerg", "team_shorthand"=>"vFp", "featured"=>"1"}, "commit"=>"Update Player", "id"=>"7"}
+  [1m[35mUser Load (2.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (1.3ms)[0m  [1mSELECT `players`.* FROM `players` WHERE `players`.`id` = 7 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mUPDATE `players` SET `country` = 'flag_usa.png', `updated_at` = '2011-08-14 05:56:19' WHERE `players`.`id` = 7[0m
+  [1m[35mSQL (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/players/7
+Completed 302 Found in 95ms
+
+
+Started GET "/players/7" for 127.0.0.1 at 2011-08-14 01:56:19 -0400
+  Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (1.3ms)[0m  SELECT `players`.* FROM `players` WHERE `players`.`id` = 7 LIMIT 1
+Rendered players/show.html.erb within layouts/application (49.9ms)
+Completed 200 OK in 103ms (Views: 55.1ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2011-08-14 01:56:20 -0400
+  Processing by PlayersController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players`
+Rendered players/index.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 68ms (Views: 26.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/players/8/edit" for 127.0.0.1 at 2011-08-14 01:56:22 -0400
+  Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (38.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.8ms)[0m  SELECT `players`.* FROM `players` WHERE `players`.`id` = 8 LIMIT 1
+Rendered players/_form.html.erb (14.9ms)
+Rendered players/edit.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 148ms (Views: 23.5ms | ActiveRecord: 39.5ms)
+
+
+Started POST "/players/8" for 127.0.0.1 at 2011-08-14 01:56:25 -0400
+  Processing by PlayersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "player"=>{"english_name"=>"Redoxase", "country"=>"flag_usa.png", "team"=>"Vertical Flat Plates", "main_race"=>"protoss", "team_shorthand"=>"vFp", "featured"=>"1"}, "commit"=>"Update Player", "id"=>"8"}
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (1.9ms)[0m  SELECT `players`.* FROM `players` WHERE `players`.`id` = 8 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  UPDATE `players` SET `country` = 'flag_usa.png', `updated_at` = '2011-08-14 05:56:25' WHERE `players`.`id` = 8
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/players/8
+Completed 302 Found in 100ms
+
+
+Started GET "/players/8" for 127.0.0.1 at 2011-08-14 01:56:25 -0400
+  Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mUser Load (1.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (1.4ms)[0m  [1mSELECT `players`.* FROM `players` WHERE `players`.`id` = 8 LIMIT 1[0m
+Rendered players/show.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 62ms (Views: 15.2ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2011-08-14 01:56:27 -0400
+  Processing by PlayersController#index as HTML
+  [1m[35mUser Load (38.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT `players`.* FROM `players`[0m
+Rendered players/index.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 99ms (Views: 22.2ms | ActiveRecord: 39.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-14 01:57:00 -0400
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.6ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered home/index.html.erb within layouts/application (49.1ms)
+Completed 200 OK in 60ms (Views: 53.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-14 01:57:46 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+Rendered home/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 20ms (Views: 13.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-14 02:01:13 -0400
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered home/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 20ms (Views: 13.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-14 02:06:36 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.6ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+Rendered home/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 21ms (Views: 15.0ms | ActiveRecord: 0.6ms)
