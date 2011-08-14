@@ -7,8 +7,11 @@
 
 <ul class="players" style="display: none">
 	<% @featured_players.each do |player |%>
-		<li class="<%=h player.country %>">
-			<%=h player.team_shorthand %><%=h player.english_name %>
+		<li>
+			<div class="country"><%=h player.country %></div>
+			<span class="player_name">
+				<%=h player.team_shorthand %><%=h player.english_name %>
+			</span>
 			<span class="<%=h player.main_race %>"></span>
 		</li>
 	<% end %>

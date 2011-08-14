@@ -10,14 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110813223644) do
-
-  create_table "admins", :force => true do |t|
-    t.string   "email",                             :default => "", :null => false
-    t.string   "encrypted_password", :limit => 128, :default => "", :null => false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(:version => 20110814050542) do
 
   create_table "players", :force => true do |t|
     t.string   "english_name"
@@ -31,8 +24,8 @@ ActiveRecord::Schema.define(:version => 20110813223644) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "email",                               :default => "", :null => false
-    t.string   "encrypted_password",   :limit => 128, :default => "", :null => false
+    t.string   "email",                               :default => "",    :null => false
+    t.string   "encrypted_password",   :limit => 128, :default => "",    :null => false
     t.string   "confirmation_token"
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
@@ -50,6 +43,11 @@ ActiveRecord::Schema.define(:version => 20110813223644) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "authentication_token"
+    t.string   "login"
+    t.string   "battle_net_id"
+    t.string   "battle_net_url"
+    t.boolean  "admin",                               :default => false
+    t.string   "username"
   end
 
 end

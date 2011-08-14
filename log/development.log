@@ -523,3 +523,627 @@ Started GET "/players" for 127.0.0.1 at 2011-08-13 23:14:13 -0400
   [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players`[0m
 Rendered players/index.html.erb within layouts/application (11.1ms)
 Completed 200 OK in 40ms (Views: 15.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-14 00:29:54 -0400
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered home/index.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 43ms (Views: 35.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2011-08-14 00:33:40 -0400
+  Processing by PlayersController#new as HTML
+Completed   in 62ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-08-14 00:33:40 -0400
+  Processing by Devise::SessionsController#new as HTML
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/devise-1.3.1/app/views/devise/shared/_links.erb (1.8ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/devise-1.3.1/app/views/devise/sessions/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 58ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2011-08-14 00:34:14 -0400
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "user"=>{"email"=>"theprecognition@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'theprecognition@gmail.com' LIMIT 1[0m
+Completed   in 128ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "user"=>{"email"=>"theprecognition@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+WARNING: Can't mass-assign protected attributes: remember_me
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/devise-1.3.1/app/views/devise/shared/_links.erb (2.0ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/devise-1.3.1/app/views/devise/sessions/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 133ms (Views: 13.7ms | ActiveRecord: 0.5ms)
+  [1m[36mSQL (13.8ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateUsers (20090916131255)
+Migrating to CreateAdmins (20091009223419)
+Migrating to TokenAuthentication (20100615195947)
+Migrating to CreatePlayers (20110813223644)
+Migrating to AddStarcraftFieldsToUser (20110814043545)
+  [1m[35mSQL (195.9ms)[0m  ALTER TABLE `users` ADD `login` varchar(255)
+  [1m[36mSQL (236.2ms)[0m  [1mALTER TABLE `users` ADD `battle_net_id` varchar(255)[0m
+  [1m[35mSQL (140.1ms)[0m  ALTER TABLE `users` ADD `battle_net_url` varchar(255)
+  [1m[36mSQL (4.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110814043545')[0m
+Migrating to AddAdminToUser (20110814050040)
+  [1m[35mSQL (0.4ms)[0m  DROP TABLE `admin`
+Mysql::Error: Unknown table 'admin': DROP TABLE `admin`
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (37.8ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateUsers (20090916131255)
+Migrating to CreateAdmins (20091009223419)
+Migrating to TokenAuthentication (20100615195947)
+Migrating to CreatePlayers (20110813223644)
+Migrating to AddStarcraftFieldsToUser (20110814043545)
+Migrating to AddAdminToUser (20110814050040)
+  [1m[35mSQL (3.3ms)[0m  DROP TABLE `admins`
+  [1m[36mSQL (102.6ms)[0m  [1mALTER TABLE `users` ADD `admin` tinyint(1) DEFAULT 0[0m
+  [1m[35mSQL (3.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20110814050040')
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (1.4ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (3.1ms)[0m  describe `players`
+  [1m[36mSQL (1.5ms)[0m  [1mSHOW KEYS FROM `players`[0m
+  [1m[35mSQL (2.9ms)[0m  describe `users`
+  [1m[36mSQL (1.4ms)[0m  [1mSHOW KEYS FROM `users`[0m
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-08-14 01:04:52 -0400
+  Processing by Devise::SessionsController#new as HTML
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/devise-1.3.1/app/views/devise/shared/_links.erb (2.2ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/devise-1.3.1/app/views/devise/sessions/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 63ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2011-08-14 01:04:55 -0400
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/devise-1.3.1/app/views/devise/shared/_links.erb (33.1ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/devise-1.3.1/app/views/devise/registrations/new.html.erb within layouts/application (57.2ms)
+Completed 200 OK in 84ms (Views: 71.2ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (42.8ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateUsers (20090916131255)
+Migrating to CreateAdmins (20091009223419)
+Migrating to TokenAuthentication (20100615195947)
+Migrating to CreatePlayers (20110813223644)
+Migrating to AddStarcraftFieldsToUser (20110814043545)
+Migrating to AddAdminToUser (20110814050040)
+Migrating to AddUsernameToUsers (20110814050542)
+  [1m[35mSQL (167.6ms)[0m  ALTER TABLE `users` ADD `username` varchar(255)
+  [1m[36mSQL (9.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110814050542')[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (8.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (4.1ms)[0m  [1mdescribe `players`[0m
+  [1m[35mSQL (1.9ms)[0m  SHOW KEYS FROM `players`
+  [1m[36mSQL (155.7ms)[0m  [1mdescribe `users`[0m
+  [1m[35mSQL (1.9ms)[0m  SHOW KEYS FROM `users`
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2011-08-14 01:13:12 -0400
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (1.8ms)
+Rendered devise/registrations/new.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 74ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /Users/lprestonsegoiii/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2011-08-14 01:13:30 -0400
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (1.9ms)
+Rendered devise/registrations/new.html.erb within layouts/application (151.3ms)
+Completed 200 OK in 161ms (Views: 156.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2011-08-14 01:13:44 -0400
+  Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "user"=>{"email"=>"theprecognition@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('theprecognition@gmail.com')) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`confirmation_token` = 'kpGAwDn2cNTRaUnMqOkH' LIMIT 1
+  [1m[36mSQL (2.1ms)[0m  [1mdescribe `users`[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `users` (`email`, `encrypted_password`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `reset_password_token`, `remember_token`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at`, `authentication_token`, `login`, `battle_net_id`, `battle_net_url`, `admin`, `username`) VALUES ('theprecognition@gmail.com', '$2a$10$1G37GfPhv9fir4phq/iLRedLYXzPo6oO5kJRyJihfBpltqqT2dBpy', 'kpGAwDn2cNTRaUnMqOkH', NULL, '2011-08-14 05:13:44', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, NULL, NULL, '2011-08-14 05:13:44', '2011-08-14 05:13:44', NULL, NULL, NULL, NULL, 0, NULL)
+Rendered devise/mailer/confirmation_instructions.html.erb (0.8ms)
+
+Sent mail to theprecognition@gmail.com (58ms)
+Date: Sun, 14 Aug 2011 01:13:52 -0400
+From: please-change-me@config-initializers-devise.com
+Reply-To: please-change-me@config-initializers-devise.com
+To: theprecognition@gmail.com
+Message-ID: <4e475990385c8_ae43fdbf1d9a0f0399be@Prometheus.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome theprecognition@gmail.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=kpGAwDn2cNTRaUnMqOkH">Confirm my account</a></p>
+  [1m[36mSQL (1.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7565ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-14 01:13:52 -0400
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered home/index.html.erb within layouts/application (48.6ms)
+Completed 200 OK in 60ms (Views: 53.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2011-08-14 01:24:51 -0400
+  Processing by PlayersController#new as HTML
+Completed   in 12ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-08-14 01:24:51 -0400
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 78ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2011-08-14 01:25:04 -0400
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "user"=>{"email"=>"theprecognition@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Completed   in 11ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "user"=>{"email"=>"theprecognition@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+WARNING: Can't mass-assign protected attributes: remember_me
+Rendered devise/shared/_links.erb (1.8ms)
+Rendered devise/sessions/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 113ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2011-08-14 01:25:41 -0400
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "user"=>{"email"=>"theprecognition@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Completed   in 9ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "user"=>{"email"=>"theprecognition@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+WARNING: Can't mass-assign protected attributes: remember_me
+Rendered devise/shared/_links.erb (1.9ms)
+Rendered devise/sessions/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 245ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2011-08-14 01:25:51 -0400
+  Processing by PlayersController#new as HTML
+Completed   in 45ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-08-14 01:25:51 -0400
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.9ms)
+Rendered devise/sessions/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 42ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2011-08-14 01:26:13 -0400
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "user"=>{"email"=>"theprecognition@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Completed   in 11ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "user"=>{"email"=>"theprecognition@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+WARNING: Can't mass-assign protected attributes: remember_me
+Rendered devise/shared/_links.erb (2.3ms)
+Rendered devise/sessions/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 112ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2011-08-14 01:26:17 -0400
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "user"=>{"email"=>"theprecognition@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Completed   in 10ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "user"=>{"email"=>"theprecognition@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+WARNING: Can't mass-assign protected attributes: remember_me
+Rendered devise/shared/_links.erb (2.2ms)
+Rendered devise/sessions/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 145ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2011-08-14 01:26:43 -0400
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (1.7ms)
+Rendered devise/registrations/new.html.erb within layouts/application (60.9ms)
+Completed 200 OK in 114ms (Views: 100.8ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /Users/lprestonsegoiii/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2011-08-14 01:27:08 -0400
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (2.1ms)
+Rendered devise/registrations/new.html.erb within layouts/application (119.4ms)
+Completed 200 OK in 129ms (Views: 123.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2011-08-14 01:27:21 -0400
+  Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "user"=>{"email"=>"theprecognition@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT 1 FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('theprecognition@gmail.com')) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`confirmation_token` = 'XP3KRvCZphsRVmE0kyut' LIMIT 1
+  [1m[36mSQL (2.3ms)[0m  [1mdescribe `users`[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `users` (`email`, `encrypted_password`, `confirmation_token`, `confirmed_at`, `confirmation_sent_at`, `reset_password_token`, `remember_token`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `failed_attempts`, `unlock_token`, `locked_at`, `created_at`, `updated_at`, `authentication_token`, `login`, `battle_net_id`, `battle_net_url`, `admin`, `username`) VALUES ('theprecognition@gmail.com', '$2a$10$ndH5j/kVbwXf6GCKYlIAZeQpzyQ3UUW7MMD5K4/KxnkMp2Wo6ZJDS', 'XP3KRvCZphsRVmE0kyut', NULL, '2011-08-14 05:27:21', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, 0, NULL, NULL, '2011-08-14 05:27:21', '2011-08-14 05:27:21', NULL, NULL, NULL, NULL, 0, NULL)
+Rendered devise/mailer/confirmation_instructions.html.erb (0.8ms)
+
+Sent mail to theprecognition@gmail.com (76ms)
+Date: Sun, 14 Aug 2011 01:27:23 -0400
+From: please-change-me@config-initializers-devise.com
+Reply-To: please-change-me@config-initializers-devise.com
+To: theprecognition@gmail.com
+Message-ID: <4e475cbb2e9f2_b1d3fd9b220b1946778a@Prometheus.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome theprecognition@gmail.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=XP3KRvCZphsRVmE0kyut">Confirm my account</a></p>
+  [1m[36mSQL (1.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 1620ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-14 01:27:23 -0400
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered home/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 27ms (Views: 18.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2011-08-14 01:27:32 -0400
+  Processing by PlayersController#new as HTML
+Completed   in 11ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-08-14 01:27:32 -0400
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.8ms)
+Rendered devise/sessions/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 59ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2011-08-14 01:27:34 -0400
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "user"=>{"email"=>"theprecognition@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Completed   in 11ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "user"=>{"email"=>"theprecognition@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+WARNING: Can't mass-assign protected attributes: remember_me
+Rendered devise/shared/_links.erb (2.0ms)
+Rendered devise/sessions/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 110ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2011-08-14 01:27:44 -0400
+  Processing by Devise::ConfirmationsController#new as HTML
+Rendered devise/shared/_links.erb (2.1ms)
+Rendered devise/confirmations/new.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 92ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/confirmation" for 127.0.0.1 at 2011-08-14 01:27:50 -0400
+  Processing by Devise::ConfirmationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "user"=>{"email"=>"theprecognition@gmail.com"}, "commit"=>"Resend confirmation instructions"}
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'theprecognition@gmail.com' LIMIT 1[0m
+Rendered devise/mailer/confirmation_instructions.html.erb (0.7ms)
+
+Sent mail to theprecognition@gmail.com (10ms)
+Date: Sun, 14 Aug 2011 01:27:50 -0400
+From: please-change-me@config-initializers-devise.com
+Reply-To: please-change-me@config-initializers-devise.com
+To: theprecognition@gmail.com
+Message-ID: <4e475cd62caf1_b1d3fd9b220b194678d8@Prometheus.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome theprecognition@gmail.com!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=XP3KRvCZphsRVmE0kyut">Confirm my account</a></p>
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 102ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-08-14 01:27:50 -0400
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.8ms)
+Rendered devise/sessions/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 48ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=XP3KRvCZphsRVmE0kyut" for 127.0.0.1 at 2011-08-14 01:28:13 -0400
+  Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"XP3KRvCZphsRVmE0kyut"}
+  [1m[35mUser Load (37.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`confirmation_token` = 'XP3KRvCZphsRVmE0kyut' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE `users` SET `confirmation_token` = NULL, `confirmed_at` = '2011-08-14 05:28:13', `updated_at` = '2011-08-14 05:28:13' WHERE `users`.`id` = 2
+  [1m[36mSQL (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2011-08-14 05:28:13', `current_sign_in_at` = '2011-08-14 05:28:13', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2011-08-14 05:28:13' WHERE `users`.`id` = 2[0m
+  [1m[35mSQL (1.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/players/new
+Completed 302 Found in 85ms
+
+
+Started GET "/players/new" for 127.0.0.1 at 2011-08-14 01:28:13 -0400
+  Processing by PlayersController#new as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+ERROR: compiling _app_views_players__form_html_erb___3966925454949610496_70204243043480__2739141324013991197 RAISED /Users/lprestonsegoiii/Personal Projects/SC2-Replay-Selector/app/views/players/_form.html.erb:26: syntax error, unexpected tLBRACK, expecting ']'
+								["USA & Canada", "flag_usa_canada.png"],
+								 ^
+/Users/lprestonsegoiii/Personal Projects/SC2-Replay-Selector/app/views/players/_form.html.erb:26: syntax error, unexpected ',', expecting ')'
+/Users/lprestonsegoiii/Personal Projects/SC2-Replay-Selector/app/views/players/_form.html.erb:27: syntax error, unexpected ']', expecting ')'
+								["USA", "flag_usa.png"]]) );@output_buffer.safe_concat('
+								                        ^
+/Users/lprestonsegoiii/Personal Projects/SC2-Replay-Selector/app/views/players/_form.html.erb:48: syntax error, unexpected keyword_end, expecting ')'
+'); end 
+       ^
+/Users/lprestonsegoiii/Personal Projects/SC2-Replay-Selector/app/views/players/_form.html.erb:50: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/lprestonsegoiii/Personal Projects/SC2-Replay-Selector/app/views/players/_form.html.erb:52: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _app_views_players__form_html_erb___3966925454949610496_70204243043480__2739141324013991197(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "players/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.append=  form_for(@player) do |f| @output_buffer.safe_concat('
+');   if @player.errors.any? 
+@output_buffer.safe_concat('    <div id="error_explanation">
+      <h2>');@output_buffer.append= ( pluralize(@player.errors.count, "error") );@output_buffer.safe_concat(' prohibited this player from being saved:</h2>
+
+      <ul>
+');@output_buffer.append_if_string=        @player.errors.full_messages.each do |msg| 
+@output_buffer.safe_concat('        <li>');@output_buffer.append= ( msg );@output_buffer.safe_concat('</li>
+');       end 
+@output_buffer.safe_concat('      </ul>
+    </div>
+');   end 
+@output_buffer.safe_concat('
+  <div class="field">
+    ');@output_buffer.append= ( f.label :english_name );@output_buffer.safe_concat('<br />
+    ');@output_buffer.append= ( f.text_field :english_name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+  <div class="field">
+    ');@output_buffer.append= ( f.select :phone_type, options_for_select([
+								["Country", ""],
+								["Canada", "flag_canada.png"], 
+								["South Korea", "flag_south_korea.png"],
+								["Sweden", "flag_swiden.png"],
+								["Taiwan", "flag_taiwan.png"],
+								["Ukraine", "flag_ukraine.png"]
+								["USA & Canada", "flag_usa_canada.png"],
+								["USA", "flag_usa.png"]]) );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+  <div class="field">
+    ');@output_buffer.append= ( f.label :team );@output_buffer.safe_concat('<br />
+    ');@output_buffer.append= ( f.text_field :team );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+  <div class="field">
+    ');@output_buffer.append= ( f.label :main_race );@output_buffer.safe_concat('<br />
+    ');@output_buffer.append= ( f.text_field :main_race );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+  <div class="field">
+    ');@output_buffer.append= ( f.label :team_shorthand );@output_buffer.safe_concat('<br />
+    ');@output_buffer.append= ( f.text_field :team_shorthand );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+  <div class="field">
+    ');@output_buffer.append= ( f.label :featured );@output_buffer.safe_concat('<br />
+    ');@output_buffer.append= ( f.check_box :featured );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+  <div class="actions">
+    ');@output_buffer.append= ( f.submit );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+'); end 
+@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_view/template.rb:258:in `module_eval'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_view/template.rb:258:in `compile'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_view/template.rb:134:in `block in render'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.0.9/lib/active_support/notifications.rb:54:in `instrument'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_view/template.rb:127:in `render'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_view/render/partials.rb:333:in `render_partial'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_view/render/partials.rb:262:in `block in render'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_view/render/partials.rb:260:in `render'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_view/render/partials.rb:378:in `_render_partial'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:31:in `render'
+/Users/lprestonsegoiii/Personal Projects/SC2-Replay-Selector/app/views/players/new.html.erb:3:in `_app_views_players_new_html_erb___369657757474208074_70204243227240_2105054945304757612'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_view/template.rb:135:in `block in render'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.0.9/lib/active_support/notifications.rb:54:in `instrument'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_view/template.rb:127:in `render'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_view/render/rendering.rb:26:in `render'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:93:in `render'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/lprestonsegoiii/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.0.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activerecord-3.0.9/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_controller/metal/mime_responds.rb:261:in `block in retrieve_response_from_mimes'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_controller/metal/mime_responds.rb:192:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+/Users/lprestonsegoiii/Personal Projects/SC2-Replay-Selector/app/controllers/players_controller.rb:31:in `new'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:150:in `process_action'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:441:in `_run__2835725026294000894__process_action__2107447867505334048__callbacks'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.0.9/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.0.9/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/abstract_controller/base.rb:119:in `process'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/abstract_controller/rendering.rb:41:in `process'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_controller/metal.rb:178:in `block in action'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/warden-1.0.3/lib/warden/manager.rb:35:in `block in call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/warden-1.0.3/lib/warden/manager.rb:34:in `catch'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/warden-1.0.3/lib/warden/manager.rb:34:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.2.2/lib/rack/methodoverride.rb:24:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:32:in `block in call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:12:in `cache'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activerecord-3.0.9/lib/active_record/query_cache.rb:31:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activerecord-3.0.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.0.9/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.2.2/lib/rack/sendfile.rb:107:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/railties-3.0.9/lib/rails/rack/logger.rb:13:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.2.2/lib/rack/runtime.rb:17:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.0.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.2.2/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/railties-3.0.9/lib/rails/application.rb:168:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/railties-3.0.9/lib/rails/application.rb:77:in `method_missing'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/railties-3.0.9/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.2.2/lib/rack/content_length.rb:13:in `call'
+/Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.2.2/lib/rack/handler/webrick.rb:52:in `service'
+/Users/lprestonsegoiii/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/lprestonsegoiii/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/lprestonsegoiii/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered players/_form.html.erb (1.1ms)
+Rendered players/new.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 89ms
+
+ActionView::Template::Error (/Users/lprestonsegoiii/Personal Projects/SC2-Replay-Selector/app/views/players/_form.html.erb:26: syntax error, unexpected tLBRACK, expecting ']'
+								["USA & Canada", "flag_usa_canada.png"],
+								 ^
+/Users/lprestonsegoiii/Personal Projects/SC2-Replay-Selector/app/views/players/_form.html.erb:26: syntax error, unexpected ',', expecting ')'
+/Users/lprestonsegoiii/Personal Projects/SC2-Replay-Selector/app/views/players/_form.html.erb:27: syntax error, unexpected ']', expecting ')'
+								["USA", "flag_usa.png"]]) );@output_buffer.safe_concat('
+								                        ^
+/Users/lprestonsegoiii/Personal Projects/SC2-Replay-Selector/app/views/players/_form.html.erb:48: syntax error, unexpected keyword_end, expecting ')'
+'); end 
+       ^
+/Users/lprestonsegoiii/Personal Projects/SC2-Replay-Selector/app/views/players/_form.html.erb:50: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/lprestonsegoiii/Personal Projects/SC2-Replay-Selector/app/views/players/_form.html.erb:52: syntax error, unexpected keyword_end, expecting ')'):
+    23: 								["Sweden", "flag_swiden.png"],
+    24: 								["Taiwan", "flag_taiwan.png"],
+    25: 								["Ukraine", "flag_ukraine.png"]
+    26: 								["USA & Canada", "flag_usa_canada.png"],
+    27: 								["USA", "flag_usa.png"]]) %>
+    28:   </div>
+    29:   <div class="field">
+  app/views/players/new.html.erb:3:in `_app_views_players_new_html_erb___369657757474208074_70204243227240_2105054945304757612'
+  app/controllers/players_controller.rb:31:in `new'
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (131.0ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (138.7ms)
+
+
+Started GET "/players/new" for 127.0.0.1 at 2011-08-14 01:29:22 -0400
+  Processing by PlayersController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+Rendered players/_form.html.erb (17.5ms)
+Rendered players/new.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 178ms (Views: 30.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/players" for 127.0.0.1 at 2011-08-14 01:29:52 -0400
+  Processing by PlayersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5anS8niGaScRvad86kUq7ogieZBWwiSsdIRHbjueuU=", "player"=>{"english_name"=>"NeuroTek", "country"=>"flag_usa.png", "team"=>"Vertical Flat Plates", "main_race"=>"protoss", "team_shorthand"=>"vFp", "featured"=>"1"}, "commit"=>"Create Player"}
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (2.6ms)[0m  [1mdescribe `players`[0m
+  [1m[35mAREL (2.3ms)[0m  INSERT INTO `players` (`english_name`, `main_race`, `country`, `team`, `team_shorthand`, `featured`, `created_at`, `updated_at`) VALUES ('NeuroTek', 'protoss', 'flag_usa.png', 'Vertical Flat Plates', 'vFp', 1, '2011-08-14 05:29:52', '2011-08-14 05:29:52')
+  [1m[36mSQL (52.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/players/2
+Completed 302 Found in 151ms
+
+
+Started GET "/players/2" for 127.0.0.1 at 2011-08-14 01:29:52 -0400
+  Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (1.8ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mPlayer Load (1.3ms)[0m  [1mSELECT `players`.* FROM `players` WHERE `players`.`id` = 2 LIMIT 1[0m
+Rendered players/show.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 64ms (Views: 15.0ms | ActiveRecord: 62.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-14 01:36:34 -0400
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered home/index.html.erb within layouts/application (32.7ms)
+Completed 200 OK in 46ms (Views: 37.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-14 01:38:00 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+Rendered home/index.html.erb within layouts/application (46.2ms)
+Completed 200 OK in 57ms (Views: 50.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-14 01:40:17 -0400
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered home/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 20ms (Views: 13.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/US" for 127.0.0.1 at 2011-08-14 01:40:24 -0400
+
+ActionController::RoutingError (No route matches "/images/US"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)

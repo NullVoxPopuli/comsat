@@ -1,10 +1,9 @@
 DeviseExample::Application.routes.draw do
   resources :players
 
-  devise_for :users, :admin
+  devise_for :users
 
   resources :home, :only => :index
-  resources :admins, :only => :index
 
   root :to => 'home#index'
 

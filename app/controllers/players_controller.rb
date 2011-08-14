@@ -1,6 +1,7 @@
 class PlayersController < ApplicationController
-  before_filter :authenticate
-  # GET /players
+ before_filter :authenticate_user!
+ 
+   # GET /players
   # GET /players.xml
   def index
     @players = Player.all
@@ -81,9 +82,5 @@ class PlayersController < ApplicationController
       format.xml  { head :ok }
     end
   end
-  
-  protected
-    def authenticate
-      current_user.class == Admin
-    end
+
 end

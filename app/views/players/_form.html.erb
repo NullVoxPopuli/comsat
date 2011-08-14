@@ -16,8 +16,15 @@
     <%= f.text_field :english_name %>
   </div>
   <div class="field">
-    <%= f.label :country %><br />
-    <%= f.text_field :country %>
+    <%= f.select :country, options_for_select([
+								["Country", ""],
+								["Canada", "flag_canada.png"], 
+								["South Korea", "flag_south_korea.png"],
+								["Sweden", "flag_swiden.png"],
+								["Taiwan", "flag_taiwan.png"],
+								["Ukraine", "flag_ukraine.png"],
+								["USA & Canada", "flag_usa_canada.png"],
+								["USA", "flag_usa.png"]]) %>
   </div>
   <div class="field">
     <%= f.label :team %><br />

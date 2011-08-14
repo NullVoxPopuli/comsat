@@ -253,13 +253,18 @@ function renderLayout(){
 }
 
 function showPlayerActionView(container, playersList, index){
-	container.find(".nameSlider .name").text(playersList.eq(index).text());
+	currentPlayerElement = playersList.eq(index)
+	
 	raceImageContainer = container.find(".race");
 	raceImageContainer.removeClass("protoss");
 	raceImageContainer.removeClass("zerg");
 	raceImageContainer.removeClass("terran");
 	raceImageContainer.removeClass("random");
-	raceImageContainer.addClass(playersList.eq(index).find("span").attr("class"));
+	raceImageContainer.addClass(currentPlayerElement.find("span").attr("class"));
+	
+	countryImgURL = currentPlayerElement.find(".country").text();
+	container.find(".nameSlider .countryFlag").css("background", "url(/images/"+countryImgURL+")");
+	container.find(".nameSlider .name").text(currentPlayerElement.find(".player_name").text());
 	
 	// animate
 	if (container == cs_characterSliderPlayerOne){

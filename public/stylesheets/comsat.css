@@ -65,7 +65,7 @@ svg{
 	}
 	
 		.countryFlag{
-			width:  150px;
+			width:  163px;
 			height:  100px;
 			background:  white;
 			display: inline-block;
@@ -86,12 +86,12 @@ svg{
 		}
 		
 		#playerOne .name {
-			left: 170px;
+			left: 183px;
 			
 		}
 		
 		#playerTwo .name {
-			right: 170px;
+			right: 183px;
 		}
 		
 		.pText{
