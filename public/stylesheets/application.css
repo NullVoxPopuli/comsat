@@ -7,6 +7,7 @@
 
 #flash_notice, #flash_alert {
   padding: 5px 8px;
+	z-index: 1001;
 }
 
 #flash_notice {
@@ -84,6 +85,9 @@ body{
 a{
 	text-decoration: none;
 }
+#user_login_box{
+	color: #777;
+}
 #user_login_box a,
 .header_container a{
 	color: #777;
@@ -149,6 +153,5 @@ input[type="submit"]
 input[type="button"]:hover,
 input[type="submit"]:hover
 {
-	background: -webkit-gradient(linear, left top, left bottom, from(#aaa), to(#eee));
-	
+	background: -webkit-gradient(linear, left top, left bottom, from(#aaa), to(#eee));	
 }

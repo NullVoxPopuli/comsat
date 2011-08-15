@@ -5006,3 +5006,411 @@ ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
   
 
 Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:14:53 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (33.4ms)
+Rendered home/index.html.erb within layouts/comsat (45.4ms)
+Completed 200 OK in 53ms (Views: 45.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/images/terran1.jpeg" for 127.0.0.1 at Mon Aug 15 01:14:55 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/protoss1.jpeg" for 127.0.0.1 at Mon Aug 15 01:14:56 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/protoss1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:15:45 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (68.2ms)
+Rendered home/index.html.erb within layouts/comsat (78.3ms)
+Completed 200 OK in 87ms (Views: 79.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/images/terran1.jpeg" for 127.0.0.1 at Mon Aug 15 01:15:47 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:16:17 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (99.1ms)
+Rendered home/index.html.erb within layouts/comsat (109.5ms)
+Completed 200 OK in 117ms (Views: 110.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/images/terran1.jpeg" for 127.0.0.1 at Mon Aug 15 01:16:18 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:16:52 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (53.3ms)
+Rendered home/index.html.erb within layouts/comsat (65.8ms)
+Completed 200 OK in 76ms (Views: 69.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/images/terran1.jpeg" for 127.0.0.1 at Mon Aug 15 01:16:54 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:17:34 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (33.2ms)
+Rendered home/index.html.erb within layouts/comsat (80.1ms)
+Completed 200 OK in 88ms (Views: 81.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/images/protoss1.jpeg" for 127.0.0.1 at Mon Aug 15 01:17:35 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/protoss1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:17:50 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (96.1ms)
+Rendered home/index.html.erb within layouts/comsat (108.3ms)
+Completed 200 OK in 118ms (Views: 109.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/images/terran1.jpeg" for 127.0.0.1 at Mon Aug 15 01:17:52 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:18:10 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (10.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (89.6ms)
+Rendered home/index.html.erb within layouts/comsat (263.3ms)
+Completed 200 OK in 272ms (Views: 256.4ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/images/terran1.jpeg" for 127.0.0.1 at Mon Aug 15 01:18:11 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/images/protoss1.jpeg" for 127.0.0.1 at Mon Aug 15 01:18:12 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/protoss1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:18:46 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (29.6ms)
+Rendered home/index.html.erb within layouts/comsat (60.2ms)
+Completed 200 OK in 68ms (Views: 61.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/images/terran1.jpeg" for 127.0.0.1 at Mon Aug 15 01:18:47 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 07:49:02 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mCOMMIT[0m
+Rendered layouts/_header.html.erb (33.2ms)
+Rendered home/index.html.erb within layouts/comsat (58.3ms)
+Completed   in 66ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Mon Aug 15 07:49:02 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.7ms)
+Rendered layouts/_header.html.erb (2.2ms)
+Rendered devise/sessions/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 40ms (Views: 17.6ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Mon Aug 15 07:49:46 -0400 2011
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"Niud90Ulk5w8aepxAlz+DOn9YkbJH5PXUSBQgT/zxts=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "login"=>"LindyHop", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE (lower(username) = 'lindyhop' OR lower(email) = 'lindyhop') LIMIT 1
+Completed   in 9ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"Niud90Ulk5w8aepxAlz+DOn9YkbJH5PXUSBQgT/zxts=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "login"=>"LindyHop", "password"=>"[FILTERED]"}}
+WARNING: Can't mass-assign protected attributes: remember_me
+Rendered devise/shared/_links.erb (1.8ms)
+Rendered layouts/_header.html.erb (1.3ms)
+Rendered devise/sessions/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 97ms (Views: 15.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Mon Aug 15 07:50:00 -0400 2011
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"Niud90Ulk5w8aepxAlz+DOn9YkbJH5PXUSBQgT/zxts=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "login"=>"theprecognition@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (lower(username) = 'theprecognition@gmail.com' OR lower(email) = 'theprecognition@gmail.com') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mAREL (152.2ms)[0m  [1mUPDATE `users` SET `current_sign_in_at` = '2011-08-15 11:50:00', `sign_in_count` = 4, `last_sign_in_at` = '2011-08-15 11:13:50', `current_sign_in_ip` = '127.0.0.1', `updated_at` = '2011-08-15 11:50:00' WHERE `users`.`id` = 1[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 280ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 07:50:01 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+  [1m[35mUser Load (1.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered layouts/_header.html.erb (91.4ms)
+Rendered home/index.html.erb within layouts/comsat (102.4ms)
+Completed 200 OK in 111ms (Views: 104.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/images/terran1.jpeg" for 127.0.0.1 at Mon Aug 15 07:50:12 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/zerg1.jpeg" for 127.0.0.1 at Mon Aug 15 07:50:18 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/zerg1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at Mon Aug 15 07:50:41 -0400 2011
+  Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered layouts/_header.html.erb (1.7ms)
+Rendered devise/registrations/edit.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 52ms (Views: 23.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 07:51:45 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+  [1m[35mUser Load (1.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered layouts/_header.html.erb (94.9ms)
+Rendered home/index.html.erb within layouts/comsat (104.9ms)
+Completed 200 OK in 112ms (Views: 105.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/PLAYERS" for 127.0.0.1 at Mon Aug 15 07:51:50 -0400 2011
+
+ActionController::RoutingError (No route matches "/PLAYERS"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/players" for 127.0.0.1 at Mon Aug 15 07:51:54 -0400 2011
+  Processing by PlayersController#index as HTML
+  [1m[36mUser Load (38.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players`
+Rendered layouts/_header.html.erb (1.7ms)
+Rendered players/index.html.erb within layouts/application (104.5ms)
+Completed 200 OK in 190ms (Views: 122.2ms | ActiveRecord: 38.5ms)
+
+
+Started GET "/players/22/edit" for 127.0.0.1 at Mon Aug 15 07:51:59 -0400 2011
+  Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (40.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (1.6ms)[0m  SELECT `players`.* FROM `players` WHERE `players`.`id` = 22 LIMIT 1
+Rendered players/_form.html.erb (14.5ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered players/edit.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 127ms (Views: 53.0ms | ActiveRecord: 41.7ms)
+
+
+Started GET "/players/22/edit" for 127.0.0.1 at Mon Aug 15 07:53:04 -0400 2011
+  Processing by PlayersController#edit as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (37.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (2.8ms)[0m  SELECT `players`.* FROM `players` WHERE `players`.`id` = 22 LIMIT 1
+Rendered players/_form.html.erb (13.0ms)
+Rendered layouts/_header.html.erb (1.3ms)
+Rendered players/edit.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 96ms (Views: 24.2ms | ActiveRecord: 40.3ms)
+
+
+Started POST "/players/22" for 127.0.0.1 at Mon Aug 15 07:53:09 -0400 2011
+  Processing by PlayersController#update as HTML
+  Parameters: {"commit"=>"Update Player", "player"=>{"team_shorthand"=>"", "main_race"=>"protoss", "country"=>"flag_south_korea.png", "featured"=>"1", "english_name"=>"Artosis", "team"=>""}, "authenticity_token"=>"Niud90Ulk5w8aepxAlz+DOn9YkbJH5PXUSBQgT/zxts=", "utf8"=>"\342\234\223", "id"=>"22"}
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (50.4ms)[0m  SELECT `players`.* FROM `players` WHERE `players`.`id` = 22 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/players/22
+Completed 302 Found in 206ms
+
+
+Started GET "/players/22" for 127.0.0.1 at Mon Aug 15 07:53:09 -0400 2011
+  Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (106.1ms)[0m  SELECT `players`.* FROM `players` WHERE `players`.`id` = 22 LIMIT 1
+Rendered layouts/_header.html.erb (1.4ms)
+Rendered players/show.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 320ms (Views: 71.7ms | ActiveRecord: 160.6ms)
+
+
+Started GET "/players" for 127.0.0.1 at Mon Aug 15 07:53:40 -0400 2011
+  Processing by PlayersController#index as HTML
+  [1m[36mUser Load (39.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPlayer Load (0.6ms)[0m  SELECT `players`.* FROM `players`
+Rendered layouts/_header.html.erb (1.6ms)
+Rendered players/index.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 173ms (Views: 39.5ms | ActiveRecord: 40.5ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at Mon Aug 15 07:53:43 -0400 2011
+  Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (36.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered layouts/_header.html.erb (1.4ms)
+Rendered devise/registrations/edit.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 76ms (Views: 14.0ms | ActiveRecord: 36.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Aug 15 07:53:49 -0400 2011
+  Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"Niud90Ulk5w8aepxAlz+DOn9YkbJH5PXUSBQgT/zxts=", "utf8"=>"\342\234\223", "user"=>{"password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "username"=>"", "password"=>"[FILTERED]", "email"=>"theprecognition@gmail.com"}}
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered layouts/_header.html.erb (1.6ms)
+Rendered devise/registrations/edit.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 116ms (Views: 16.5ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Aug 15 07:53:59 -0400 2011
+  Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"Niud90Ulk5w8aepxAlz+DOn9YkbJH5PXUSBQgT/zxts=", "utf8"=>"\342\234\223", "user"=>{"password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "username"=>"", "password"=>"[FILTERED]", "email"=>"theprecognition@gmail.com"}}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (51.4ms)[0m  SELECT 1 FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('theprecognition@gmail.com')) AND (`users`.id <> 1) LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE `users` SET `username` = '', `updated_at` = '2011-08-15 11:53:59' WHERE `users`.`id` = 1[0m
+  [1m[35mSQL (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 278ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 07:53:59 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+  [1m[35mUser Load (1.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered layouts/_header.html.erb (96.0ms)
+Rendered home/index.html.erb within layouts/comsat (189.6ms)
+Completed 200 OK in 197ms (Views: 190.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 07:54:51 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered layouts/_header.html.erb (57.6ms)
+Rendered home/index.html.erb within layouts/comsat (67.9ms)
+Completed 200 OK in 75ms (Views: 68.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at Mon Aug 15 07:54:53 -0400 2011
+  Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (116.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered layouts/_header.html.erb (1.4ms)
+Rendered devise/registrations/edit.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 228ms (Views: 16.3ms | ActiveRecord: 117.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Mon Aug 15 07:55:04 -0400 2011
+  Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"Niud90Ulk5w8aepxAlz+DOn9YkbJH5PXUSBQgT/zxts=", "utf8"=>"\342\234\223", "user"=>{"password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "username"=>"LindyHop", "password"=>"[FILTERED]", "email"=>"theprecognition@gmail.com"}}
+  [1m[36mUser Load (2.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT 1 FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('theprecognition@gmail.com')) AND (`users`.id <> 1) LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mUPDATE `users` SET `updated_at` = '2011-08-15 11:55:04', `username` = 'LindyHop' WHERE `users`.`id` = 1[0m
+  [1m[35mSQL (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 127ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 07:55:04 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.6ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered layouts/_header.html.erb (99.1ms)
+Rendered home/index.html.erb within layouts/comsat (110.2ms)
+Completed 200 OK in 118ms (Views: 112.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 07:57:43 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.6ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+  [1m[35mUser Load (1.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Rendered layouts/_header.html.erb (53.8ms)
+Rendered home/index.html.erb within layouts/comsat (64.1ms)
+Completed 200 OK in 71ms (Views: 65.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/images/terran1.jpeg" for 127.0.0.1 at Mon Aug 15 07:57:45 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)

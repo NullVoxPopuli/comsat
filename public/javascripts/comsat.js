@@ -23,6 +23,7 @@ var INITIAL_WINDOW_WIDTH = $j(document).width();
 */
 var HEX_NUM_WIDTH = 5; // number of tiled hexes across (odds only)
 var HEX_NUM_HEIGHT = 6; // number of tiled hexes vertically
+var MAX_NUM_HEXES = 22;
 var HORZ_SCALE_FACTOR = 18;
 var ZERT_SCALE_FACTOR = 18;
 var HEX_SPACING = 8; // diagonal (sorta.. it's like… Pi/3 spacing) spacing
@@ -187,11 +188,20 @@ function renderLayout(){
     playersList = cs_players.children("li");
     numOfPlayersInLastRow = playersList.size() % HEX_NUM_WIDTH;
     playersList.each(function(j) {
+		if (j > MAX_NUM_HEXES) { return false; } // terminate
+		
     	var i = j; // because we mutate the index
         col = i % HEX_NUM_WIDTH;
-        if (Math.floor(i / HEX_NUM_WIDTH) == HEX_NUM_HEIGHT - 2) {
-        	col = (HEX_NUM_WIDTH - numOfPlayersInLastRow) + col - 1;
-        }
+		// handle the last row
+		// center the last few hexes
+        // if (Math.floor(i / HEX_NUM_WIDTH) == HEX_NUM_HEIGHT - 2) {
+        //        	col = (HEX_NUM_WIDTH - numOfPlayersInLastRow) + col - 1;
+        //        }
+		
+		// fixed layout (last row)
+		if (i == 20){ col = 1;}
+		if (i == 21){ col = 3;}
+		
         row = Math.floor(i / HEX_NUM_WIDTH);
 		even = (col % 2 - 1);
 		if (row % 2 - 1 == 0) { even = (i + 1) % 2 - 1;}
