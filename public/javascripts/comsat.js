@@ -233,13 +233,6 @@ function renderLayout(){
 				cs_confirmSelection.removeClass("select_players");
 				cs_confirmSelection.addClass("confirm_selection");
 				cs_confirmSelection.text("[ Confirm Selection ]");
-				cs_confirmSelection.addGlow({ 
-					textColor: '#fff', 
-					haloColor: '#fff', 
-					radius: 50 });
-				cs_confirmSelection.bind('glow:started', console.info);
-			    cs_confirmSelection.bind('glow:canceled', console.info);
-		      
 			}
                            
             });

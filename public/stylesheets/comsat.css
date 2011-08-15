@@ -140,4 +140,5 @@ svg{
 	width: 100%;
 	font-size: 28px;
 	color: white;
+	z-index: 10000;
 }
