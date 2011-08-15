@@ -38,6 +38,8 @@ svg{
 	display: block;
 	min-height: 100%;
 	z-index: 0;
+	-webkit-text-stroke: 2px black;
+	
 }
 
 #playerOne{
@@ -139,6 +141,24 @@ svg{
 	text-align: center;
 	width: 100%;
 	font-size: 28px;
-	color: white;
 	z-index: 10000;
+	color: white;
+	font-weight: bold;
+}
+
+.select_players a,
+.confirm_selection a{
+	color: white;
+}
+
+.confirm_selection {
+    -webkit-transition: text-shadow 1s linear;
+    -moz-transition: text-shadow 1s linear;
+    -ms-transition: text-shadow 1s linear;
+    -o-transition: text-shadow 1s linear;
+    transition: text-shadow 1s linear;
+}
+.confirm_selection:hover,
+.confirm_selection.glow {
+    text-shadow: 0 0 15px white;
 }

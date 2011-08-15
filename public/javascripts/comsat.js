@@ -232,7 +232,10 @@ function renderLayout(){
 			if ($j("#playerOne").is(":visible") && $j("#playerTwo").is(":visible")){
 				cs_confirmSelection.removeClass("select_players");
 				cs_confirmSelection.addClass("confirm_selection");
-				cs_confirmSelection.text("[ Confirm Selection ]");
+				cs_confirmSelection.html("<a href='#'>[ Confirm Selection ]</a>");
+				setInterval(function(){
+				    cs_confirmSelection.hasClass('glow') ? cs_confirmSelection.removeClass('glow') : cs_confirmSelection.addClass('glow');
+				}, 1000);
 			}
                            
             });
