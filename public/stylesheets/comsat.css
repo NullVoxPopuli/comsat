@@ -38,8 +38,7 @@ svg{
 	display: block;
 	min-height: 100%;
 	z-index: 0;
-	-webkit-text-stroke: 2px black;
-	
+	-webkit-text-stroke: 2px black;	
 }
 
 #playerOne{
@@ -70,19 +69,19 @@ svg{
 		height:  100px;
 		width:  100%;
 		background-size: 100% 100%;
-	    background-repeat: no-repeat;
+	    background-repeat: no-repeat;		
 	}
 	
 	#playerOne .nameSlider{	
 		position: absolute;
 		left: 0px;
-		background: -webkit-linear-gradient(225deg, transparent 100px, rgba(0,0,0,0.5) 100px);
+		background: -webkit-linear-gradient(225deg, transparent 70px, rgba(0,0,0,0.5) 50px);
 	    background-position: bottom left, bottom right, top right, top left;
 	}
 	#playerTwo .nameSlider{
 		position: absolute;
 		right: 0px;
-		background: -webkit-linear-gradient(315deg, transparent 100px, rgba(0,0,0,0.5) 100px);
+		background: -webkit-linear-gradient(315deg, transparent 70px, rgba(0,0,0,0.5) 50px);
 	    background-position: bottom left, bottom right, top right, top left;
 	}
 	
@@ -102,7 +101,7 @@ svg{
 		.name{
 			position: absolute;
 			color:  white;
-			font-size: 50px;
+			font-size: 40px;
 			line-height: 100px;
 			display:  inline-block;
 		}
@@ -125,12 +124,12 @@ svg{
 		#playerOne .pText{
 			color: blue;
 			float: right;
-			margin-right: 120px;
+			margin-right: 100px;
 		}
 		#playerTwo .pText{
 			color: red;
 			float: left;
-			margin-left:  120px;
+			margin-left:  100px;
 		}
 
 .select_players,

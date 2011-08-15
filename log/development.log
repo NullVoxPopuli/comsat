@@ -4555,3 +4555,454 @@ ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
   
 
 Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 00:57:04 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+Rendered layouts/_header.html.erb (71.7ms)
+Rendered home/index.html.erb within layouts/comsat (114.4ms)
+Completed 200 OK in 123ms (Views: 117.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 00:57:56 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.5ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered layouts/_header.html.erb (10.6ms)
+Rendered home/index.html.erb within layouts/comsat (21.8ms)
+Completed 200 OK in 29ms (Views: 24.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/images/protoss1.jpeg" for 127.0.0.1 at Mon Aug 15 00:57:58 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/protoss1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 00:58:56 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+Rendered layouts/_header.html.erb (11.0ms)
+Rendered home/index.html.erb within layouts/comsat (166.5ms)
+Completed 200 OK in 174ms (Views: 169.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/protoss1.jpeg" for 127.0.0.1 at Mon Aug 15 00:58:58 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/protoss1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/zerg1.jpeg" for 127.0.0.1 at Mon Aug 15 00:58:59 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/zerg1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/terran1.jpeg" for 127.0.0.1 at Mon Aug 15 00:59:00 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 00:59:28 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered layouts/_header.html.erb (9.4ms)
+Rendered home/index.html.erb within layouts/comsat (21.6ms)
+Completed 200 OK in 29ms (Views: 24.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/terran1.jpeg" for 127.0.0.1 at Mon Aug 15 00:59:29 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/zerg1.jpeg" for 127.0.0.1 at Mon Aug 15 00:59:33 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/zerg1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/images/protoss1.jpeg" for 127.0.0.1 at Mon Aug 15 00:59:34 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/protoss1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Mon Aug 15 01:00:15 -0400 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.1ms)
+Rendered layouts/_header.html.erb (1.4ms)
+Rendered devise/sessions/new.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 66ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Mon Aug 15 01:00:24 -0400 2011
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"Niud90Ulk5w8aepxAlz+DOn9YkbJH5PXUSBQgT/zxts=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "login"=>"LindyHop", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (lower(username) = 'lindyhop' OR lower(email) = 'lindyhop') LIMIT 1[0m
+Completed   in 70ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"Niud90Ulk5w8aepxAlz+DOn9YkbJH5PXUSBQgT/zxts=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "login"=>"LindyHop", "password"=>"[FILTERED]"}}
+WARNING: Can't mass-assign protected attributes: remember_me
+Rendered devise/shared/_links.erb (2.3ms)
+Rendered layouts/_header.html.erb (1.5ms)
+Rendered devise/sessions/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 102ms (Views: 16.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Mon Aug 15 01:00:36 -0400 2011
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"Niud90Ulk5w8aepxAlz+DOn9YkbJH5PXUSBQgT/zxts=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "login"=>"theprecognition@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE (lower(username) = 'theprecognition@gmail.com' OR lower(email) = 'theprecognition@gmail.com') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  COMMIT
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (1.2ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2011-08-15 04:17:21', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 3, `updated_at` = '2011-08-15 05:00:36', `current_sign_in_at` = '2011-08-15 05:00:36' WHERE `users`.`id` = 1
+  [1m[36mSQL (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 108ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:00:36 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (92.7ms)
+Rendered home/index.html.erb within layouts/comsat (103.1ms)
+Completed 200 OK in 110ms (Views: 104.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/images/terran1.jpeg" for 127.0.0.1 at Mon Aug 15 01:00:44 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/zerg1.jpeg" for 127.0.0.1 at Mon Aug 15 01:00:44 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/zerg1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:01:27 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.5ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (48.6ms)
+Rendered home/index.html.erb within layouts/comsat (58.7ms)
+Completed 200 OK in 66ms (Views: 59.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/images/terran1.jpeg" for 127.0.0.1 at Mon Aug 15 01:01:28 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:01:46 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (52.0ms)
+Rendered home/index.html.erb within layouts/comsat (61.7ms)
+Completed 200 OK in 130ms (Views: 63.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/images/terran1.jpeg" for 127.0.0.1 at Mon Aug 15 01:01:48 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:02:17 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (2.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (98.9ms)
+Rendered home/index.html.erb within layouts/comsat (136.3ms)
+Completed 200 OK in 143ms (Views: 136.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/images/zerg1.jpeg" for 127.0.0.1 at Mon Aug 15 01:02:19 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/zerg1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:02:25 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.6ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (53.0ms)
+Rendered home/index.html.erb within layouts/comsat (63.0ms)
+Completed 200 OK in 71ms (Views: 63.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/images/zerg1.jpeg" for 127.0.0.1 at Mon Aug 15 01:02:26 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/zerg1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:02:39 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.5ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (50.0ms)
+Rendered home/index.html.erb within layouts/comsat (59.9ms)
+Completed 200 OK in 67ms (Views: 61.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/images/zerg1.jpeg" for 127.0.0.1 at Mon Aug 15 01:02:40 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/zerg1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:02:46 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.5ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (92.2ms)
+Rendered home/index.html.erb within layouts/comsat (102.6ms)
+Completed 200 OK in 113ms (Views: 105.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/images/zerg1.jpeg" for 127.0.0.1 at Mon Aug 15 01:02:47 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/zerg1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:02:54 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.3ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (47.9ms)
+Rendered home/index.html.erb within layouts/comsat (58.9ms)
+Completed 200 OK in 66ms (Views: 60.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/images/zerg1.jpeg" for 127.0.0.1 at Mon Aug 15 01:02:55 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/zerg1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:03:05 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.5ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (55.4ms)
+Rendered home/index.html.erb within layouts/comsat (65.3ms)
+Completed 200 OK in 72ms (Views: 66.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/images/zerg1.jpeg" for 127.0.0.1 at Mon Aug 15 01:03:06 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/zerg1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:03:13 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (55.7ms)
+Rendered home/index.html.erb within layouts/comsat (66.8ms)
+Completed 200 OK in 131ms (Views: 69.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/images/zerg1.jpeg" for 127.0.0.1 at Mon Aug 15 01:03:14 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/zerg1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:03:21 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (109.2ms)
+Rendered home/index.html.erb within layouts/comsat (119.0ms)
+Completed 200 OK in 126ms (Views: 120.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/images/zerg1.jpeg" for 127.0.0.1 at Mon Aug 15 01:03:22 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/zerg1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:03:45 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (90.8ms)
+Rendered home/index.html.erb within layouts/comsat (101.8ms)
+Completed 200 OK in 109ms (Views: 103.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/images/zerg1.jpeg" for 127.0.0.1 at Mon Aug 15 01:03:46 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/zerg1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/images/protoss1.jpeg" for 127.0.0.1 at Mon Aug 15 01:04:17 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/protoss1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/terran1.jpeg" for 127.0.0.1 at Mon Aug 15 01:04:19 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:04:24 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (50.2ms)
+Rendered home/index.html.erb within layouts/comsat (59.9ms)
+Completed 200 OK in 67ms (Views: 61.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/images/protoss1.jpeg" for 127.0.0.1 at Mon Aug 15 01:04:25 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/protoss1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/terran1.jpeg" for 127.0.0.1 at Mon Aug 15 01:04:25 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:04:32 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.6ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (54.8ms)
+Rendered home/index.html.erb within layouts/comsat (66.1ms)
+Completed 200 OK in 140ms (Views: 67.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/images/terran1.jpeg" for 127.0.0.1 at Mon Aug 15 01:04:33 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/images/zerg1.jpeg" for 127.0.0.1 at Mon Aug 15 01:04:37 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/zerg1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/images/protoss1.jpeg" for 127.0.0.1 at Mon Aug 15 01:04:39 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/protoss1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:05:02 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.5ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (94.3ms)
+Rendered home/index.html.erb within layouts/comsat (105.6ms)
+Completed 200 OK in 113ms (Views: 107.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/images/terran1.jpeg" for 127.0.0.1 at Mon Aug 15 01:05:03 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 01:05:24 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (93.4ms)
+Rendered home/index.html.erb within layouts/comsat (103.3ms)
+Completed 200 OK in 111ms (Views: 104.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/images/protoss1.jpeg" for 127.0.0.1 at Mon Aug 15 01:05:26 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/protoss1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/terran1.jpeg" for 127.0.0.1 at Mon Aug 15 01:05:27 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)

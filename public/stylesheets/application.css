@@ -71,12 +71,11 @@ body{
 	overflow:hidden;
 	display: block;
 	min-width: 100%;
-	
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
 }
 .header{
 	background-image: -webkit-linear-gradient(top, #222, #000); 
     background-image: -moz-linear-gradient(top, #222, #000);
-   	box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
 }
 .header_container{
 	padding: 7px;

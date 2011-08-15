@@ -25,8 +25,8 @@ var HEX_NUM_WIDTH = 5; // number of tiled hexes across (odds only)
 var HEX_NUM_HEIGHT = 6; // number of tiled hexes vertically
 var HORZ_SCALE_FACTOR = 18;
 var ZERT_SCALE_FACTOR = 18;
-var HEX_SPACING = 10; // diagonal (sorta.. it's like… Pi/3 spacing) spacing
-var INITIAL_HEX_RADIUS = 80;
+var HEX_SPACING = 8; // diagonal (sorta.. it's like… Pi/3 spacing) spacing
+var INITIAL_HEX_RADIUS = 72;
 var cs_hexRadius = INITIAL_HEX_RADIUS;
 // End Graphics Constants
 
