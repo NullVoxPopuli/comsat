@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   before_filter :authenticate_user!, :only => :token
+  layout "comsat"
 
   def index
     @featured_players = Player.find(:all, :conditions => ["featured = ?", true])

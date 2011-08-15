@@ -46,6 +46,7 @@ var cs_activeCharacterSelect;
 var cs_lastUsedCharacterSelect;
 var cs_characterSliderPlayerOne;
 var cs_characterSliderPlayerTwo;
+var cs_confirmSelection;
 // End Interface Elements
 
 /*
@@ -210,6 +211,8 @@ function renderLayout(){
         cs_playerList[i].y = yPos; 
     });
     
+	cs_confirmSelection = $j(".select_players");
+
      jQuery.each(cs_playerList, function(i) {    
             this.click(function(event) {
             	swapActiveSelector(); 
@@ -223,11 +226,21 @@ function renderLayout(){
             		}else if (cs_activeCharacterSelect == cs_characterSelectPlayerTwo){
             			showPlayerActionView(cs_characterSliderPlayerTwo, playersList, i);
             		}
-                            	
-                            	
                 	cs_activeCharacterSelect = "";
-                
 //            	}
+
+			if ($j("#playerOne").is(":visible") && $j("#playerTwo").is(":visible")){
+				cs_confirmSelection.removeClass("select_players");
+				cs_confirmSelection.addClass("confirm_selection");
+				cs_confirmSelection.text("[ Confirm Selection ]");
+				cs_confirmSelection.addGlow({ 
+					textColor: '#fff', 
+					haloColor: '#fff', 
+					radius: 50 });
+				cs_confirmSelection.bind('glow:started', console.info);
+			    cs_confirmSelection.bind('glow:canceled', console.info);
+		      
+			}
                            
             });
             this.mouseover(function(event) {

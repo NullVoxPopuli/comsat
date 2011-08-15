@@ -1,0 +1,32 @@
+<div class="pre_header_container">
+	<div class="header">
+		<div class="header_container">
+		 	<%= link_to 'Home', root_path %>
+	     	<% if user_signed_in? -%>
+				<div id="user_login_box" style="float:right">
+			        <%= current_user.username + " | " if current_user and current_user.username %>
+			        <%= link_to 'Account', edit_user_registration_path %> |
+			    	<%= link_to 'Sign out', destroy_user_session_path %>
+			    </div>
+			<% else %>
+				<div id="user_login_box" style="float:right;">
+					<%= link_to 'Sign in', new_user_session_path %>
+				</div>
+			<% end -%>
+		</div>
+	</div>
+	<%- flash.each do |name, msg| -%>
+		<%= content_tag :div, msg, :style => "margin-top: 30px;", :id => "flash_#{name}" if msg.is_a?(String) %>
+		<script type="text/javascript">
+			$j(function() {
+				setTimeout(function(){
+					$j("div#flash_<%= name %>").hide("slide", {direction: "up"}, 1000);
+					}, 2000);
+				});
+		</script>
+	<%- end -%>
+</div>
+
+<% if request.path =~ /users/ or request.path =~ /sessions/ %>
+	<div class="header_spacer"></div>
+<% end %>

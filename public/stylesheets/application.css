@@ -1,3 +1,4 @@
+
 .clear {
   clear: both;
   height: 0;
@@ -60,6 +61,8 @@ body{
 	margin: 0px;
 	padding: 0px;
 	font-family: Verdana, Helvetica, Arial;
+	background: #bbb;
+	
 }
 .pre_header_container{
 	position: fixed;
@@ -80,10 +83,73 @@ body{
 }
 
 a{
-	color: #777;
 	text-decoration: none;
+}
+#user_login_box a,
+.header_container a{
+	color: #777;
+}
+.log_in_form_container a{
+	color: 000;
 }
 
 .header_spacer{
 	height: 50px;
+}
+
+.outer_shell{
+	
+}
+
+.shell{
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+}
+
+.log_in_form_container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+}
+
+.log_in_form {
+	border: 1px solid black;
+	padding: 10px;
+	background-image: -webkit-linear-gradient(top, #efefef, #ddd); 
+    background-image: -moz-linear-gradient(top, #efefef, #ddd);
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.8);
+   	border-radius: 10px; /* future proofing */
+	margin-bottom: 10px;
+}
+
+input
+{
+	margin: 10px;
+	font-size: 14px;
+	padding: 5px;
+	border: 1px solid #a1a1a1;
+	border-radius: 5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(white));
+}
+/* buttons */
+
+input[type="button"],
+input[type="submit"]
+{
+	text-decoration: none;
+	font-size: 11px;
+	padding: 5px;
+	height: 29px;
+	margin-bottom: 2px !important;
+	border: 1px solid #a1a1a1;
+	border-radius: 5px;
+	background: -webkit-gradient(linear, left top, left bottom, from(white), to(#ddd));
+	
+}
+input[type="button"]:hover,
+input[type="submit"]:hover
+{
+	background: -webkit-gradient(linear, left top, left bottom, from(#aaa), to(#eee));
+	
 }
