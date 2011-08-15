@@ -4531,3 +4531,27 @@ ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
   
 
 Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Aug 15 00:40:39 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.5ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered layouts/_header.html.erb (10.0ms)
+Rendered home/index.html.erb within layouts/comsat (47.5ms)
+Completed 200 OK in 54ms (Views: 50.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/images/zerg1.jpeg" for 127.0.0.1 at Mon Aug 15 00:40:40 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/zerg1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/images/terran1.jpeg" for 127.0.0.1 at Mon Aug 15 00:40:41 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)

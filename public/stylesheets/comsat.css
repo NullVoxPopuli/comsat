@@ -157,6 +157,8 @@ svg{
     -ms-transition: text-shadow 1s linear;
     -o-transition: text-shadow 1s linear;
     transition: text-shadow 1s linear;
+
+	bottom: 150px;
 }
 .confirm_selection:hover,
 .confirm_selection.glow {
