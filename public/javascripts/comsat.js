@@ -61,7 +61,7 @@ var cs_bothPlayersSelected = false;
 */
 var DEFAULT_HEX_COLOR = "rgba(200,200,200,0.7)";
 var DEFAULT_STROKE_COLOR = "rgba(50,50,50,1)";
-var HEX_HOVER_COLOR = "rgba(0,0,0,0.9)";
+var HEX_HOVER_COLOR = "rgba(0,0,0,0.7)";
 var CHARACTER_SELECT_FILL_COLOR = "rgba(0.1,0.1,0.1,0.1)";
 var PLAYER_ONE_SELECT_FILL_COLOR = "#009";
 var PLAYER_TWO_SELECT_FILL_COLOR = "#900";
