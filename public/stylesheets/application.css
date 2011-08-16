@@ -65,6 +65,13 @@ body{
 	background: #bbb;
 	
 }
+.logo{
+	position: absolute;
+	left: 20px;
+	top: 50px;
+	width: 200px;
+}
+
 .pre_header_container{
 	position: fixed;
 	top: 0;
