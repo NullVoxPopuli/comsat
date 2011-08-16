@@ -1,5 +1,13 @@
+html {
+	background: url(../images/background.jpg) black no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
 body{
-	background: url(http://i.imgur.com/Ks6Pd.jpg) black no-repeat;
+	background-width: 100%;
 	font-family: sans-serif;
 	margin: 0px;
 	padding: 0px;
@@ -34,18 +42,18 @@ svg{
 #playerOne,
 #playerTwo {
 	width: 600px;
-	position:relative;
+	position:absolute;
 	display: block;
-	min-height: 100%;
 	z-index: 0;
+	bottom: 0px;
 	-webkit-text-stroke: 2px black;	
 }
 
 #playerOne{
-	float: left;
+	left: 0px;
 }
 #playerTwo{
-	float: right;
+	right: 0px;;
 }
 	.race{
 		position: absolute;
@@ -65,7 +73,8 @@ svg{
 		min-width: 750px;
 		z-index: 200;
 		bottom:  50px;
-		background: rgba(0,0,0,0.5);
+		background: rgb(0,0,0);
+		background: rgba(0,0,0,0.8);
 		height:  100px;
 		width:  100%;
 		background-size: 100% 100%;
@@ -73,13 +82,11 @@ svg{
 	}
 	
 	#playerOne .nameSlider{	
-		position: absolute;
 		left: 0px;
 		background: -webkit-linear-gradient(225deg, transparent 70px, rgba(0,0,0,0.5) 50px);
 	    background-position: bottom left, bottom right, top right, top left;
 	}
 	#playerTwo .nameSlider{
-		position: absolute;
 		right: 0px;
 		background: -webkit-linear-gradient(315deg, transparent 70px, rgba(0,0,0,0.5) 50px);
 	    background-position: bottom left, bottom right, top right, top left;
@@ -143,11 +150,15 @@ svg{
 	z-index: 10000;
 	color: white;
 	font-weight: bold;
+	-webkit-text-stroke: 1px black;	
+	
 }
 
 .select_players a,
 .confirm_selection a{
 	color: white;
+	-webkit-text-stroke: 1px black;	
+	
 }
 
 .confirm_selection {
@@ -161,5 +172,5 @@ svg{
 }
 .confirm_selection:hover,
 .confirm_selection.glow {
-    text-shadow: 0 0 15px white;
+    text-shadow: 0 0 15px black;
 }

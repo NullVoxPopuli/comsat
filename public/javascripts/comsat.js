@@ -59,9 +59,9 @@ var cs_bothPlayersSelected = false;
 /*
 	Interface Colors
 */
-var DEFAULT_HEX_COLOR = "rgba(0,0,0,0.9)";
+var DEFAULT_HEX_COLOR = "rgba(200,200,200,0.7)";
 var DEFAULT_STROKE_COLOR = "rgba(50,50,50,1)";
-var HEX_HOVER_COLOR = "rgba(200,200,200,0.9)";
+var HEX_HOVER_COLOR = "rgba(0,0,0,0.9)";
 var CHARACTER_SELECT_FILL_COLOR = "rgba(0.1,0.1,0.1,0.1)";
 var PLAYER_ONE_SELECT_FILL_COLOR = "#009";
 var PLAYER_TWO_SELECT_FILL_COLOR = "#900";
@@ -174,7 +174,7 @@ function swapActiveSelector() {
 }
 
 function renderLayout(){
-//	$jCanvas.clear();
+	// $jCanvas.clear();
     var diagDist = cs_hexRadius * Math.cos(Math.PI / 6) * 2 + HEX_SPACING;
     var dX = diagDist * Math.cos(Math.PI / 6);
     var dY = diagDist * Math.sin(Math.PI / 6);
@@ -220,56 +220,60 @@ function renderLayout(){
         cs_playerList[i].x = xPos;
         cs_playerList[i].y = yPos; 
     });
-    
-	cs_confirmSelection = $j(".select_players");
 
-     jQuery.each(cs_playerList, function(i) {    
-            this.click(function(event) {
-            	swapActiveSelector(); 
-//              if (cs_bothPlayersSelected){
-                	cs_activeCharacterSelect.toFront().stop().animate({
-                    	characterSelector: [this.x, this.y, cs_hexRadius, 6, cs_activeColor]
-                	}, 100);
-//                
-               		if (cs_activeCharacterSelect == cs_characterSelectPlayerOne){
-                		showPlayerActionView(cs_characterSliderPlayerOne, playersList, i);
-            		}else if (cs_activeCharacterSelect == cs_characterSelectPlayerTwo){
-            			showPlayerActionView(cs_characterSliderPlayerTwo, playersList, i);
-            		}
-                	cs_activeCharacterSelect = "";
-//            	}
-
-			if ($j("#playerOne").is(":visible") && $j("#playerTwo").is(":visible")){
-				cs_confirmSelection.removeClass("select_players");
-				cs_confirmSelection.addClass("confirm_selection");
-				cs_confirmSelection.html("<a href='#'>[ Confirm Selection ]</a>");
-				setInterval(function(){
-				    cs_confirmSelection.hasClass('glow') ? cs_confirmSelection.removeClass('glow') : cs_confirmSelection.addClass('glow');
-				}, 1000);
-			}
-                           
-            });
-            this.mouseover(function(event) {
-                if (cs_activeCharacterSelect.length > 0){
-                // animates the selector
-//                cs_activeCharacterSelect.toFront().stop().animate({
-//                    characterSelector: [this.x, this.y, cs_hexRadius, 6, cs_activeColor]
-//                }, 100);
-                }
-            });
-    
-            this.hover(function(event) {
-                cs_playerList[i].animate({
-                    fill: HEX_HOVER_COLOR
-                }, 500);
-            }, function(event) {
-                cs_playerList[i].animate({
-                    fill: DEFAULT_HEX_COLOR
-                }, 500)
-            });
-        });
     
 }
+function generateEventHandlers(){
+	
+		cs_confirmSelection = $j(".select_players");
+
+	     jQuery.each(cs_playerList, function(i) {    
+	            this.click(function(event) {
+	            	swapActiveSelector(); 
+	//              if (cs_bothPlayersSelected){
+	                	cs_activeCharacterSelect.toFront().stop().animate({
+	                    	characterSelector: [this.x, this.y, cs_hexRadius, 6, cs_activeColor]
+	                	}, 100);
+	//                
+	               		if (cs_activeCharacterSelect == cs_characterSelectPlayerOne){
+	                		showPlayerActionView(cs_characterSliderPlayerOne, playersList, i);
+	            		}else if (cs_activeCharacterSelect == cs_characterSelectPlayerTwo){
+	            			showPlayerActionView(cs_characterSliderPlayerTwo, playersList, i);
+	            		}
+	                	cs_activeCharacterSelect = "";
+	//            	}
+
+				if ($j("#playerOne").is(":visible") && $j("#playerTwo").is(":visible")){
+					cs_confirmSelection.removeClass("select_players");
+					cs_confirmSelection.addClass("confirm_selection");
+					cs_confirmSelection.html("<a href='#'>[ Confirm Selection ]</a>");
+					setInterval(function(){
+					    cs_confirmSelection.hasClass('glow') ? cs_confirmSelection.removeClass('glow') : cs_confirmSelection.addClass('glow');
+					}, 1000);
+				}
+
+	            });
+	            this.mouseover(function(event) {
+	                if (cs_activeCharacterSelect.length > 0){
+	                // animates the selector
+	//                cs_activeCharacterSelect.toFront().stop().animate({
+	//                    characterSelector: [this.x, this.y, cs_hexRadius, 6, cs_activeColor]
+	//                }, 100);
+	                }
+	            });
+
+	            this.hover(function(event) {
+	                cs_playerList[i].animate({
+	                    fill: HEX_HOVER_COLOR
+	                }, 500);
+	            }, function(event) {
+	                cs_playerList[i].animate({
+	                    fill: DEFAULT_HEX_COLOR
+	                }, 500)
+	            });
+	        });
+}
+
 
 function showPlayerActionView(container, playersList, index){
 	// animate (hide)
@@ -333,11 +337,10 @@ function initComsat() {
 	
 	
 	renderLayout();
-
+	generateEventHandlers();
 }
 
 
     initComsat();
-//    $j(window).bind("resize", renderLayout);
 });
 
