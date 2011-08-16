@@ -17,21 +17,30 @@ body{
 	overflow: hidden;
 	
 }
+#notepad{
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+}
 svg{
-	width:  100% !important;
-	height:  100% !important;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative !important;
+/*	width:  100% !important;
+	height:  100% !important;*/
 }
 .zerg{
-	background: url(../images/zerg1.jpeg) no-repeat;
+	background: url(../images/zerg.png) no-repeat;
 }
 .protoss{
-	background: url(../images/protoss1.jpeg) no-repeat;
+	background: url(../images/protoss.png) no-repeat;
 }
 .terran{
-	background: url(../images/terran1.jpeg) no-repeat;
+	background: url(../images/terran.png) no-repeat;
 }
 .random{
-	background: url(../images/random1.jpeg) no-repeat;
+	background: url(../images/random.png) no-repeat;
 }
 
 .zerg, .protoss, .terran, .random{
@@ -58,14 +67,14 @@ svg{
 	.race{
 		position: absolute;
 		margin-top: 100px;
-		width: 600px;
-		height: 800px;
+		width: 500px;
+		height: 500px;
 	}
 	#playerOne .race{
-		right: 100px;
+		margin-right: 200px;
 	}
 	#playerTwo .race{
-		left: 100px;
+		margin-left: 200px;
 	}
 	.nameSlider{
 		font-weight: bold;

@@ -6152,3 +6152,149 @@ ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
   
 
 Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 16 08:02:18 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+Rendered layouts/_header.html.erb (1.6ms)
+Rendered home/index.html.erb within layouts/comsat (12.6ms)
+Completed 200 OK in 93ms (Views: 16.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 16 08:02:58 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.5ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered layouts/_header.html.erb (9.5ms)
+Rendered home/index.html.erb within layouts/comsat (20.0ms)
+Completed 200 OK in 27ms (Views: 22.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 16 08:03:12 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+Rendered layouts/_header.html.erb (10.6ms)
+Rendered home/index.html.erb within layouts/comsat (20.7ms)
+Completed 200 OK in 28ms (Views: 23.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 16 08:03:42 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered layouts/_header.html.erb (14.8ms)
+Rendered home/index.html.erb within layouts/comsat (117.1ms)
+Completed 200 OK in 125ms (Views: 119.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 16 08:10:48 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (3.0ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+Rendered layouts/_header.html.erb (14.2ms)
+Rendered home/index.html.erb within layouts/comsat (26.9ms)
+Completed 200 OK in 41ms (Views: 31.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 16 08:12:03 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.5ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered layouts/_header.html.erb (11.1ms)
+Rendered home/index.html.erb within layouts/comsat (24.6ms)
+Completed 200 OK in 34ms (Views: 27.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 16 08:17:24 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+Rendered layouts/_header.html.erb (14.8ms)
+Rendered home/index.html.erb within layouts/comsat (54.6ms)
+Completed 200 OK in 66ms (Views: 58.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 16 08:53:20 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered layouts/_header.html.erb (9.1ms)
+Rendered home/index.html.erb within layouts/comsat (45.5ms)
+Completed 200 OK in 112ms (Views: 48.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/terran1.jpeg" for 127.0.0.1 at Tue Aug 16 08:53:22 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/images/zerg1.jpeg" for 127.0.0.1 at Tue Aug 16 08:53:25 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/zerg1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/images/protoss1.jpeg" for 127.0.0.1 at Tue Aug 16 08:53:31 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/protoss1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 16 08:53:41 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+Rendered layouts/_header.html.erb (64.5ms)
+Rendered home/index.html.erb within layouts/comsat (75.7ms)
+Completed 200 OK in 84ms (Views: 79.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/images/protoss1.jpeg" for 127.0.0.1 at Tue Aug 16 08:53:43 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/protoss1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/terran1.jpeg" for 127.0.0.1 at Tue Aug 16 08:53:47 -0400 2011
+
+ActionController::RoutingError (No route matches "/images/terran1.jpeg"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 16 11:51:51 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+Rendered layouts/_header.html.erb (1.9ms)
+Rendered home/index.html.erb within layouts/comsat (20.2ms)
+Completed 200 OK in 199ms (Views: 54.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 16 11:54:27 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.5ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered layouts/_header.html.erb (22.0ms)
+Rendered home/index.html.erb within layouts/comsat (49.2ms)
+Completed 200 OK in 99ms (Views: 78.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 16 11:56:37 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+Rendered layouts/_header.html.erb (8.8ms)
+Rendered home/index.html.erb within layouts/comsat (20.3ms)
+Completed 200 OK in 28ms (Views: 23.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 16 11:57:11 -0400 2011
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered layouts/_header.html.erb (12.6ms)
+Rendered home/index.html.erb within layouts/comsat (24.1ms)
+Completed 200 OK in 91ms (Views: 27.7ms | ActiveRecord: 0.4ms)

@@ -338,6 +338,9 @@ function initComsat() {
 	
 	renderLayout();
 	generateEventHandlers();
+	
+	// move into a div so we can style the canvas
+	$j("svg").appendTo("#notepad");
 }
 
 
