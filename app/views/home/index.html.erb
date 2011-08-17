@@ -20,7 +20,7 @@
 				<%= image_tag player.race.race_logo_file_name, :class => "race" %>
 			<% end %>
 			<span class="player_name">
-				<%=h player.team.abbreviation + "." if not player.team_id.nil? %><%=h player.english_name %>
+				<%=h player.team.abbreviation if not player.team_id.nil? %><%=h player.english_name %>
 			</span>
 		</li>
 	<% end %>

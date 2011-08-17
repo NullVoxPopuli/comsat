@@ -141,15 +141,13 @@ svg{
 	z-index: 10000;
 	color: white;
 	font-weight: bold;
-	-webkit-text-stroke: 1px black;	
-	
+	-webkit-text-stroke: 1px black;		
 }
 
 .select_players a,
 .confirm_selection a{
 	color: white;
 	-webkit-text-stroke: 1px black;	
-	
 }
 
 /*.confirm_selection {
@@ -164,4 +162,36 @@ svg{
 .confirm_selection:hover,
 .confirm_selection.glow {
     text-shadow: 0 0 15px black;
+}
+
+
+/* browser support */
+/* firefox */
+@-moz-document url-prefix() {
+	#playerOne,
+	#playerTwo {
+		text-shadow:
+	   		-1px -1px 0 #000,
+	    	1px -1px 0 #000,
+	    	-1px 1px 0 #000,
+	     	1px 1px 0 #000;
+	}
+	
+	.select_players a,
+	.confirm_selection a{
+		text-shadow:
+	   		-1px -1px 0 #000,
+	    	1px -1px 0 #000,
+	    	-1px 1px 0 #000,
+	     	1px 1px 0 #000;
+	}
+	
+	.select_players,
+	.confirm_selection {
+		text-shadow:
+	   		-1px -1px 0 #000,
+	    	1px -1px 0 #000,
+	    	-1px 1px 0 #000,
+	     	1px 1px 0 #000;
+	}
 }

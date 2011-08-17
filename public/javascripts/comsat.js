@@ -290,10 +290,10 @@ function showPlayerActionView(container, playersList, index){
 	currentPlayerElement = playersList.eq(index)
 	
 	raceImageContainer = container.find(".race");
-	raceImageContainer.remove("img");
+	raceImageContainer.empty("img");
 	raceImageContainer.append(currentPlayerElement.find(".race").clone());
 	
-	container.find(".nameSlider .countryFlag").remove("img");
+	container.find(".nameSlider .countryFlag").empty(".country");
 	container.find(".nameSlider .countryFlag").append(currentPlayerElement.find(".country").clone());
 	
 	container.find(".nameSlider .name").text(currentPlayerElement.find(".player_name").text());

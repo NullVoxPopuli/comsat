@@ -75,7 +75,7 @@ body{
 .pre_header_container{
 	position: fixed;
 	top: 0;
-	z-index: 1000;
+	z-index: 1000001;
 	overflow:hidden;
 	display: block;
 	min-width: 100%;

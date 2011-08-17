@@ -9749,3 +9749,665 @@ Started GET "/" for 127.0.0.1 at 2011-08-16 20:49:15 -0400
 Rendered layouts/_header.html.erb (74.9ms)
 Rendered home/index.html.erb within layouts/comsat (135.8ms)
 Completed 200 OK in 155ms (Views: 134.4ms | ActiveRecord: 4.1ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /Users/lprestonsegoiii/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-16 20:57:49 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+Rendered home/index.html.erb within layouts/comsat (28.9ms)
+Completed 500 Internal Server Error in 171ms
+
+ActionView::Template::Error (undefined method `mini_head_file_name' for #<Player:0x007fd62a0ecc68>):
+    7: <ul class="players" style="display: none">
+    8: 	<% @featured_players.each do |player|%>
+    9: 		<li>
+    10: 			<% if player.mini_head_file_name %>
+    11: 				<%= image_tag player.mini_head_file_name, :class => "mini_head" %>
+    12: 			<% end %>
+    13: 			<% if player.action_shot_file_name %>
+  app/views/home/index.html.erb:10:in `block in _app_views_home_index_html_erb___874534097361394701_70278902635620__4244027143506621063'
+  app/views/home/index.html.erb:8:in `each'
+  app/views/home/index.html.erb:8:in `_app_views_home_index_html_erb___874534097361394701_70278902635620__4244027143506621063'
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (125.2ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (130.5ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2011-08-16 20:58:27 -0400
+  Processing by PlayersController#index as HTML
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Completed   in 92ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-08-16 20:58:28 -0400
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.9ms)
+Rendered layouts/_header.html.erb (1.6ms)
+Rendered devise/sessions/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 43ms (Views: 14.7ms | ActiveRecord: 0.8ms)
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.9ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateUsers (20090916131255)
+Migrating to CreateAdmins (20091009223419)
+Migrating to TokenAuthentication (20100615195947)
+Migrating to CreatePlayers (20110813223644)
+Migrating to AddStarcraftFieldsToUser (20110814043545)
+Migrating to AddAdminToUser (20110814050040)
+Migrating to AddUsernameToUsers (20110814050542)
+Migrating to AddRealNameAndAgeToPlayers (20110816221216)
+  [1m[35mSQL (152.2ms)[0m  ALTER TABLE `players` ADD `real_name` varchar(255)
+  [1m[36mSQL (200.2ms)[0m  [1mALTER TABLE `players` ADD `age` int(11)[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20110816221216')
+Migrating to CreateCountries (20110816222253)
+  [1m[36mSQL (0.3ms)[0m  [1mCREATE TABLE `countries` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `abbreviation` varchar(255), `flag_file_name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+Mysql::Error: Table 'countries' already exists: CREATE TABLE `countries` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `abbreviation` varchar(255), `flag_file_name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (37.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateUsers (20090916131255)
+Migrating to CreateAdmins (20091009223419)
+Migrating to TokenAuthentication (20100615195947)
+Migrating to CreatePlayers (20110813223644)
+Migrating to AddStarcraftFieldsToUser (20110814043545)
+Migrating to AddAdminToUser (20110814050040)
+Migrating to AddUsernameToUsers (20110814050542)
+Migrating to AddRealNameAndAgeToPlayers (20110816221216)
+Migrating to CreateCountries (20110816222253)
+  [1m[35mSQL (125.9ms)[0m  CREATE TABLE `countries` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `abbreviation` varchar(255), `flag_file_name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (3.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110816222253')[0m
+Migrating to AddCountryIdToPlayer (20110816223434)
+  [1m[35mSQL (205.0ms)[0m  ALTER TABLE `players` ADD `country_id` int(11)
+  [1m[36mSQL (126.8ms)[0m  [1mALTER TABLE `players` DROP `country`[0m
+  [1m[35mSQL (2.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20110816223434')
+Migrating to CreateTeams (20110816224929)
+  [1m[36mSQL (0.3ms)[0m  [1mCREATE TABLE `teams` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `abbreviation` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+Mysql::Error: Table 'teams' already exists: CREATE TABLE `teams` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `abbreviation` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateUsers (20090916131255)
+Migrating to CreateAdmins (20091009223419)
+Migrating to TokenAuthentication (20100615195947)
+Migrating to CreatePlayers (20110813223644)
+Migrating to AddStarcraftFieldsToUser (20110814043545)
+Migrating to AddAdminToUser (20110814050040)
+Migrating to AddUsernameToUsers (20110814050542)
+Migrating to AddRealNameAndAgeToPlayers (20110816221216)
+Migrating to CreateCountries (20110816222253)
+Migrating to AddCountryIdToPlayer (20110816223434)
+Migrating to CreateTeams (20110816224929)
+  [1m[35mSQL (69.6ms)[0m  CREATE TABLE `teams` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `abbreviation` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (2.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110816224929')[0m
+Migrating to AddTeamIdToPlayer (20110816225029)
+  [1m[35mSQL (198.1ms)[0m  ALTER TABLE `players` ADD `team_id` int(11)
+  [1m[36mSQL (127.3ms)[0m  [1mALTER TABLE `players` DROP `team`[0m
+  [1m[35mSQL (115.7ms)[0m  ALTER TABLE `players` DROP `team_shorthand`
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110816225029')[0m
+Migrating to CreateRaces (20110816231012)
+  [1m[35mSQL (96.5ms)[0m  CREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `race_logo_file_name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (3.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110816231012')[0m
+Migrating to AddRaceIdToPlayer (20110816231024)
+  [1m[35mSQL (116.5ms)[0m  ALTER TABLE `players` ADD `race_id` int(11)
+  [1m[36mSQL (119.8ms)[0m  [1mALTER TABLE `players` DROP `main_race`[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20110816231024')
+Migrating to AddImagesToPlayer (20110816233719)
+  [1m[36mSQL (110.8ms)[0m  [1mALTER TABLE `players` ADD `mini_head_file_name` varchar(255)[0m
+  [1m[35mSQL (102.4ms)[0m  ALTER TABLE `players` ADD `action_shot_file_name` varchar(255)
+  [1m[36mSQL (2.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110816233719')[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.8ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (2.9ms)[0m  [1mdescribe `countries`[0m
+  [1m[35mSQL (1.4ms)[0m  SHOW KEYS FROM `countries`
+  [1m[36mSQL (3.0ms)[0m  [1mdescribe `players`[0m
+  [1m[35mSQL (1.4ms)[0m  SHOW KEYS FROM `players`
+  [1m[36mSQL (2.8ms)[0m  [1mdescribe `races`[0m
+  [1m[35mSQL (1.7ms)[0m  SHOW KEYS FROM `races`
+  [1m[36mSQL (2.8ms)[0m  [1mdescribe `teams`[0m
+  [1m[35mSQL (1.7ms)[0m  SHOW KEYS FROM `teams`
+  [1m[36mSQL (5.3ms)[0m  [1mdescribe `users`[0m
+  [1m[35mSQL (1.6ms)[0m  SHOW KEYS FROM `users`
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-16 21:01:20 -0400
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_header.html.erb (53.8ms)
+Rendered home/index.html.erb within layouts/comsat (68.9ms)
+Completed 200 OK in 128ms (Views: 70.2ms | ActiveRecord: 1.7ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /Users/lprestonsegoiii/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-17 06:54:11 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (32.8ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+Rendered layouts/_header.html.erb (2.6ms)
+Rendered home/index.html.erb within layouts/comsat (72.3ms)
+Completed 200 OK in 416ms (Views: 92.2ms | ActiveRecord: 32.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-17 06:54:26 -0400
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered layouts/_header.html.erb (14.3ms)
+Rendered home/index.html.erb within layouts/comsat (483.8ms)
+Completed 200 OK in 604ms (Views: 560.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-17 06:55:22 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+Rendered layouts/_header.html.erb (14.4ms)
+Rendered home/index.html.erb within layouts/comsat (106.3ms)
+Completed 200 OK in 161ms (Views: 111.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-17 06:56:45 -0400
+  Processing by HomeController#index as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mCountry Load (1.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mRace Load (1.3ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mTeam Load (1.2ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1
+  [1m[36mCountry Load (0.5ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1[0m
+  [1m[35mRace Load (0.1ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 6 LIMIT 1[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 8 LIMIT 1
+  [1m[36mRace Load (0.2ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1[0m
+  [1m[35mRace Load (0.1ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mCountry Load (0.2ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 12 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1
+Rendered layouts/_header.html.erb (14.6ms)
+Rendered home/index.html.erb within layouts/comsat (282.4ms)
+Completed 200 OK in 337ms (Views: 282.2ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-17 06:59:32 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+  [1m[35mCountry Load (1.2ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mRace Load (1.5ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mTeam Load (1.5ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1
+  [1m[36mCountry Load (0.3ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1[0m
+  [1m[35mRace Load (0.2ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 6 LIMIT 1[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 8 LIMIT 1
+  [1m[36mRace Load (0.1ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1[0m
+  [1m[35mRace Load (0.1ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.3ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 12 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1
+Rendered layouts/_header.html.erb (12.1ms)
+Rendered home/index.html.erb within layouts/comsat (151.4ms)
+Completed 200 OK in 180ms (Views: 160.8ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-17 07:00:17 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.6ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+  [1m[35mCountry Load (1.4ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mRace Load (1.4ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mTeam Load (1.2ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1
+  [1m[36mCountry Load (0.3ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1[0m
+  [1m[35mRace Load (0.2ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 6 LIMIT 1[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 8 LIMIT 1
+  [1m[36mRace Load (0.1ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1[0m
+  [1m[35mRace Load (0.1ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 12 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1
+  [1m[36mCountry Load (0.4ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1
+Rendered layouts/_header.html.erb (11.9ms)
+Rendered home/index.html.erb within layouts/comsat (180.2ms)
+Completed 200 OK in 253ms (Views: 200.3ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-08-17 07:01:07 -0400
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (3.0ms)
+Rendered layouts/_header.html.erb (1.9ms)
+Rendered devise/sessions/new.html.erb within layouts/application (306.1ms)
+Completed 200 OK in 441ms (Views: 385.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-17 07:01:36 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+  [1m[35mCountry Load (67.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mRace Load (89.9ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mTeam Load (12.8ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1
+  [1m[36mCountry Load (3.9ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1[0m
+  [1m[35mRace Load (0.3ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mTeam Load (0.6ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 6 LIMIT 1[0m
+  [1m[35mCountry Load (0.2ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 8 LIMIT 1
+  [1m[36mRace Load (0.1ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1[0m
+  [1m[35mRace Load (0.1ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mCountry Load (0.2ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 12 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1
+Rendered layouts/_header.html.erb (12.1ms)
+Rendered home/index.html.erb within layouts/comsat (877.1ms)
+Completed 200 OK in 904ms (Views: 709.9ms | ActiveRecord: 177.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-17 07:04:29 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+  [1m[35mCountry Load (1.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mRace Load (1.4ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mTeam Load (1.3ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1[0m
+  [1m[35mRace Load (0.1ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 6 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 8 LIMIT 1
+  [1m[36mRace Load (0.2ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1[0m
+  [1m[35mRace Load (0.1ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 12 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1
+  [1m[36mCountry Load (0.3ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1
+  [1m[36mCountry Load (0.3ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1
+Rendered layouts/_header.html.erb (14.0ms)
+Rendered home/index.html.erb within layouts/comsat (194.2ms)
+Completed 200 OK in 217ms (Views: 196.0ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-17 07:04:34 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+  [1m[35mCountry Load (2.2ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mRace Load (1.4ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mTeam Load (1.4ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1[0m
+  [1m[35mRace Load (0.3ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 6 LIMIT 1[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 8 LIMIT 1
+  [1m[36mRace Load (0.1ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1[0m
+  [1m[35mRace Load (0.1ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 12 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1
+Rendered layouts/_header.html.erb (12.0ms)
+Rendered home/index.html.erb within layouts/comsat (159.8ms)
+Completed 200 OK in 174ms (Views: 154.3ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-17 07:06:10 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+  [1m[35mCountry Load (1.4ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mRace Load (1.3ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mTeam Load (1.4ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1[0m
+  [1m[35mRace Load (0.1ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 6 LIMIT 1[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 8 LIMIT 1
+  [1m[36mRace Load (0.2ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1[0m
+  [1m[35mRace Load (0.1ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 12 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1
+Rendered layouts/_header.html.erb (13.2ms)
+Rendered home/index.html.erb within layouts/comsat (171.6ms)
+Completed 200 OK in 202ms (Views: 179.4ms | ActiveRecord: 7.0ms)

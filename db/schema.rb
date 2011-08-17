@@ -16,16 +16,12 @@ ActiveRecord::Schema.define(:version => 20110816233719) do
     t.string   "name"
     t.string   "abbreviation"
     t.string   "flag_file_name"
-    t.string   "flag_content_type"
-    t.integer  "flag_file_size"
-    t.datetime "flag_updated_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "players", :force => true do |t|
     t.string   "english_name"
-    t.string   "country"
     t.boolean  "featured"
     t.datetime "created_at"
     t.datetime "updated_at"
