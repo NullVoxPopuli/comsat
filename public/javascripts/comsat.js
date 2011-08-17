@@ -300,9 +300,9 @@ function showPlayerActionView(container, playersList, index){
 	
 	// animate (show)
 	if (container == cs_characterSliderPlayerOne){
-		container.show("slide", {direction: "left"}, 200);
+		container.show("slide", {direction: "left"}, 500);
 	} else if (container == cs_characterSliderPlayerTwo){
-		container.show("slide", {direction: "right"}, 200);
+		container.show("slide", {direction: "right"}, 500);
 	}
 }
 
