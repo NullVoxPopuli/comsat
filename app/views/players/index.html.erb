@@ -2,10 +2,11 @@
 
 <table>
   <tr>
-    <th>English name</th>
+    <th>Alias</th>
+    <th>Real Name</th>
+    <th>Age</th>
     <th>Country</th>
     <th>Team</th>
-	<th>Abbr.</th>
 	<th>feat?</th>
     <th></th>
     <th></th>
@@ -15,9 +16,10 @@
 <% @players.each do |player| %>
   <tr>
     <td><%= player.english_name %></td>
-    <td><%= player.country %></td>
-    <td><%= player.team %></td>
-    <td><%= player.team_shorthand %></td>
+    <td><%= player.real_name %></td>
+    <td><%= player.age %></td>
+    <td><%= player.country ? player.country.name : " - Alien - " %></td>
+    <td><%= player.team ? player.team.abbreviation : "Unaffiliated" %></td>
     <td><%= player.featured ? "Yes" : "No" %></td>
     <td><%= link_to 'Show', player %></td>
     <td><%= link_to 'Edit', edit_player_path(player) %></td>

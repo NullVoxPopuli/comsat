@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @country.name %>
+</p>
+
+<p>
+  <b>Abbreviation:</b>
+  <%= @country.abbreviation %>
+</p>
+
+<p>
+  <b>Flag:</b>
+  <%= image_tag @country.flag_file_name %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_country_path(@country) %> |
+<%= link_to 'Back', countries_path %>

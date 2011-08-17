@@ -1,4 +1,10 @@
 DeviseExample::Application.routes.draw do
+  resources :races
+
+  resources :teams
+
+  resources :countries
+
   resources :players
 
   devise_for :users

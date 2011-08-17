@@ -247,9 +247,9 @@ function generateEventHandlers(){
 					cs_confirmSelection.removeClass("select_players");
 					cs_confirmSelection.addClass("confirm_selection");
 					cs_confirmSelection.html("<a href='#'>[ Confirm Selection ]</a>");
-					setInterval(function(){
-					    cs_confirmSelection.hasClass('glow') ? cs_confirmSelection.removeClass('glow') : cs_confirmSelection.addClass('glow');
-					}, 1000);
+					// setInterval(function(){
+					//     cs_confirmSelection.hasClass('glow') ? cs_confirmSelection.removeClass('glow') : cs_confirmSelection.addClass('glow');
+					// }, 1000);
 				}
 
 	            });
@@ -290,21 +290,19 @@ function showPlayerActionView(container, playersList, index){
 	currentPlayerElement = playersList.eq(index)
 	
 	raceImageContainer = container.find(".race");
-	raceImageContainer.removeClass("protoss");
-	raceImageContainer.removeClass("zerg");
-	raceImageContainer.removeClass("terran");
-	raceImageContainer.removeClass("random");
-	raceImageContainer.addClass(currentPlayerElement.find("span.race").text());
+	raceImageContainer.remove("img");
+	raceImageContainer.append(currentPlayerElement.find(".race").clone());
 	
-	countryImgURL = currentPlayerElement.find(".country").text();
-	container.find(".nameSlider .countryFlag").css("background", "url(/images/"+countryImgURL+")");
+	container.find(".nameSlider .countryFlag").remove("img");
+	container.find(".nameSlider .countryFlag").append(currentPlayerElement.find(".country").clone());
+	
 	container.find(".nameSlider .name").text(currentPlayerElement.find(".player_name").text());
 	
 	// animate (show)
 	if (container == cs_characterSliderPlayerOne){
-		container.show("slide", {direction: "left"}, 100);
+		container.show("slide", {direction: "left"}, 200);
 	} else if (container == cs_characterSliderPlayerTwo){
-		container.show("slide", {direction: "right"}, 100);
+		container.show("slide", {direction: "right"}, 200);
 	}
 }
 

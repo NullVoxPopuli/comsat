@@ -1,0 +1,25 @@
+<%= form_for(@race) do |f| %>
+  <% if @race.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@race.errors.count, "error") %> prohibited this race from being saved:</h2>
+
+      <ul>
+      <% @race.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :race_logo_file_name %><br />
+    <%= f.file_field :race_logo_file_name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

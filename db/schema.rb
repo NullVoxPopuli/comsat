@@ -10,22 +10,51 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110814050542) do
+ActiveRecord::Schema.define(:version => 20110816233719) do
+
+  create_table "countries", :force => true do |t|
+    t.string   "name"
+    t.string   "abbreviation"
+    t.string   "flag_file_name"
+    t.string   "flag_content_type"
+    t.integer  "flag_file_size"
+    t.datetime "flag_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "players", :force => true do |t|
     t.string   "english_name"
-    t.string   "main_race"
     t.string   "country"
-    t.string   "team"
-    t.string   "team_shorthand"
     t.boolean  "featured"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "real_name"
+    t.integer  "age"
+    t.integer  "country_id"
+    t.integer  "team_id"
+    t.integer  "race_id"
+    t.string   "mini_head_file_name"
+    t.string   "action_shot_file_name"
+  end
+
+  create_table "races", :force => true do |t|
+    t.string   "name"
+    t.string   "race_logo_file_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "teams", :force => true do |t|
+    t.string   "name"
+    t.string   "abbreviation"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|
-    t.string   "email",                               :default => "",    :null => false
-    t.string   "encrypted_password",   :limit => 128, :default => "",    :null => false
+    t.string   "email",                                                  :null => false
+    t.string   "encrypted_password",   :limit => 128,                    :null => false
     t.string   "confirmation_token"
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"

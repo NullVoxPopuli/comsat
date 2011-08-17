@@ -12,35 +12,40 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :english_name %><br />
+    <%= f.label :alias %>
     <%= f.text_field :english_name %>
   </div>
   <div class="field">
-    <%= f.select :country, options_for_select([
-								["Country", ""],
-								["Canada", "flag_canada.png"], 
-								["South Korea", "flag_south_korea.png"],
-								["Sweden", "flag_sweden.png"],
-								["Taiwan", "flag_taiwan.png"],
-								["Ukraine", "flag_ukraine.png"],
-								["USA & Canada", "flag_usa_canada.png"],
-								["USA", "flag_usa.png"]]) %>
+    <%= f.label :real_name %>
+    <%= f.text_field :real_name %>
+  </div>
+  <div class="field">
+    <%= f.label :age %>
+    <%= f.text_field :age %>
+  </div>
+  <div class="field">
+	<%= f.label :Geographical_affiliation %><br />
+    <%= f.select :country_id, options_for_select(Country.all.map {|u| [u.name,u.id]}) %>
   </div>
   <div class="field">
     <%= f.label :team %><br />
-    <%= f.text_field :team %>
+    <%= f.select :team_id, options_for_select([["Unaffiliated", ""]] + (Team.all.map {|u| [u.name,u.id]})) %>
   </div>
   <div class="field">
-    <%= f.label :main_race %><br />
-    <%= f.text_field :main_race %>
-  </div>
-  <div class="field">
-    <%= f.label :team_shorthand %><br />
-    <%= f.text_field :team_shorthand %>
+    <%= f.label :race %><br />
+    <%= f.select :race_id, options_for_select(Race.all.map {|u| [u.name,u.id]}) %>
   </div>
   <div class="field">
     <%= f.label :featured %><br />
     <%= f.check_box :featured %>
+  </div>
+  <div class="field">
+    <%= f.label :mini_head_file_name %><br />
+    <%= f.file_field :mini_head_file_name %>
+  </div>
+  <div class="field">
+    <%= f.label :action_shot_file_name %><br />
+    <%= f.file_field :action_shot_file_name %>
   </div>
   <div class="actions">
     <%= f.submit %>

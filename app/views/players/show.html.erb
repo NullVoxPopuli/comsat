@@ -1,20 +1,42 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>English name:</b>
+  <b>Alias:</b>
   <%= @player.english_name %>
 </p>
-
 <p>
-  <b>Country:</b>
-  <%= @player.country %>
+	<b>Name:</b>
+	<%= @player.real_name %>
+</p>
+<p>
+	<b>Age:</b>
+	<%= @player.age %>
+</p>
+<p>
+	<%= @player.race.name if @player.race %>
+</p>
+<p>
+ 	<b>Country:</b>
+	<% if @player.country %>
+		<%= image_tag @player.country.flag_file_name %>
+	<% else %>
+		Alien
+	<% end %>
 </p>
 
 <p>
   <b>Team:</b>
-  <%= @player.team %>
+  <%= @player.team ? @player.team.abbreviation : "Unaffiliated" %>
 </p>
 
 
 <%= link_to 'Edit', edit_player_path(@player) %> |
 <%= link_to 'Back', players_path %>
+
+
+<p>
+  <%= image_tag @player.mini_head_file_name if @player.mini_head_file_name %><br />
+</p>
+<p>
+  <%= image_tag @player.action_shot_file_name if @player.action_shot_file_name %><br />
+</p>

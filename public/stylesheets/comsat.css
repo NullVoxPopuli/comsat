@@ -27,24 +27,9 @@ svg{
 	margin-left: auto;
 	margin-right: auto;
 	position: relative !important;
+	z-index: 1000000;
 /*	width:  100% !important;
 	height:  100% !important;*/
-}
-.zerg{
-	background: url(../images/zerg.png) no-repeat;
-}
-.protoss{
-	background: url(../images/protoss.png) no-repeat;
-}
-.terran{
-	background: url(../images/terran.png) no-repeat;
-}
-.random{
-	background: url(../images/random.png) no-repeat;
-}
-
-.zerg, .protoss, .terran, .random{
-	background-size: 400px; 
 }
 
 
@@ -67,20 +52,17 @@ svg{
 	.race{
 		position: absolute;
 		margin-top: 100px;
-		width: 500px;
-		height: 500px;
 	}
 	#playerOne .race{
 		margin-right: 200px;
 	}
 	#playerTwo .race{
-		margin-left: 200px;
+		margin-right: 200px;
 	}
 	.nameSlider{
 		font-weight: bold;
 		position: absolute;
 		min-width: 750px;
-		z-index: 200;
 		bottom:  50px;
 		background: rgb(0,0,0);
 		background: rgba(0,0,0,0.8);
@@ -170,7 +152,7 @@ svg{
 	
 }
 
-.confirm_selection {
+/*.confirm_selection {
     -webkit-transition: text-shadow 1s linear;
     -moz-transition: text-shadow 1s linear;
     -ms-transition: text-shadow 1s linear;
@@ -178,7 +160,7 @@ svg{
     transition: text-shadow 1s linear;
 
 	bottom: 150px;
-}
+}*/
 .confirm_selection:hover,
 .confirm_selection.glow {
     text-shadow: 0 0 15px black;

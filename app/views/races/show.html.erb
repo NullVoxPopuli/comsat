@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @race.name %>
+</p>
+
+<p>
+  <b>Logo:</b>
+  <%= image_tag @race.race_logo_file_name %>
+</p>
+
+
+<%= link_to 'Edit', edit_race_path(@race) %> |
+<%= link_to 'Back', races_path %>

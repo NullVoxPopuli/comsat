@@ -5,14 +5,22 @@
 <div id="notepad"></div>
 
 <ul class="players" style="display: none">
-	<% @featured_players.each do |player |%>
+	<% @featured_players.each do |player|%>
 		<li>
-			<div class="country"><%=h player.country %></div>
+			<% if player.mini_head_file_name %>
+				<%= image_tag player.mini_head_file_name, :class => "mini_head" %>
+			<% end %>
+			<% if player.action_shot_file_name %>
+				<%= image_tag player.action_shot_file_name, :class => "action_shot" %>
+			<% end %>
+			<% if not player.country_id.nil? %>
+				<%= image_tag player.country.flag_file_name, :class => "country" %>
+			<% end %>
+			<% if not player.race_id.nil? %>
+				<%= image_tag player.race.race_logo_file_name, :class => "race" %>
+			<% end %>
 			<span class="player_name">
-				<%=h player.team_shorthand %><%=h player.english_name %>
-			</span>
-			<span class="race">
-				<%=h player.main_race %>
+				<%=h player.team.abbreviation + "." if not player.team_id.nil? %><%=h player.english_name %>
 			</span>
 		</li>
 	<% end %>
