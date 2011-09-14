@@ -10979,3 +10979,2714 @@ Started GET "/" for 127.0.0.1 at 2011-08-17 07:23:40 -0400
 Rendered layouts/_header.html.erb (12.1ms)
 Rendered home/index.html.erb within layouts/comsat (170.7ms)
 Completed 200 OK in 192ms (Views: 166.9ms | ActiveRecord: 7.4ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /Users/lprestonsegoiii/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 22:20:03 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mPlayer Load (41.9ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+  [1m[35mSQL (35.5ms)[0m  SHOW TABLES
+  [1m[36mCountry Load (2.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mRace Load (2.2ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mTeam Load (2.6ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1
+  [1m[36mRace Load (0.3ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 6 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 8 LIMIT 1[0m
+  [1m[35mRace Load (0.1ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1
+  [1m[36mRace Load (0.1ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.3ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1[0m
+  [1m[35mCountry Load (0.2ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 9 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mTeam Load (0.3ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 12 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1[0m
+  [1m[35mCountry Load (0.2ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1[0m
+Rendered layouts/_header.html.erb (1.8ms)
+Rendered home/index.html.erb within layouts/comsat (285.6ms)
+Completed 200 OK in 509ms (Views: 271.9ms | ActiveRecord: 87.9ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /Users/lprestonsegoiii/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:05:50 -0400
+
+Mysql::Error (Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.8ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:12:54 -0400
+
+Mysql::Error (Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:13:31 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/comsat (26.1ms)
+Completed 500 Internal Server Error in 64ms
+
+ActionView::Template::Error (No route matches {:controller=>"home", :action=>"match_set_up"}):
+    6: 	<div class="select_options">
+    7: 		<ul>
+    8: 			<li>
+    9: 				<%= link_to "Match Set Up", :controller => :home, :action => :match_set_up %>
+    10: 			</li>
+    11: 			<li> Custom Tournament </li>
+    12: 			<li> Random Featured Match </li>
+  app/views/home/index.html.erb:9:in `_app_views_home_index_html_erb__3232717770578725605_70154341041680_3743252671360335001'
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (113.9ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (119.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:15:24 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/comsat (0.8ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (No route matches {:controller=>"home", :action=>"match_set_up"}):
+    6: 	<div class="select_options">
+    7: 		<ul>
+    8: 			<li>
+    9: 				<%= link_to "Match Set Up", :controller => :home, :action => :match_set_up %>
+    10: 			</li>
+    11: 			<li> Custom Tournament </li>
+    12: 			<li> Random Featured Match </li>
+  app/views/home/index.html.erb:9:in `_app_views_home_index_html_erb__3232717770578725605_70154339267320_3743252671360335001'
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (140.3ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (145.3ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /Users/lprestonsegoiii/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:17:39 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/comsat (12.1ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (No route matches {:controller=>"home", :action=>"match_set_up"}):
+    6: 	<div class="select_options">
+    7: 		<ul>
+    8: 			<li>
+    9: 				<%= link_to "Match Set Up", :controller => :home, :action => :match_set_up %>
+    10: 			</li>
+    11: 			<li> Custom Tournament </li>
+    12: 			<li> Random Featured Match </li>
+  app/views/home/index.html.erb:9:in `_app_views_home_index_html_erb___3037522472710176585_70300849717400_1036646090462034847'
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (113.2ms)
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (118.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:22:57 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (1.7ms)
+Rendered home/index.html.erb within layouts/comsat (21.9ms)
+Completed 200 OK in 39ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:24:54 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (17.0ms)
+Rendered home/index.html.erb within layouts/comsat (20.7ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:24:56 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (18.8ms)
+Rendered home/index.html.erb within layouts/comsat (22.6ms)
+Completed 200 OK in 26ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:25:24 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (18.1ms)
+Rendered home/index.html.erb within layouts/comsat (22.0ms)
+Completed 200 OK in 25ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:25:49 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (16.1ms)
+Rendered home/index.html.erb within layouts/comsat (20.0ms)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:26:00 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (14.8ms)
+Rendered home/index.html.erb within layouts/comsat (18.6ms)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:26:29 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.6ms)
+Rendered home/index.html.erb within layouts/comsat (14.6ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:26:31 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (13.9ms)
+Rendered home/index.html.erb within layouts/comsat (16.7ms)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:27:50 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (14.2ms)
+Rendered home/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:28:56 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (14.2ms)
+Rendered home/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 21ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:31:32 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.6ms)
+Rendered home/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:31:47 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (17.7ms)
+Rendered home/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:32:09 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.2ms)
+Rendered home/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:32:29 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (14.5ms)
+Rendered home/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:32:43 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (14.1ms)
+Rendered home/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:35:38 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.1ms)
+Rendered home/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:36:11 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.6ms)
+Rendered home/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:36:49 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.9ms)
+Rendered home/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:37:00 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.7ms)
+Rendered home/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:37:27 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (19.1ms)
+Rendered home/index.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:37:35 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.6ms)
+Rendered home/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 18ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:37:41 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (62.3ms)
+Rendered home/index.html.erb within layouts/application (66.5ms)
+Completed 200 OK in 72ms (Views: 71.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:37:48 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (18.2ms)
+Rendered home/index.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:43:39 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (64.7ms)
+Rendered home/index.html.erb within layouts/application (74.1ms)
+Completed 200 OK in 113ms (Views: 112.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:43:45 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (13.3ms)
+Rendered home/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:44:02 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (41.5ms)
+Rendered home/index.html.erb within layouts/application (44.1ms)
+Completed 200 OK in 48ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:44:12 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (16.9ms)
+Rendered home/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:44:18 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (14.5ms)
+Rendered home/index.html.erb within layouts/application (47.7ms)
+Completed 200 OK in 52ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:44:22 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (13.9ms)
+Rendered home/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:44:35 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (21.7ms)
+Rendered home/index.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:46:59 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (27.1ms)
+Rendered home/index.html.erb within layouts/application (44.7ms)
+Completed 200 OK in 65ms (Views: 64.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:47:16 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.7ms)
+Rendered home/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 20ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:47:21 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.5ms)
+Rendered home/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:47:26 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.1ms)
+Rendered home/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:50:53 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.4ms)
+Rendered home/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:51:00 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.9ms)
+Rendered home/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:51:12 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.0ms)
+Rendered home/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 19ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:51:17 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.9ms)
+Rendered home/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:51:47 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.8ms)
+Rendered home/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:51:51 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.4ms)
+Rendered home/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:52:41 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.5ms)
+Rendered home/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:52:52 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.0ms)
+Rendered home/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:53:03 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.5ms)
+Rendered home/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:53:06 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (14.5ms)
+Rendered home/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:53:12 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.0ms)
+Rendered home/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:53:45 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (15.7ms)
+Rendered home/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:54:17 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.7ms)
+Rendered home/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:54:30 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.4ms)
+Rendered home/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-18 23:59:44 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.5ms)
+Rendered home/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/fonts/BPdotsPlusBold.oft" for 127.0.0.1 at 2011-08-18 23:59:44 -0400
+
+ActionController::RoutingError (No route matches "/fonts/BPdotsPlusBold.oft"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:00:40 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.8ms)
+Rendered home/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:01:00 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.2ms)
+Rendered home/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:01:04 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.7ms)
+Rendered home/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:01:41 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (42.8ms)
+Rendered home/index.html.erb within layouts/application (45.3ms)
+Completed 200 OK in 49ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:01:41 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.8ms)
+Rendered home/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:01:41 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (14.2ms)
+Rendered home/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:17:43 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (14.5ms)
+Rendered home/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 26ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/match_set_up" for 127.0.0.1 at 2011-08-19 00:17:47 -0400
+  Processing by HomeController#match_set_up as HTML
+  [1m[36mPlayer Load (47.0ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+  [1m[35mSQL (36.1ms)[0m  SHOW TABLES
+  [1m[36mCountry Load (3.3ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mRace Load (2.1ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mTeam Load (1.7ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1
+  [1m[36mRace Load (0.1ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 6 LIMIT 1
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 8 LIMIT 1[0m
+  [1m[35mRace Load (0.1ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1
+  [1m[36mRace Load (0.1ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1[0m
+  [1m[35mCountry Load (0.2ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 9 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 12 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1[0m
+  [1m[35mCountry Load (0.2ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1[0m
+Rendered layouts/_header.html.erb (13.1ms)
+Rendered home/match_set_up.html.erb within layouts/comsat (291.0ms)
+Completed 200 OK in 519ms (Views: 268.2ms | ActiveRecord: 93.6ms)
+
+
+Started GET "/images/flag_canada.png" for 127.0.0.1 at 2011-08-19 00:17:47 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_canada.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/images/flag_south_korea.png" for 127.0.0.1 at 2011-08-19 00:17:47 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_south_korea.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/images/zerg.png" for 127.0.0.1 at 2011-08-19 00:17:47 -0400
+
+ActionController::RoutingError (No route matches "/images/zerg.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/protoss.png" for 127.0.0.1 at 2011-08-19 00:17:47 -0400
+
+ActionController::RoutingError (No route matches "/images/protoss.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/flag_peru.png" for 127.0.0.1 at 2011-08-19 00:17:47 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_peru.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/terran.png" for 127.0.0.1 at 2011-08-19 00:17:47 -0400
+
+ActionController::RoutingError (No route matches "/images/terran.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/images/flag_sweden.png" for 127.0.0.1 at 2011-08-19 00:17:47 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_sweden.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/random.png" for 127.0.0.1 at 2011-08-19 00:17:47 -0400
+
+ActionController::RoutingError (No route matches "/images/random.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/flag_usa.png" for 127.0.0.1 at 2011-08-19 00:17:47 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/flag_ukraine.png" for 127.0.0.1 at 2011-08-19 00:17:47 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_ukraine.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/flag_netherlands.png" for 127.0.0.1 at 2011-08-19 00:17:47 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_netherlands.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/images/flag_usa_canada.png" for 127.0.0.1 at 2011-08-19 00:17:47 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa_canada.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/flag_poland.png" for 127.0.0.1 at 2011-08-19 00:17:47 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_poland.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:19:53 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.1ms)
+Rendered home/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:19:59 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (14.1ms)
+Rendered home/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:20:03 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (17.9ms)
+Rendered home/index.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 28ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:20:09 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.7ms)
+Rendered home/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:20:15 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (13.9ms)
+Rendered home/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:20:46 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (13.9ms)
+Rendered home/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:20:55 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (19.5ms)
+Rendered home/index.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 28ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:24:19 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (58.8ms)
+Rendered home/index.html.erb within layouts/application (74.0ms)
+Completed 200 OK in 79ms (Views: 78.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:24:52 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (13.2ms)
+Rendered home/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:24:56 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (19.1ms)
+Rendered home/index.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:25:01 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (15.9ms)
+Rendered home/index.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:28:45 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.5ms)
+Rendered home/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:28:48 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (14.8ms)
+Rendered home/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 22ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:29:02 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (45.6ms)
+Rendered home/index.html.erb within layouts/application (48.3ms)
+Completed 200 OK in 52ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:29:09 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (16.6ms)
+Rendered home/index.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 28ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:29:15 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (63.8ms)
+Rendered home/index.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 77ms (Views: 75.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:29:55 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.4ms)
+Rendered home/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:30:07 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (18.3ms)
+Rendered home/index.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:31:01 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.3ms)
+Rendered home/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:32:03 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.2ms)
+Rendered home/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 19ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:32:14 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.8ms)
+Rendered home/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 21ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:32:23 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.9ms)
+Rendered home/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:32:34 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (17.3ms)
+Rendered home/index.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 28ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:33:02 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.1ms)
+Rendered home/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:33:11 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (50.2ms)
+Rendered home/index.html.erb within layouts/application (54.7ms)
+Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:35:45 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (16.8ms)
+Rendered home/index.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:36:33 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.9ms)
+Rendered home/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:36:56 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.9ms)
+Rendered home/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:37:25 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (15.7ms)
+Rendered home/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 23ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:37:36 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.9ms)
+Rendered home/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:37:38 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (16.4ms)
+Rendered home/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:37:42 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (16.7ms)
+Rendered home/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:38:00 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (17.7ms)
+Rendered home/index.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 28ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:38:05 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (16.2ms)
+Rendered home/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:38:09 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (16.1ms)
+Rendered home/index.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 26ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:38:13 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (16.1ms)
+Rendered home/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 24ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:42:41 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.6ms)
+Rendered home/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 19ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:42:47 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (50.4ms)
+Rendered home/index.html.erb within layouts/application (55.6ms)
+Completed 200 OK in 62ms (Views: 61.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:42:58 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.3ms)
+Rendered home/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 18ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:43:04 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (72.2ms)
+Rendered home/index.html.erb within layouts/application (79.2ms)
+Completed 200 OK in 87ms (Views: 85.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:43:23 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (18.4ms)
+Rendered home/index.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:43:31 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (14.8ms)
+Rendered home/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 25ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:43:41 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.7ms)
+Rendered home/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:43:46 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (18.1ms)
+Rendered home/index.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:43:50 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (14.3ms)
+Rendered home/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:43:55 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (19.8ms)
+Rendered home/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:44:35 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.6ms)
+Rendered home/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:44:47 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.9ms)
+Rendered home/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:44:53 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (19.4ms)
+Rendered home/index.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 28ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:45:00 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.9ms)
+Rendered home/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:45:03 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.2ms)
+Rendered home/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:45:12 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (18.3ms)
+Rendered home/index.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 25ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:45:29 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (48.7ms)
+Rendered home/index.html.erb within layouts/application (51.9ms)
+Completed 200 OK in 57ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:45:54 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.1ms)
+Rendered home/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:45:59 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (16.9ms)
+Rendered home/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 25ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:46:02 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.4ms)
+Rendered home/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 19ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:46:11 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (15.7ms)
+Rendered home/index.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 24ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:50:21 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.9ms)
+Rendered home/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 19ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:50:46 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.5ms)
+Rendered home/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:50:57 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (15.1ms)
+Rendered home/index.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 26ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 00:51:15 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (17.6ms)
+Rendered home/index.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 29ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 01:10:44 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.7ms)
+Rendered home/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 01:10:50 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.8ms)
+Rendered home/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 01:11:08 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.6ms)
+Rendered home/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 01:11:27 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (12.4ms)
+Rendered home/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 01:11:44 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (13.0ms)
+Rendered home/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 01:29:22 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (11.6ms)
+Rendered home/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-19 01:29:41 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (13.1ms)
+Rendered home/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (149.4ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW KEYS FROM `schema_migrations`
+  [1m[36mSQL (194.4ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (18.9ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateUsers (20090916131255)
+  [1m[35mSQL (125.3ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `confirmation_token` varchar(255), `confirmed_at` datetime, `confirmation_sent_at` datetime, `reset_password_token` varchar(255), `remember_token` varchar(255), `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `failed_attempts` int(11) DEFAULT 0, `unlock_token` varchar(255), `locked_at` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20090916131255')[0m
+Migrating to CreateAdmins (20091009223419)
+  [1m[35mSQL (109.3ms)[0m  CREATE TABLE `admins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (2.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20091009223419')[0m
+Migrating to TokenAuthentication (20100615195947)
+  [1m[35mSQL (179.1ms)[0m  ALTER TABLE `users` ADD `authentication_token` varchar(255)
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (27.2ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` >= 0) ORDER BY `users`.`id` ASC LIMIT 1000
+  [1m[36mSQL (21.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20100615195947')[0m
+Migrating to CreatePlayers (20110813223644)
+  [1m[35mSQL (175.7ms)[0m  CREATE TABLE `players` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `english_name` varchar(255), `main_race` varchar(255), `country` varchar(255), `team` varchar(255), `team_shorthand` varchar(255), `featured` tinyint(1), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (5.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110813223644')[0m
+Migrating to AddStarcraftFieldsToUser (20110814043545)
+  [1m[35mSQL (149.4ms)[0m  ALTER TABLE `users` ADD `login` varchar(255)
+  [1m[36mSQL (149.6ms)[0m  [1mALTER TABLE `users` ADD `battle_net_id` varchar(255)[0m
+  [1m[35mSQL (146.2ms)[0m  ALTER TABLE `users` ADD `battle_net_url` varchar(255)
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110814043545')[0m
+Migrating to AddAdminToUser (20110814050040)
+  [1m[35mSQL (1.5ms)[0m  DROP TABLE `admins`
+  [1m[36mSQL (140.4ms)[0m  [1mALTER TABLE `users` ADD `admin` tinyint(1) DEFAULT 0[0m
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20110814050040')
+Migrating to AddUsernameToUsers (20110814050542)
+  [1m[36mSQL (158.5ms)[0m  [1mALTER TABLE `users` ADD `username` varchar(255)[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20110814050542')
+Migrating to AddRealNameAndAgeToPlayers (20110816221216)
+  [1m[36mSQL (112.7ms)[0m  [1mALTER TABLE `players` ADD `real_name` varchar(255)[0m
+  [1m[35mSQL (140.4ms)[0m  ALTER TABLE `players` ADD `age` int(11)
+  [1m[36mSQL (4.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110816221216')[0m
+Migrating to CreateCountries (20110816222253)
+  [1m[35mSQL (109.2ms)[0m  CREATE TABLE `countries` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `abbreviation` varchar(255), `flag_file_name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (2.7ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110816222253')[0m
+Migrating to AddCountryIdToPlayer (20110816223434)
+  [1m[35mSQL (117.9ms)[0m  ALTER TABLE `players` ADD `country_id` int(11)
+  [1m[36mSQL (113.4ms)[0m  [1mALTER TABLE `players` DROP `country`[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20110816223434')
+Migrating to CreateTeams (20110816224929)
+  [1m[36mSQL (99.8ms)[0m  [1mCREATE TABLE `teams` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `abbreviation` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (12.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20110816224929')
+Migrating to AddTeamIdToPlayer (20110816225029)
+  [1m[36mSQL (119.7ms)[0m  [1mALTER TABLE `players` ADD `team_id` int(11)[0m
+  [1m[35mSQL (113.0ms)[0m  ALTER TABLE `players` DROP `team`
+  [1m[36mSQL (99.0ms)[0m  [1mALTER TABLE `players` DROP `team_shorthand`[0m
+  [1m[35mSQL (2.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20110816225029')
+Migrating to CreateRaces (20110816231012)
+  [1m[36mSQL (102.5ms)[0m  [1mCREATE TABLE `races` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `race_logo_file_name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (4.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20110816231012')
+Migrating to AddRaceIdToPlayer (20110816231024)
+  [1m[36mSQL (116.5ms)[0m  [1mALTER TABLE `players` ADD `race_id` int(11)[0m
+  [1m[35mSQL (119.0ms)[0m  ALTER TABLE `players` DROP `main_race`
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110816231024')[0m
+Migrating to AddImagesToPlayer (20110816233719)
+  [1m[35mSQL (111.7ms)[0m  ALTER TABLE `players` ADD `mini_head_file_name` varchar(255)
+  [1m[36mSQL (111.2ms)[0m  [1mALTER TABLE `players` ADD `action_shot_file_name` varchar(255)[0m
+  [1m[35mSQL (2.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20110816233719')
+  [1m[36mSQL (0.7ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (1.6ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (2.9ms)[0m  describe `countries`
+  [1m[36mSQL (1.6ms)[0m  [1mSHOW KEYS FROM `countries`[0m
+  [1m[35mSQL (2.7ms)[0m  describe `players`
+  [1m[36mSQL (1.6ms)[0m  [1mSHOW KEYS FROM `players`[0m
+  [1m[35mSQL (2.9ms)[0m  describe `races`
+  [1m[36mSQL (1.6ms)[0m  [1mSHOW KEYS FROM `races`[0m
+  [1m[35mSQL (2.8ms)[0m  describe `teams`
+  [1m[36mSQL (1.6ms)[0m  [1mSHOW KEYS FROM `teams`[0m
+  [1m[35mSQL (71.9ms)[0m  describe `users`
+  [1m[36mSQL (2.0ms)[0m  [1mSHOW KEYS FROM `users`[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from handle at /Users/lprestonsegoiii/Library/Application Support/Pow/Versions/0.3.2/node_modules/nack/lib/nack/server.rb:146)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 23 11:23:44 -0400 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (1.9ms)
+Rendered home/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 71ms (Views: 70.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/match_set_up" for 127.0.0.1 at Tue Aug 23 11:23:52 -0400 2011
+  Processing by HomeController#match_set_up as HTML
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+Rendered layouts/_header.html.erb (8.6ms)
+Rendered home/match_set_up.html.erb within layouts/comsat (11.8ms)
+Completed 200 OK in 56ms (Views: 15.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/match_set_up" for 127.0.0.1 at Tue Aug 23 11:24:09 -0400 2011
+  Processing by HomeController#match_set_up as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered layouts/_header.html.erb (10.1ms)
+Rendered home/match_set_up.html.erb within layouts/comsat (78.1ms)
+Completed 200 OK in 92ms (Views: 80.8ms | ActiveRecord: 0.4ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /Users/lprestonsegoiii/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111)
+
+
+Started GET "/match_set_up" for 127.0.0.1 at 2011-08-23 11:27:47 -0400
+  Processing by HomeController#match_set_up as HTML
+  [1m[36mPlayer Load (0.5ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+Rendered layouts/_header.html.erb (1.8ms)
+Rendered home/match_set_up.html.erb within layouts/comsat (5.2ms)
+Completed 200 OK in 171ms (Views: 40.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/match_set_up" for 127.0.0.1 at 2011-08-23 11:29:38 -0400
+  Processing by HomeController#match_set_up as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered layouts/_header.html.erb (13.3ms)
+Rendered home/match_set_up.html.erb within layouts/comsat (17.0ms)
+Completed 200 OK in 60ms (Views: 19.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/match_set_up" for 127.0.0.1 at 2011-08-23 11:30:43 -0400
+  Processing by HomeController#match_set_up as HTML
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+Rendered layouts/_header.html.erb (12.4ms)
+Rendered home/match_set_up.html.erb within layouts/comsat (16.0ms)
+Completed 200 OK in 60ms (Views: 18.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/match_set_up" for 127.0.0.1 at 2011-08-23 11:30:44 -0400
+  Processing by HomeController#match_set_up as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+Rendered layouts/_header.html.erb (13.2ms)
+Rendered home/match_set_up.html.erb within layouts/comsat (17.9ms)
+Completed 200 OK in 39ms (Views: 20.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/players" for 127.0.0.1 at 2011-08-23 12:03:18 -0400
+  Processing by PlayersController#index as HTML
+Completed   in 11ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2011-08-23 12:03:18 -0400
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.0ms)
+Rendered layouts/_header.html.erb (1.8ms)
+Rendered devise/sessions/new.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 105ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-08-23 12:13:06 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (15.0ms)
+Rendered home/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/match_set_up" for 127.0.0.1 at 2011-08-23 12:13:40 -0400
+  Processing by HomeController#match_set_up as HTML
+  [1m[36mPlayer Load (0.4ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mCountry Load (1.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mRace Load (1.5ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mTeam Load (1.3ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1
+  [1m[36mRace Load (0.1ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 6 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 8 LIMIT 1[0m
+  [1m[35mRace Load (0.1ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1
+  [1m[36mRace Load (0.1ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1[0m
+  [1m[35mCountry Load (0.2ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1[0m
+  [1m[35mCountry Load (0.2ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 9 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mTeam Load (0.3ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 12 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1[0m
+  [1m[35mCountry Load (0.2ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1[0m
+Rendered layouts/_header.html.erb (11.9ms)
+Rendered home/match_set_up.html.erb within layouts/comsat (212.2ms)
+Completed 200 OK in 300ms (Views: 224.5ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/images/flag_canada.png" for 127.0.0.1 at 2011-08-23 12:13:40 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_canada.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/protoss.png" for 127.0.0.1 at 2011-08-23 12:13:40 -0400
+
+ActionController::RoutingError (No route matches "/images/protoss.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/flag_south_korea.png" for 127.0.0.1 at 2011-08-23 12:13:40 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_south_korea.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/zerg.png" for 127.0.0.1 at 2011-08-23 12:13:40 -0400
+
+ActionController::RoutingError (No route matches "/images/zerg.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/flag_peru.png" for 127.0.0.1 at 2011-08-23 12:13:40 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_peru.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/images/terran.png" for 127.0.0.1 at 2011-08-23 12:13:40 -0400
+
+ActionController::RoutingError (No route matches "/images/terran.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/flag_sweden.png" for 127.0.0.1 at 2011-08-23 12:13:41 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_sweden.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/random.png" for 127.0.0.1 at 2011-08-23 12:13:41 -0400
+
+ActionController::RoutingError (No route matches "/images/random.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/flag_usa.png" for 127.0.0.1 at 2011-08-23 12:13:41 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/flag_ukraine.png" for 127.0.0.1 at 2011-08-23 12:13:41 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_ukraine.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/flag_netherlands.png" for 127.0.0.1 at 2011-08-23 12:13:41 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_netherlands.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/flag_usa_canada.png" for 127.0.0.1 at 2011-08-23 12:13:41 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa_canada.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/flag_poland.png" for 127.0.0.1 at 2011-08-23 12:13:41 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_poland.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/images/terran.png" for 127.0.0.1 at 2011-08-23 12:13:42 -0400
+
+ActionController::RoutingError (No route matches "/images/terran.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/images/flag_usa.png" for 127.0.0.1 at 2011-08-23 12:13:42 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/protoss.png" for 127.0.0.1 at 2011-08-23 12:13:44 -0400
+
+ActionController::RoutingError (No route matches "/images/protoss.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/flag_canada.png" for 127.0.0.1 at 2011-08-23 12:13:44 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_canada.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/protoss.png" for 127.0.0.1 at 2011-08-23 12:13:46 -0400
+
+ActionController::RoutingError (No route matches "/images/protoss.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/flag_south_korea.png" for 127.0.0.1 at 2011-08-23 12:13:46 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_south_korea.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/images/protoss.png" for 127.0.0.1 at 2011-08-23 12:13:47 -0400
+
+ActionController::RoutingError (No route matches "/images/protoss.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/images/flag_usa_canada.png" for 127.0.0.1 at 2011-08-23 12:13:47 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa_canada.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/images/protoss.png" for 127.0.0.1 at 2011-08-23 12:13:48 -0400
+
+ActionController::RoutingError (No route matches "/images/protoss.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/images/flag_usa.png" for 127.0.0.1 at 2011-08-23 12:13:48 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/terran.png" for 127.0.0.1 at 2011-08-23 12:13:49 -0400
+
+ActionController::RoutingError (No route matches "/images/terran.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/flag_south_korea.png" for 127.0.0.1 at 2011-08-23 12:13:49 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_south_korea.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/images/random.png" for 127.0.0.1 at 2011-08-23 12:13:51 -0400
+
+ActionController::RoutingError (No route matches "/images/random.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/flag_usa.png" for 127.0.0.1 at 2011-08-23 12:13:51 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/images/terran.png" for 127.0.0.1 at 2011-08-23 12:13:53 -0400
+
+ActionController::RoutingError (No route matches "/images/terran.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/flag_usa.png" for 127.0.0.1 at 2011-08-23 12:13:53 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/images/zerg.png" for 127.0.0.1 at 2011-08-23 12:13:55 -0400
+
+ActionController::RoutingError (No route matches "/images/zerg.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/flag_usa.png" for 127.0.0.1 at 2011-08-23 12:13:55 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/images/random.png" for 127.0.0.1 at 2011-08-23 12:13:57 -0400
+
+ActionController::RoutingError (No route matches "/images/random.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/flag_usa.png" for 127.0.0.1 at 2011-08-23 12:13:57 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/protoss.png" for 127.0.0.1 at 2011-08-23 12:13:59 -0400
+
+ActionController::RoutingError (No route matches "/images/protoss.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/flag_poland.png" for 127.0.0.1 at 2011-08-23 12:13:59 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_poland.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/zerg.png" for 127.0.0.1 at 2011-08-23 12:14:00 -0400
+
+ActionController::RoutingError (No route matches "/images/zerg.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/images/flag_usa.png" for 127.0.0.1 at 2011-08-23 12:14:00 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/images/protoss.png" for 127.0.0.1 at 2011-08-23 12:14:02 -0400
+
+ActionController::RoutingError (No route matches "/images/protoss.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/images/flag_usa_canada.png" for 127.0.0.1 at 2011-08-23 12:14:02 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa_canada.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/zerg.png" for 127.0.0.1 at 2011-08-23 12:14:04 -0400
+
+ActionController::RoutingError (No route matches "/images/zerg.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/images/flag_usa.png" for 127.0.0.1 at 2011-08-23 12:14:04 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/zerg.png" for 127.0.0.1 at 2011-08-23 12:14:05 -0400
+
+ActionController::RoutingError (No route matches "/images/zerg.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/images/flag_netherlands.png" for 127.0.0.1 at 2011-08-23 12:14:05 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_netherlands.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/images/zerg.png" for 127.0.0.1 at 2011-08-23 12:14:09 -0400
+
+ActionController::RoutingError (No route matches "/images/zerg.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/images/flag_usa.png" for 127.0.0.1 at 2011-08-23 12:14:10 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/protoss.png" for 127.0.0.1 at 2011-08-23 12:14:11 -0400
+
+ActionController::RoutingError (No route matches "/images/protoss.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/images/flag_usa_canada.png" for 127.0.0.1 at 2011-08-23 12:14:11 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa_canada.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/images/zerg.png" for 127.0.0.1 at 2011-08-23 12:14:13 -0400
+
+ActionController::RoutingError (No route matches "/images/zerg.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/images/flag_canada.png" for 127.0.0.1 at 2011-08-23 12:14:13 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_canada.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/protoss.png" for 127.0.0.1 at 2011-08-23 12:14:15 -0400
+
+ActionController::RoutingError (No route matches "/images/protoss.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/images/flag_canada.png" for 127.0.0.1 at 2011-08-23 12:14:15 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_canada.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/images/terran.png" for 127.0.0.1 at 2011-08-23 12:14:17 -0400
+
+ActionController::RoutingError (No route matches "/images/terran.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/images/flag_usa.png" for 127.0.0.1 at 2011-08-23 12:14:17 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/images/protoss.png" for 127.0.0.1 at 2011-08-23 12:14:18 -0400
+
+ActionController::RoutingError (No route matches "/images/protoss.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/images/flag_canada.png" for 127.0.0.1 at 2011-08-23 12:14:18 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_canada.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/zerg.png" for 127.0.0.1 at 2011-08-23 12:14:19 -0400
+
+ActionController::RoutingError (No route matches "/images/zerg.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/images/flag_south_korea.png" for 127.0.0.1 at 2011-08-23 12:14:19 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_south_korea.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/protoss.png" for 127.0.0.1 at 2011-08-23 12:14:21 -0400
+
+ActionController::RoutingError (No route matches "/images/protoss.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/images/flag_usa.png" for 127.0.0.1 at 2011-08-23 12:14:21 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/match_set_up" for 127.0.0.1 at 2011-08-23 12:15:18 -0400
+  Processing by HomeController#match_set_up as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mCountry Load (1.3ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mRace Load (0.4ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mTeam Load (1.5ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1
+  [1m[36mRace Load (0.2ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 6 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 8 LIMIT 1[0m
+  [1m[35mRace Load (0.1ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1
+  [1m[36mRace Load (0.1ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.3ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mTeam Load (0.3ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 9 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mTeam Load (0.3ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 12 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.3ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1[0m
+Rendered layouts/_header.html.erb (12.4ms)
+Rendered home/match_set_up.html.erb within layouts/comsat (149.7ms)
+Completed 200 OK in 165ms (Views: 144.6ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/images/flag_canada.png" for 127.0.0.1 at 2011-08-23 12:15:18 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_canada.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/zerg.png" for 127.0.0.1 at 2011-08-23 12:15:18 -0400
+
+ActionController::RoutingError (No route matches "/images/zerg.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/images/protoss.png" for 127.0.0.1 at 2011-08-23 12:15:18 -0400
+
+ActionController::RoutingError (No route matches "/images/protoss.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/flag_south_korea.png" for 127.0.0.1 at 2011-08-23 12:15:18 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_south_korea.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/flag_peru.png" for 127.0.0.1 at 2011-08-23 12:15:18 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_peru.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/images/flag_sweden.png" for 127.0.0.1 at 2011-08-23 12:15:18 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_sweden.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/terran.png" for 127.0.0.1 at 2011-08-23 12:15:18 -0400
+
+ActionController::RoutingError (No route matches "/images/terran.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/random.png" for 127.0.0.1 at 2011-08-23 12:15:18 -0400
+
+ActionController::RoutingError (No route matches "/images/random.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/images/flag_usa.png" for 127.0.0.1 at 2011-08-23 12:15:18 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/images/flag_ukraine.png" for 127.0.0.1 at 2011-08-23 12:15:18 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_ukraine.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/images/flag_netherlands.png" for 127.0.0.1 at 2011-08-23 12:15:18 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_netherlands.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/images/flag_usa_canada.png" for 127.0.0.1 at 2011-08-23 12:15:18 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa_canada.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/images/flag_poland.png" for 127.0.0.1 at 2011-08-23 12:15:18 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_poland.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/match_set_up" for 127.0.0.1 at 2011-08-23 12:17:38 -0400
+  Processing by HomeController#match_set_up as HTML
+  [1m[35mPlayer Load (0.4ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mCountry Load (1.2ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mRace Load (1.5ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mTeam Load (1.4ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1
+  [1m[36mRace Load (0.2ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 6 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 8 LIMIT 1[0m
+  [1m[35mRace Load (0.2ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1[0m
+  [1m[35mCountry Load (0.2ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1
+  [1m[36mRace Load (0.2ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.3ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 9 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mTeam Load (0.3ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 12 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1[0m
+Rendered layouts/_header.html.erb (13.0ms)
+Rendered home/match_set_up.html.erb within layouts/comsat (195.0ms)
+Completed 200 OK in 214ms (Views: 190.1ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/images/flag_canada.png" for 127.0.0.1 at 2011-08-23 12:17:39 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_canada.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/images/protoss.png" for 127.0.0.1 at 2011-08-23 12:17:39 -0400
+
+ActionController::RoutingError (No route matches "/images/protoss.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/flag_south_korea.png" for 127.0.0.1 at 2011-08-23 12:17:39 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_south_korea.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/flag_peru.png" for 127.0.0.1 at 2011-08-23 12:17:39 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_peru.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/zerg.png" for 127.0.0.1 at 2011-08-23 12:17:39 -0400
+
+ActionController::RoutingError (No route matches "/images/zerg.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/terran.png" for 127.0.0.1 at 2011-08-23 12:17:39 -0400
+
+ActionController::RoutingError (No route matches "/images/terran.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/flag_sweden.png" for 127.0.0.1 at 2011-08-23 12:17:39 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_sweden.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/random.png" for 127.0.0.1 at 2011-08-23 12:17:39 -0400
+
+ActionController::RoutingError (No route matches "/images/random.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/flag_usa.png" for 127.0.0.1 at 2011-08-23 12:17:39 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/images/flag_ukraine.png" for 127.0.0.1 at 2011-08-23 12:17:39 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_ukraine.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/images/flag_netherlands.png" for 127.0.0.1 at 2011-08-23 12:17:39 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_netherlands.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/images/flag_usa_canada.png" for 127.0.0.1 at 2011-08-23 12:17:39 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa_canada.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/images/flag_poland.png" for 127.0.0.1 at 2011-08-23 12:17:39 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_poland.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/match_set_up" for 127.0.0.1 at 2011-08-23 12:18:39 -0400
+  Processing by HomeController#match_set_up as HTML
+  [1m[35mPlayer Load (0.5ms)[0m  SELECT `players`.* FROM `players` WHERE (featured = 1)
+  [1m[36mCountry Load (1.3ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mRace Load (1.6ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mTeam Load (1.4ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1
+  [1m[36mRace Load (0.2ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mTeam Load (0.5ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 6 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 8 LIMIT 1[0m
+  [1m[35mRace Load (0.1ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1
+  [1m[36mRace Load (0.1ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.3ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 9 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mTeam Load (0.3ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mTeam Load (0.3ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 12 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1[0m
+  [1m[35mCountry Load (0.2ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.3ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1[0m
+Rendered layouts/_header.html.erb (12.8ms)
+Rendered home/match_set_up.html.erb within layouts/comsat (245.2ms)
+Completed 200 OK in 264ms (Views: 239.5ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/images/protoss.png" for 127.0.0.1 at 2011-08-23 12:18:40 -0400
+
+ActionController::RoutingError (No route matches "/images/protoss.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/images/flag_south_korea.png" for 127.0.0.1 at 2011-08-23 12:18:40 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_south_korea.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/zerg.png" for 127.0.0.1 at 2011-08-23 12:18:40 -0400
+
+ActionController::RoutingError (No route matches "/images/zerg.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/images/flag_canada.png" for 127.0.0.1 at 2011-08-23 12:18:40 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_canada.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/images/flag_peru.png" for 127.0.0.1 at 2011-08-23 12:18:40 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_peru.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/terran.png" for 127.0.0.1 at 2011-08-23 12:18:40 -0400
+
+ActionController::RoutingError (No route matches "/images/terran.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/flag_sweden.png" for 127.0.0.1 at 2011-08-23 12:18:40 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_sweden.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/random.png" for 127.0.0.1 at 2011-08-23 12:18:40 -0400
+
+ActionController::RoutingError (No route matches "/images/random.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/flag_usa.png" for 127.0.0.1 at 2011-08-23 12:18:40 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/flag_ukraine.png" for 127.0.0.1 at 2011-08-23 12:18:40 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_ukraine.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/flag_netherlands.png" for 127.0.0.1 at 2011-08-23 12:18:40 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_netherlands.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/images/flag_usa_canada.png" for 127.0.0.1 at 2011-08-23 12:18:40 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa_canada.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/flag_poland.png" for 127.0.0.1 at 2011-08-23 12:18:40 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_poland.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/protoss.png" for 127.0.0.1 at 2011-08-23 12:18:42 -0400
+
+ActionController::RoutingError (No route matches "/images/protoss.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/images/flag_ukraine.png" for 127.0.0.1 at 2011-08-23 12:18:42 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_ukraine.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/images/zerg.png" for 127.0.0.1 at 2011-08-23 12:18:43 -0400
+
+ActionController::RoutingError (No route matches "/images/zerg.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/images/flag_canada.png" for 127.0.0.1 at 2011-08-23 12:18:43 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_canada.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /Users/lprestonsegoiii/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-14 12:05:42 -0400
+  Processing by HomeController#index as HTML
+Rendered layouts/_header.html.erb (28.9ms)
+Rendered home/index.html.erb within layouts/application (67.5ms)
+Completed 200 OK in 88ms (Views: 87.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/match_set_up" for 127.0.0.1 at 2011-09-14 12:05:46 -0400
+  Processing by HomeController#match_set_up as HTML
+  [1m[36mPlayer Load (67.9ms)[0m  [1mSELECT `players`.* FROM `players` WHERE (featured = 1)[0m
+  [1m[35mSQL (53.0ms)[0m  SHOW TABLES
+  [1m[36mCountry Load (12.8ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mRace Load (2.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mTeam Load (1.6ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1
+  [1m[36mRace Load (0.1ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 6 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 8 LIMIT 1[0m
+  [1m[35mRace Load (0.1ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1
+  [1m[36mRace Load (0.1ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 3 LIMIT 1[0m
+  [1m[35mCountry Load (0.2ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1[0m
+  [1m[35mCountry Load (0.2ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 9 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 12 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 2 LIMIT 1[0m
+  [1m[35mCountry Load (0.1ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `races`.* FROM `races` WHERE `races`.`id` = 2 LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT `teams`.* FROM `teams` WHERE `teams`.`id` = 8 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `races`.* FROM `races` WHERE `races`.`id` = 4 LIMIT 1[0m
+Rendered layouts/_header.html.erb (13.3ms)
+Rendered home/match_set_up.html.erb within layouts/comsat (311.0ms)
+Completed 200 OK in 550ms (Views: 257.9ms | ActiveRecord: 140.6ms)
+
+
+Started GET "/images/flag_canada.png" for 127.0.0.1 at 2011-09-14 12:05:47 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_canada.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290@comsat/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/flag_peru.png" for 127.0.0.1 at 2011-09-14 12:05:47 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_peru.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290@comsat/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/flag_south_korea.png" for 127.0.0.1 at 2011-09-14 12:05:47 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_south_korea.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290@comsat/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/terran.png" for 127.0.0.1 at 2011-09-14 12:05:47 -0400
+
+ActionController::RoutingError (No route matches "/images/terran.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290@comsat/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/flag_sweden.png" for 127.0.0.1 at 2011-09-14 12:05:47 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_sweden.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290@comsat/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/random.png" for 127.0.0.1 at 2011-09-14 12:05:47 -0400
+
+ActionController::RoutingError (No route matches "/images/random.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290@comsat/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/flag_ukraine.png" for 127.0.0.1 at 2011-09-14 12:05:47 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_ukraine.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290@comsat/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/images/flag_netherlands.png" for 127.0.0.1 at 2011-09-14 12:05:47 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_netherlands.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290@comsat/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/images/flag_usa_canada.png" for 127.0.0.1 at 2011-09-14 12:05:47 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa_canada.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290@comsat/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/flag_poland.png" for 127.0.0.1 at 2011-09-14 12:05:47 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_poland.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290@comsat/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/protoss.png" for 127.0.0.1 at 2011-09-14 12:05:47 -0400
+
+ActionController::RoutingError (No route matches "/images/protoss.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290@comsat/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/images/flag_usa.png" for 127.0.0.1 at 2011-09-14 12:05:47 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290@comsat/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/images/zerg.png" for 127.0.0.1 at 2011-09-14 12:05:47 -0400
+
+ActionController::RoutingError (No route matches "/images/zerg.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290@comsat/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/flag_canada.png" for 127.0.0.1 at 2011-09-14 12:05:47 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_canada.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290@comsat/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/images/flag_peru.png" for 127.0.0.1 at 2011-09-14 12:05:47 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_peru.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290@comsat/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/images/protoss.png" for 127.0.0.1 at 2011-09-14 12:05:49 -0400
+
+ActionController::RoutingError (No route matches "/images/protoss.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290@comsat/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/flag_usa_canada.png" for 127.0.0.1 at 2011-09-14 12:05:50 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_usa_canada.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290@comsat/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/protoss.png" for 127.0.0.1 at 2011-09-14 12:05:52 -0400
+
+ActionController::RoutingError (No route matches "/images/protoss.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290@comsat/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/images/flag_south_korea.png" for 127.0.0.1 at 2011-09-14 12:05:52 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_south_korea.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290@comsat/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/protoss.png" for 127.0.0.1 at 2011-09-14 12:05:54 -0400
+
+ActionController::RoutingError (No route matches "/images/protoss.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290@comsat/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/images/flag_ukraine.png" for 127.0.0.1 at 2011-09-14 12:05:54 -0400
+
+ActionController::RoutingError (No route matches "/images/flag_ukraine.png"):
+  
+
+Rendered /Users/lprestonsegoiii/.rvm/gems/ruby-1.9.2-p290@comsat/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)

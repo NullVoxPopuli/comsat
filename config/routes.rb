@@ -9,7 +9,8 @@ DeviseExample::Application.routes.draw do
 
   devise_for :users
 
-  resources :home, :only => :index
+  match '/match_set_up', :to => 'home#match_set_up'
+  resources :home, :only =>:index
 
   root :to => 'home#index'
 

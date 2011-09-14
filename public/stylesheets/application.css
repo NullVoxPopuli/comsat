@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "BPDotsPlus";
+  src: url("/fonts/BPdotsPlusBold.otf");
+}
 
 .clear {
   clear: both;
@@ -65,12 +69,14 @@ body{
 	background: #bbb;
 	
 }
+
 .logo{
 	position: absolute;
 	left: 20px;
 	top: 50px;
 	width: 200px;
 }
+
 
 .pre_header_container{
 	position: fixed;
@@ -107,15 +113,6 @@ a{
 	height: 50px;
 }
 
-.outer_shell{
-	
-}
-
-.shell{
-	margin-left: auto;
-	margin-right: auto;
-	width: 900px;
-}
 
 .log_in_form_container{
 	margin-left: auto;
@@ -162,3 +159,104 @@ input[type="submit"]:hover
 {
 	background: -webkit-gradient(linear, left top, left bottom, from(#aaa), to(#eee));	
 }
+
+
+ /*
+
+Home screen buttons and UI elements 
+
+*/
+
+.outer_shell{
+	
+}
+
+.shell{
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+
+.logo_container{
+	position: absolute;
+	top: 10%;
+	height: 15%;
+	width: 100%;
+}
+.logo_background{
+	position: absolute;
+	top: 13%;
+	height: 80%;
+	width: 100%;
+	z-index: 0;
+	background-color: rgba(0,0,0,0.2);
+}
+.logo_big{
+	position: relative;
+	top: 0px;
+	left: 21% !important;
+	width: auto;
+	height: 100%;
+	left: 8%;
+	z-index: 1;
+}
+.main_options{
+	position: absolute;
+	top: 40%;
+	width: 50%;
+	height: 35%;
+	margin-left: auto;
+	margin-right: auto;
+}
+	.select_options{
+		display: inline;
+		padding: 20px;
+		left: 0px;
+		font-family: "BPDotsPlus";
+		font-size: 200%;
+		height: 100%;
+	}
+		.select_options_background{
+			position: absolute;
+			width: auto;
+			height: 100%;
+			z-index: 0;
+		}
+		.select_options ul{
+			position: absolute;
+			z-index: 1;
+		}
+
+		.select_options ul li{
+			list-style: none;
+			text-height: 210%;
+			line-height: 210%;
+			color: rgba(253, 113, 47, 1) !important;
+			
+		}
+		
+		.select_options a,
+		.select_options a:visited{
+			color: rgba(253, 113, 47, 1) !important;
+		}
+		
+	.announcments{
+		position: relative;
+		display: inline;
+		padding: 20px;
+		top: 40%;
+		width: 50%;
+		right: 0px;
+		
+	}
+		.announcement_background{
+			position: absolute;
+			width: auto;
+			height: 100%;
+			z-index: 0;
+		}
+		.text{
+			position: absolute;
+			z-index: 1;
+		}
+	
